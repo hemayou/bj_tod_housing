@@ -1,8 +1,9 @@
 // ========================================
-// 北京轨道交通TOD — App v4
+// 北京轨道交通TOD+居住机遇区 — App v4.1
 // Features: real GeoJSON, micro-centers, layer control,
 //   opacity slider, export HD, line labels, enhanced TOD zones,
-//   v4: POI markers, employment data, dynamic POI on zoom
+//   v4: employment data, dynamic POI on zoom
+//   v4.1: POI as GeoJSON layers with text labels, zone splits
 // ========================================
 
 (function() {
@@ -222,9 +223,12 @@
           }
         });
       });
-      // Also toggle POI markers visibility
-      currentPoiMarkers.forEach(m => {
-        m.getElement().style.display = layerVisibility.todZones ? '' : 'none';
+      // Also toggle POI GeoJSON layers visibility
+      const poiVis = layerVisibility.todZones ? 'visible' : 'none';
+      ['employment', 'residential', 'publicSpace', 'publicService'].forEach(cat => {
+        ['poi-labels-' + cat, 'poi-circles-' + cat, 'poi-circles-outline-' + cat].forEach(lid => {
+          if (map.getLayer(lid)) map.setLayoutProperty(lid, 'visibility', poiVis);
+        });
       });
     }
   }
@@ -243,7 +247,7 @@
       try {
         const canvas = map.getCanvas();
         const link = document.createElement('a');
-        link.download = `北京轨道交通TOD_${new Date().toISOString().slice(0,10)}.png`;
+        link.download = `北京轨道交通TOD居住机遇区_${new Date().toISOString().slice(0,10)}.png`;
         link.href = canvas.toDataURL('image/png');
         link.click();
       } catch(e) {
@@ -813,11 +817,21 @@
   }
 
   // ========================================
-  // POI Markers (v4)
+  // POI Markers (v4.1 — GeoJSON layers)
   // ========================================
   function clearPoiMarkers() {
+    // Remove old DOM markers if any
     currentPoiMarkers.forEach(m => m.remove());
     currentPoiMarkers = [];
+    // Remove GeoJSON layers & sources
+    ['employment', 'residential', 'publicSpace', 'publicService'].forEach(cat => {
+      ['poi-labels-' + cat, 'poi-circles-' + cat, 'poi-circles-outline-' + cat].forEach(id => {
+        if (map.getLayer(id)) map.removeLayer(id);
+      });
+      if (map.getSource('poi-' + cat)) map.removeSource('poi-' + cat);
+    });
+    // Remove click popup if any
+    if (window._poiPopup) { window._poiPopup.remove(); window._poiPopup = null; }
   }
 
   function addPoiMarkers(zone) {
@@ -827,29 +841,94 @@
     const categories = ['employment', 'residential', 'publicSpace', 'publicService'];
     categories.forEach(cat => {
       const pois = zone.pois[cat];
-      if (!pois) return;
+      if (!pois || pois.length === 0) return;
       const config = POI_CONFIG[cat];
+      const color = isDark ? config.darkColor : config.color;
 
-      pois.forEach(poi => {
-        const el = document.createElement('div');
-        el.className = 'poi-marker poi-marker-' + cat;
-        el.innerHTML = `<span class="poi-marker-icon">${config.emoji}</span>`;
-        el.title = poi.name;
+      // Build GeoJSON
+      const geojson = {
+        type: 'FeatureCollection',
+        features: pois.map(poi => ({
+          type: 'Feature',
+          geometry: { type: 'Point', coordinates: poi.coords },
+          properties: { name: poi.name, desc: poi.desc, category: cat, label: config.label }
+        }))
+      };
 
-        const marker = new maplibregl.Marker({ element: el, anchor: 'center' })
-          .setLngLat(poi.coords)
-          .setPopup(
-            new maplibregl.Popup({ offset: 16, closeButton: true, maxWidth: '240px' })
-              .setHTML(`
-                <div class="popup-title">${poi.name}</div>
-                <span class="popup-line" style="background:${isDark ? config.darkColor : config.color}">${config.label}</span>
-                <div class="popup-desc">${poi.desc}</div>
-              `)
-          )
-          .addTo(map);
+      const srcId = 'poi-' + cat;
+      map.addSource(srcId, { type: 'geojson', data: geojson });
 
-        currentPoiMarkers.push(marker);
+      // Outer ring (white/dark border for contrast)
+      map.addLayer({
+        id: 'poi-circles-outline-' + cat,
+        type: 'circle',
+        source: srcId,
+        paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 12, 7, 14, 10, 16, 14],
+          'circle-color': isDark ? '#1a1a2e' : '#ffffff',
+          'circle-opacity': 0.9,
+          'circle-stroke-width': 0,
+        }
       });
+
+      // Inner filled circle
+      map.addLayer({
+        id: 'poi-circles-' + cat,
+        type: 'circle',
+        source: srcId,
+        paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 12, 5, 14, 8, 16, 12],
+          'circle-color': color,
+          'circle-opacity': 0.92,
+          'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 16, 2.5],
+          'circle-stroke-color': isDark ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.9)',
+        }
+      });
+
+      // Text labels
+      map.addLayer({
+        id: 'poi-labels-' + cat,
+        type: 'symbol',
+        source: srcId,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+          'text-size': ['interpolate', ['linear'], ['zoom'], 12, 10, 14, 12, 16, 14],
+          'text-offset': [0, 1.4],
+          'text-anchor': 'top',
+          'text-max-width': 8,
+          'text-allow-overlap': false,
+          'text-ignore-placement': false,
+          'icon-allow-overlap': true,
+        },
+        paint: {
+          'text-color': isDark ? '#e0e0e0' : '#1a1a2e',
+          'text-halo-color': isDark ? 'rgba(20,20,40,0.85)' : 'rgba(255,255,255,0.85)',
+          'text-halo-width': 2,
+          'text-opacity': ['interpolate', ['linear'], ['zoom'], 12.5, 0, 13, 1],
+        }
+      });
+
+      // Click handler for popup
+      map.on('click', 'poi-circles-' + cat, (e) => {
+        const feat = e.features[0];
+        if (!feat) return;
+        const coords = feat.geometry.coordinates.slice();
+        const props = feat.properties;
+        if (window._poiPopup) window._poiPopup.remove();
+        window._poiPopup = new maplibregl.Popup({ offset: 14, closeButton: true, maxWidth: '260px' })
+          .setLngLat(coords)
+          .setHTML(`
+            <div class="popup-title">${props.name}</div>
+            <span class="popup-line" style="background:${color}">${props.label}</span>
+            <div class="popup-desc">${props.desc}</div>
+          `)
+          .addTo(map);
+      });
+
+      // Cursor pointer on hover
+      map.on('mouseenter', 'poi-circles-' + cat, () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'poi-circles-' + cat, () => { map.getCanvas().style.cursor = ''; });
     });
   }
 

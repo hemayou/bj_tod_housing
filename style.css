@@ -206,7 +206,7 @@ body {
 
 .header-title h1 {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -1043,55 +1043,9 @@ body {
 .attribution a:hover { color: var(--color-text-muted); }
 
 /* ========================================
-   POI Markers (v4)
+   POI (v4.1 — now rendered as MapLibre GeoJSON layers)
+   Popup styles for POI clicks
    ======================================== */
-.poi-marker {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
-  animation: poi-pop 350ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  opacity: 0;
-  transform: scale(0);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  border: 2px solid var(--color-surface);
-}
-
-.poi-marker:hover {
-  transform: scale(1.25) !important;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-  z-index: 10;
-}
-
-@keyframes poi-pop {
-  to { opacity: 1; transform: scale(1); }
-}
-
-.poi-marker-icon {
-  font-size: 14px;
-  line-height: 1;
-}
-
-.poi-marker-employment { background: #3B82F6; }
-.poi-marker-residential { background: #F59E0B; }
-.poi-marker-publicSpace { background: #10B981; }
-.poi-marker-publicService { background: #8B5CF6; }
-
-[data-theme="dark"] .poi-marker-employment { background: #2563EB; }
-[data-theme="dark"] .poi-marker-residential { background: #D97706; }
-[data-theme="dark"] .poi-marker-publicSpace { background: #059669; }
-[data-theme="dark"] .poi-marker-publicService { background: #7C3AED; }
-
-/* Staggered animation for POI markers */
-.poi-marker:nth-child(1) { animation-delay: 0ms; }
-.poi-marker:nth-child(2) { animation-delay: 40ms; }
-.poi-marker:nth-child(3) { animation-delay: 80ms; }
-.poi-marker:nth-child(4) { animation-delay: 120ms; }
 
 /* ========================================
    POI Panel Styles (v4)
