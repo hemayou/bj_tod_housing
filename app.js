@@ -1,7 +1,8 @@
 // ========================================
-// 北京轨道交通TOD — App v3
+// 北京轨道交通TOD — App v4
 // Features: real GeoJSON, micro-centers, layer control,
-//   opacity slider, export HD, line labels, enhanced TOD zones
+//   opacity slider, export HD, line labels, enhanced TOD zones,
+//   v4: POI markers, employment data, dynamic POI on zoom
 // ========================================
 
 (function() {
@@ -12,13 +13,16 @@
   let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   // Data stores
-  let metroLinesData = null;       // citylines.co operating lines
-  let metroStationsData = null;    // citylines.co operating stations
-  let newOperatingLines = null;    // 18号线 (recently opened)
+  let metroLinesData = null;
+  let metroStationsData = null;
+  let newOperatingLines = null;
   let newOperatingStations = null;
-  let ucLinesData = null;          // uploaded under-construction lines
-  let ucStationsData = null;       // uploaded under-construction stations
-  let microCentersData = null;     // 轨道微中心
+  let ucLinesData = null;
+  let ucStationsData = null;
+  let microCentersData = null;
+
+  // POI markers on map (DOM markers)
+  let currentPoiMarkers = [];
 
   // Layer visibility state
   const layerVisibility = {
@@ -52,6 +56,36 @@
   const $exportBtn = document.getElementById('export-btn');
 
   // ========================================
+  // POI config
+  // ========================================
+  const POI_CONFIG = {
+    employment: {
+      emoji: '🏢',
+      label: '就业空间',
+      color: '#3B82F6',
+      darkColor: '#60A5FA'
+    },
+    residential: {
+      emoji: '🏘',
+      label: '居住区',
+      color: '#F59E0B',
+      darkColor: '#FBBF24'
+    },
+    publicSpace: {
+      emoji: '🌳',
+      label: '公共空间',
+      color: '#10B981',
+      darkColor: '#34D399'
+    },
+    publicService: {
+      emoji: '🏥',
+      label: '公共服务',
+      color: '#8B5CF6',
+      darkColor: '#A78BFA'
+    }
+  };
+
+  // ========================================
   // Theme
   // ========================================
   function applyTheme() {
@@ -60,7 +94,11 @@
       map.setStyle(getMapStyle());
       map.once('style.load', () => {
         addAllMapLayers();
-        if (activeZone) highlightZone(activeZone);
+        if (activeZone) {
+          highlightZone(activeZone);
+          const zone = OPPORTUNITY_ZONES.find(z => z.id === activeZone);
+          if (zone) addPoiMarkers(zone);
+        }
       });
     }
   }
@@ -126,7 +164,6 @@
         map.setPaintProperty(id, 'line-opacity', baseOp * metroOpacity);
       }
     });
-    // Station opacity
     ['stations-dots', 'stations-transfer-ring', 'uc-stations-dots',
      'new-op-stations-dots'].forEach(id => {
       if (map.getLayer(id)) {
@@ -164,7 +201,7 @@
                           'uc-stations-dots', 'uc-stations-labels'],
       stations: ['stations-dots', 'stations-transfer-ring', 'stations-labels',
                  'new-op-stations-dots', 'new-op-stations-labels'],
-      todZones: [],  // handled dynamically
+      todZones: [],
       microCenters: ['micro-centers-dots', 'micro-centers-labels', 'micro-centers-ring'],
       lineLabels: ['operating-line-labels', 'new-operating-line-labels', 'uc-line-labels']
     };
@@ -176,7 +213,6 @@
       }
     });
 
-    // TOD zones have dynamic IDs
     if (layerKey === 'todZones') {
       OPPORTUNITY_ZONES.forEach(z => {
         const sid = `zone-${z.id}`;
@@ -185,6 +221,10 @@
             map.setLayoutProperty(id, 'visibility', vis);
           }
         });
+      });
+      // Also toggle POI markers visibility
+      currentPoiMarkers.forEach(m => {
+        m.getElement().style.display = layerVisibility.todZones ? '' : 'none';
       });
     }
   }
@@ -199,19 +239,14 @@
   function exportMap() {
     $exportBtn.classList.add('exporting');
     $exportBtn.disabled = true;
-
-    // Use preserveDrawingBuffer approach - render to canvas
     map.once('render', () => {
       try {
         const canvas = map.getCanvas();
-        // Create a higher-res version
-        const dpr = window.devicePixelRatio || 2;
         const link = document.createElement('a');
         link.download = `北京轨道交通TOD_${new Date().toISOString().slice(0,10)}.png`;
         link.href = canvas.toDataURL('image/png');
         link.click();
       } catch(e) {
-        // Fallback: use html2canvas-like approach via maplibre's built-in
         alert('导出失败，请尝试使用浏览器截图功能（Ctrl+Shift+S）');
       }
       $exportBtn.classList.remove('exporting');
@@ -259,7 +294,7 @@
       maxZoom: 17,
       minZoom: 8,
       attributionControl: false,
-      preserveDrawingBuffer: true  // needed for export
+      preserveDrawingBuffer: true
     });
 
     map.addControl(new maplibregl.NavigationControl({ showCompass: true, visualizePitch: true }), 'bottom-right');
@@ -475,7 +510,6 @@
 
   // ---- Line Labels (along lines) ----
   function addLineLabels() {
-    // Operating line labels
     if (map.getSource('operating-lines') && !map.getLayer('operating-line-labels')) {
       map.addLayer({
         id: 'operating-line-labels', type: 'symbol', source: 'operating-lines',
@@ -485,9 +519,7 @@
           'text-field': ['get', 'line'],
           'text-size': ['interpolate', ['linear'], ['zoom'], 10, 9, 14, 12],
           'text-font': ['Noto Sans Regular'],
-          'text-max-angle': 30,
-          'text-padding': 40,
-          'symbol-spacing': 300,
+          'text-max-angle': 30, 'text-padding': 40, 'symbol-spacing': 300,
           'text-allow-overlap': false
         },
         paint: {
@@ -497,7 +529,6 @@
         }
       });
     }
-    // New operating line labels (18号线)
     if (map.getSource('new-operating-lines') && !map.getLayer('new-operating-line-labels')) {
       map.addLayer({
         id: 'new-operating-line-labels', type: 'symbol', source: 'new-operating-lines',
@@ -517,7 +548,6 @@
         }
       });
     }
-    // UC line labels
     if (map.getSource('uc-lines') && !map.getLayer('uc-line-labels')) {
       map.addLayer({
         id: 'uc-line-labels', type: 'symbol', source: 'uc-lines',
@@ -543,7 +573,6 @@
   function addMicroCenters() {
     if (!microCentersData || map.getSource('micro-centers')) return;
 
-    // Build GeoJSON from array
     const features = microCentersData.map(mc => ({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [mc.lon, mc.lat] },
@@ -553,7 +582,6 @@
 
     map.addSource('micro-centers', { type: 'geojson', data: geojson });
 
-    // Outer ring for grade emphasis
     map.addLayer({
       id: 'micro-centers-ring', type: 'circle', source: 'micro-centers',
       minzoom: 10,
@@ -574,7 +602,6 @@
       }
     });
 
-    // Filled dots
     map.addLayer({
       id: 'micro-centers-dots', type: 'circle', source: 'micro-centers',
       minzoom: 10,
@@ -597,7 +624,6 @@
       }
     });
 
-    // Labels
     map.addLayer({
       id: 'micro-centers-labels', type: 'symbol', source: 'micro-centers',
       minzoom: 12.5,
@@ -647,24 +673,15 @@
     if (map._stationClickBound) return;
     map._stationClickBound = true;
 
-    // Operating stations
-    map.on('click', 'stations-dots', (e) => {
-      showStationPopup(e.features[0], 'operating');
-    });
+    map.on('click', 'stations-dots', (e) => { showStationPopup(e.features[0], 'operating'); });
     map.on('mouseenter', 'stations-dots', () => { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', 'stations-dots', () => { map.getCanvas().style.cursor = ''; });
 
-    // New operating stations
-    map.on('click', 'new-op-stations-dots', (e) => {
-      showStationPopup(e.features[0], 'operating');
-    });
+    map.on('click', 'new-op-stations-dots', (e) => { showStationPopup(e.features[0], 'operating'); });
     map.on('mouseenter', 'new-op-stations-dots', () => { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', 'new-op-stations-dots', () => { map.getCanvas().style.cursor = ''; });
 
-    // UC stations
-    map.on('click', 'uc-stations-dots', (e) => {
-      showStationPopup(e.features[0], 'uc');
-    });
+    map.on('click', 'uc-stations-dots', (e) => { showStationPopup(e.features[0], 'uc'); });
     map.on('mouseenter', 'uc-stations-dots', () => { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', 'uc-stations-dots', () => { map.getCanvas().style.cursor = ''; });
   }
@@ -716,7 +733,6 @@
         }
       });
 
-      // Enhanced fill - more vibrant
       map.addLayer({
         id: `${sourceId}-fill`, type: 'fill', source: sourceId,
         paint: {
@@ -725,7 +741,6 @@
         }
       });
 
-      // Enhanced border - MUCH more prominent
       map.addLayer({
         id: `${sourceId}-border`, type: 'line', source: sourceId,
         paint: {
@@ -736,7 +751,6 @@
         }
       });
 
-      // Zone label
       const labelSrcId = `zone-label-${zone.id}`;
       if (!map.getSource(labelSrcId)) {
         map.addSource(labelSrcId, {
@@ -799,6 +813,47 @@
   }
 
   // ========================================
+  // POI Markers (v4)
+  // ========================================
+  function clearPoiMarkers() {
+    currentPoiMarkers.forEach(m => m.remove());
+    currentPoiMarkers = [];
+  }
+
+  function addPoiMarkers(zone) {
+    clearPoiMarkers();
+    if (!zone.pois) return;
+
+    const categories = ['employment', 'residential', 'publicSpace', 'publicService'];
+    categories.forEach(cat => {
+      const pois = zone.pois[cat];
+      if (!pois) return;
+      const config = POI_CONFIG[cat];
+
+      pois.forEach(poi => {
+        const el = document.createElement('div');
+        el.className = 'poi-marker poi-marker-' + cat;
+        el.innerHTML = `<span class="poi-marker-icon">${config.emoji}</span>`;
+        el.title = poi.name;
+
+        const marker = new maplibregl.Marker({ element: el, anchor: 'center' })
+          .setLngLat(poi.coords)
+          .setPopup(
+            new maplibregl.Popup({ offset: 16, closeButton: true, maxWidth: '240px' })
+              .setHTML(`
+                <div class="popup-title">${poi.name}</div>
+                <span class="popup-line" style="background:${isDark ? config.darkColor : config.color}">${config.label}</span>
+                <div class="popup-desc">${poi.desc}</div>
+              `)
+          )
+          .addTo(map);
+
+        currentPoiMarkers.push(marker);
+      });
+    });
+  }
+
+  // ========================================
   // Zone Navigation
   // ========================================
   function buildZoneNav() {
@@ -828,12 +883,13 @@
     });
 
     map.flyTo({
-      center: zone.center, zoom: 13, pitch: 30, bearing: -10,
+      center: zone.center, zoom: 14, pitch: 30, bearing: -10,
       duration: 1500, essential: true
     });
 
     highlightZone(zoneId);
     showPanel(zone);
+    addPoiMarkers(zone);
     $legendPanel.classList.remove('visible');
     $layerPanel.classList.remove('visible');
   }
@@ -863,6 +919,7 @@
 
   function resetView() {
     activeZone = null;
+    clearPoiMarkers();
     document.querySelectorAll('.zone-btn').forEach(btn => {
       btn.classList.toggle('active', !btn.dataset.zoneId);
     });
@@ -885,9 +942,54 @@
   }
 
   // ========================================
-  // Side Panel
+  // Side Panel (v4 — with jobs + POI)
   // ========================================
   function showPanel(zone) {
+    // Build POI section HTML
+    let poiSectionHtml = '';
+    if (zone.pois) {
+      const categories = ['employment', 'residential', 'publicSpace', 'publicService'];
+      let poiItems = '';
+      categories.forEach(cat => {
+        const pois = zone.pois[cat];
+        if (!pois || pois.length === 0) return;
+        const config = POI_CONFIG[cat];
+        const colorVar = isDark ? config.darkColor : config.color;
+
+        poiItems += `<div class="poi-category">
+          <div class="poi-category-header">
+            <span class="poi-category-dot" style="background:${colorVar}"></span>
+            <span class="poi-category-name">${config.emoji} ${config.label}</span>
+            <span class="poi-category-count">${pois.length}个</span>
+          </div>
+          <div class="poi-category-list">
+            ${pois.map(p => `
+              <div class="poi-list-item" data-lng="${p.coords[0]}" data-lat="${p.coords[1]}">
+                <div class="poi-list-name">${p.name}</div>
+                <div class="poi-list-desc">${p.desc}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>`;
+      });
+
+      if (poiItems) {
+        poiSectionHtml = `
+          <div class="panel-section animate-in">
+            <div class="panel-section-title">区域要素分布</div>
+            <div class="poi-legend-mini">
+              ${categories.map(cat => {
+                const config = POI_CONFIG[cat];
+                const colorVar = isDark ? config.darkColor : config.color;
+                return `<span class="poi-legend-item"><span class="poi-legend-dot" style="background:${colorVar}"></span>${config.label}</span>`;
+              }).join('')}
+            </div>
+            ${poiItems}
+          </div>
+        `;
+      }
+    }
+
     const html = `
       <div class="animate-in">
         <div class="zone-badge">TOD机遇区</div>
@@ -915,6 +1017,7 @@
           <div class="stat-card"><div class="stat-value">${zone.stats.commuters}</div><div class="stat-label">日均通勤</div></div>
           <div class="stat-card"><div class="stat-value">${zone.stats.housingDensity}</div><div class="stat-label">住房密度</div></div>
           <div class="stat-card"><div class="stat-value">${zone.stats.avgCommute}</div><div class="stat-label">平均通勤</div></div>
+          ${zone.stats.jobs ? `<div class="stat-card stat-card-jobs"><div class="stat-value stat-value-jobs">${zone.stats.jobs}</div><div class="stat-label">就业岗位</div></div>` : ''}
         </div>
       </div>
       <div class="panel-section animate-in">
@@ -938,6 +1041,7 @@
           <div class="opportunity-item"><div class="opportunity-icon">💡</div><div class="opportunity-text"><strong>机遇：</strong>${zone.housingStatus.opportunity}</div></div>
         </div>
       </div>
+      ${poiSectionHtml}
       <div class="panel-section animate-in">
         <div class="panel-section-title">优化机会</div>
         <div class="opportunity-list">
@@ -949,12 +1053,23 @@
     `;
     $panelContent.innerHTML = html;
     $sidePanel.classList.add('visible');
+
+    // Animate progress bars
     requestAnimationFrame(() => {
       setTimeout(() => {
         document.querySelectorAll('.progress-fill[data-width]').forEach(el => {
           el.style.width = el.dataset.width + '%';
         });
       }, 300);
+    });
+
+    // POI item click → fly to location
+    document.querySelectorAll('.poi-list-item[data-lng]').forEach(item => {
+      item.addEventListener('click', () => {
+        const lng = parseFloat(item.dataset.lng);
+        const lat = parseFloat(item.dataset.lat);
+        map.flyTo({ center: [lng, lat], zoom: 15.5, duration: 800 });
+      });
     });
   }
 
