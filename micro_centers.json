@@ -1,0 +1,1032 @@
+[
+  {
+    "id": 1,
+    "name": "西直门站",
+    "district": "西城区",
+    "grade": "枢纽级",
+    "lat": 39.939217,
+    "lon": 116.349235,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 2,
+    "name": "东大桥站",
+    "district": "朝阳区",
+    "grade": "城市级",
+    "lat": 39.921482,
+    "lon": 116.44556,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 3,
+    "name": "十里河站",
+    "district": "朝阳区",
+    "grade": "城市级",
+    "lat": 39.864713,
+    "lon": 116.45256,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 4,
+    "name": "崔各庄站",
+    "district": "朝阳区",
+    "grade": "区域级",
+    "lat": 40.020563,
+    "lon": 116.486754,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 5,
+    "name": "管庄站",
+    "district": "朝阳区",
+    "grade": "区域级",
+    "lat": 39.908085,
+    "lon": 116.593168,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 6,
+    "name": "北京东站",
+    "district": "朝阳区",
+    "grade": "区域级",
+    "lat": 39.901096,
+    "lon": 116.478656,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 7,
+    "name": "东坝北站",
+    "district": "朝阳区",
+    "grade": "区域级",
+    "lat": 39.974604,
+    "lon": 116.55197,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 8,
+    "name": "东坝西站",
+    "district": "朝阳区",
+    "grade": "街区级",
+    "lat": 39.973336,
+    "lon": 116.528356,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 9,
+    "name": "十八里店站",
+    "district": "朝阳区",
+    "grade": "街区级",
+    "lat": 39.843058,
+    "lon": 116.489831,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 10,
+    "name": "管庄路西口站",
+    "district": "朝阳区",
+    "grade": "城市级",
+    "lat": 39.9093,
+    "lon": 116.562,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 11,
+    "name": "红庙站",
+    "district": "朝阳区",
+    "grade": "城市级",
+    "lat": 39.9139,
+    "lon": 116.4725,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 12,
+    "name": "定福庄站",
+    "district": "朝阳区",
+    "grade": "区域级",
+    "lat": 39.914737,
+    "lon": 116.550192,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 13,
+    "name": "光华路站",
+    "district": "朝阳区",
+    "grade": "区域级",
+    "lat": 39.9122,
+    "lon": 116.4692,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 14,
+    "name": "核心区站",
+    "district": "朝阳区",
+    "grade": "区域级",
+    "lat": 39.9015,
+    "lon": 116.645,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 15,
+    "name": "广渠东路站",
+    "district": "朝阳区",
+    "grade": "街区级",
+    "lat": 39.89,
+    "lon": 116.551,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 16,
+    "name": "广渠路站",
+    "district": "朝阳区",
+    "grade": "街区级",
+    "lat": 39.89,
+    "lon": 116.5245,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 17,
+    "name": "市郊望京站",
+    "district": "朝阳区",
+    "grade": "街区级",
+    "lat": 40.0045,
+    "lon": 116.4705,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 18,
+    "name": "温阳路站",
+    "district": "海淀区",
+    "grade": "区域级",
+    "lat": 40.067511,
+    "lon": 116.155569,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 19,
+    "name": "稻香湖路站",
+    "district": "海淀区",
+    "grade": "区域级",
+    "lat": 40.067441,
+    "lon": 116.18227,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 20,
+    "name": "牡丹园站",
+    "district": "海淀区",
+    "grade": "区域级",
+    "lat": 39.974913,
+    "lon": 116.363063,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 21,
+    "name": "五道口站",
+    "district": "海淀区",
+    "grade": "区域级",
+    "lat": 39.991478,
+    "lon": 116.331702,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 22,
+    "name": "学知园站",
+    "district": "海淀区",
+    "grade": "区域级",
+    "lat": 40.01363,
+    "lon": 116.345753,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 23,
+    "name": "学院南路站",
+    "district": "海淀区",
+    "grade": "街区级",
+    "lat": 39.9831,
+    "lon": 116.3187,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 24,
+    "name": "大红门站",
+    "district": "丰台区",
+    "grade": "城市级",
+    "lat": 39.844014,
+    "lon": 116.392772,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 25,
+    "name": "草桥站",
+    "district": "丰台区",
+    "grade": "城市级",
+    "lat": 39.8446,
+    "lon": 116.345412,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 26,
+    "name": "丽泽商务区站",
+    "district": "丰台区",
+    "grade": "城市级",
+    "lat": 39.866276,
+    "lon": 116.325603,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 27,
+    "name": "大红门南站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.835548,
+    "lon": 116.394854,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 28,
+    "name": "花乡东桥站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.827847,
+    "lon": 116.313945,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 29,
+    "name": "丰台南路站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.839595,
+    "lon": 116.290668,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 30,
+    "name": "景风门站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.861407,
+    "lon": 116.360096,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 31,
+    "name": "新宫站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.811044,
+    "lon": 116.359749,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 32,
+    "name": "榆树庄站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.837568,
+    "lon": 116.252982,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 33,
+    "name": "园博园站",
+    "district": "丰台区",
+    "grade": "街区级",
+    "lat": 39.859993,
+    "lon": 116.195672,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 34,
+    "name": "王佐站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.7999,
+    "lon": 116.1499,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 35,
+    "name": "西二区站",
+    "district": "丰台区",
+    "grade": "区域级",
+    "lat": 39.82,
+    "lon": 116.166,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 36,
+    "name": "新宫南站",
+    "district": "丰台区",
+    "grade": "街区级",
+    "lat": 39.8,
+    "lon": 116.3495,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 37,
+    "name": "苹果园站",
+    "district": "石景山区",
+    "grade": "城市级",
+    "lat": 39.92436,
+    "lon": 116.171306,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 38,
+    "name": "金安桥站",
+    "district": "石景山区",
+    "grade": "城市级",
+    "lat": 39.921924,
+    "lon": 116.156827,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 39,
+    "name": "新首钢站",
+    "district": "石景山区",
+    "grade": "区域级",
+    "lat": 39.907665,
+    "lon": 116.158606,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 40,
+    "name": "体育场南街站",
+    "district": "石景山区",
+    "grade": "区域级",
+    "lat": 39.9155,
+    "lon": 116.208,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 41,
+    "name": "衙门口西站",
+    "district": "石景山区",
+    "grade": "街区级",
+    "lat": 39.899895,
+    "lon": 116.204763,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 42,
+    "name": "鲁谷大街站",
+    "district": "石景山区",
+    "grade": "街区级",
+    "lat": 39.9075,
+    "lon": 116.25,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 43,
+    "name": "锅炉厂南路站",
+    "district": "石景山区",
+    "grade": "街区级",
+    "lat": 39.904,
+    "lon": 116.2355,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 44,
+    "name": "市郊顺义站",
+    "district": "顺义区",
+    "grade": "城市级",
+    "lat": 40.128,
+    "lon": 116.654,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 45,
+    "name": "牛栏山站",
+    "district": "顺义区",
+    "grade": "街区级",
+    "lat": 40.202167,
+    "lon": 116.64244,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 46,
+    "name": "临河站",
+    "district": "顺义区",
+    "grade": "区域级",
+    "lat": 40.093,
+    "lon": 116.66,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 47,
+    "name": "霍营站",
+    "district": "昌平区",
+    "grade": "城市级",
+    "lat": 40.070479,
+    "lon": 116.353898,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 48,
+    "name": "北邵洼站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.220697,
+    "lon": 116.275447,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 49,
+    "name": "天通苑东站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.067101,
+    "lon": 116.435984,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 50,
+    "name": "回龙观东大街站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.079751,
+    "lon": 116.357185,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 51,
+    "name": "沙河高教园站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.163399,
+    "lon": 116.274386,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 52,
+    "name": "未来科学城站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.093,
+    "lon": 116.405,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 53,
+    "name": "新龙泽站",
+    "district": "昌平区",
+    "grade": "城市级",
+    "lat": 40.08,
+    "lon": 116.363,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 54,
+    "name": "回龙观东站",
+    "district": "昌平区",
+    "grade": "街区级",
+    "lat": 40.0657,
+    "lon": 116.383,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 55,
+    "name": "生命谷站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.082,
+    "lon": 116.396,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 56,
+    "name": "沙河北站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.13,
+    "lon": 116.262,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 57,
+    "name": "市郊昌平站",
+    "district": "昌平区",
+    "grade": "区域级",
+    "lat": 40.22,
+    "lon": 116.231,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 58,
+    "name": "高楼金站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.861862,
+    "lon": 116.67951,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 59,
+    "name": "花庄站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.85538,
+    "lon": 116.689014,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 60,
+    "name": "万盛东站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.862532,
+    "lon": 116.650159,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 61,
+    "name": "万盛西站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.862441,
+    "lon": 116.626707,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 62,
+    "name": "通州站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.908,
+    "lon": 116.7001,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 63,
+    "name": "群芳站",
+    "district": "通州区",
+    "grade": "街区级",
+    "lat": 39.869,
+    "lon": 116.6605,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 64,
+    "name": "通州北关站",
+    "district": "通州区",
+    "grade": "城市级",
+    "lat": 39.917464,
+    "lon": 116.65553,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 65,
+    "name": "北京大剧院站",
+    "district": "通州区",
+    "grade": "城市级",
+    "lat": 39.9098,
+    "lon": 116.6745,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 66,
+    "name": "通运门站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.9143,
+    "lon": 116.658,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 67,
+    "name": "通州西站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.903483,
+    "lon": 116.62075,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 68,
+    "name": "体育中心站",
+    "district": "通州区",
+    "grade": "街区级",
+    "lat": 39.9082,
+    "lon": 116.66,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 69,
+    "name": "永顺站",
+    "district": "通州区",
+    "grade": "街区级",
+    "lat": 39.913,
+    "lon": 116.6445,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 70,
+    "name": "徐辛庄站",
+    "district": "通州区",
+    "grade": "区域级",
+    "lat": 39.895,
+    "lon": 116.73,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 71,
+    "name": "良乡站",
+    "district": "房山区",
+    "grade": "城市级",
+    "lat": 39.739821,
+    "lon": 116.150645,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 72,
+    "name": "良乡大学城站",
+    "district": "房山区",
+    "grade": "区域级",
+    "lat": 39.721902,
+    "lon": 116.170297,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 73,
+    "name": "良乡南关站",
+    "district": "房山区",
+    "grade": "区域级",
+    "lat": 39.721882,
+    "lon": 116.13424,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 74,
+    "name": "窦店站",
+    "district": "房山区",
+    "grade": "区域级",
+    "lat": 39.667881,
+    "lon": 116.095745,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 75,
+    "name": "黄村火车站",
+    "district": "大兴区",
+    "grade": "城市级",
+    "lat": 39.721505,
+    "lon": 116.326654,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 76,
+    "name": "大兴新城站",
+    "district": "大兴区",
+    "grade": "区域级",
+    "lat": 39.734074,
+    "lon": 116.359482,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 77,
+    "name": "礼贤站",
+    "district": "大兴区",
+    "grade": "区域级",
+    "lat": 39.555011,
+    "lon": 116.431612,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 78,
+    "name": "新媒体产业基地站",
+    "district": "大兴区",
+    "grade": "区域级",
+    "lat": 39.715,
+    "lon": 116.43,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 79,
+    "name": "中日产业园站",
+    "district": "大兴区",
+    "grade": "区域级",
+    "lat": 39.695,
+    "lon": 116.425,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 80,
+    "name": "芦城南站",
+    "district": "大兴区",
+    "grade": "区域级",
+    "lat": 39.75,
+    "lon": 116.2866,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 81,
+    "name": "芦城北站",
+    "district": "大兴区",
+    "grade": "街区级",
+    "lat": 39.76,
+    "lon": 116.28,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 82,
+    "name": "金星西路站",
+    "district": "大兴区",
+    "grade": "街区级",
+    "lat": 39.762037,
+    "lon": 116.32352,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 83,
+    "name": "观音寺站",
+    "district": "大兴区",
+    "grade": "街区级",
+    "lat": 39.74,
+    "lon": 116.34,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 84,
+    "name": "首都医科大学站",
+    "district": "大兴区",
+    "grade": "街区级",
+    "lat": 39.735,
+    "lon": 116.37,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 85,
+    "name": "延庆站",
+    "district": "延庆区",
+    "grade": "区域级",
+    "lat": 40.434977,
+    "lon": 115.977405,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 86,
+    "name": "怀柔站",
+    "district": "怀柔区",
+    "grade": "区域级",
+    "lat": 40.316016,
+    "lon": 116.643128,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 87,
+    "name": "怀柔南站",
+    "district": "怀柔区",
+    "grade": "区域级",
+    "lat": 40.277193,
+    "lon": 116.69887,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 88,
+    "name": "怀柔北站",
+    "district": "怀柔区",
+    "grade": "街区级",
+    "lat": 40.407992,
+    "lon": 116.686869,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 89,
+    "name": "雁栖小镇站",
+    "district": "怀柔区",
+    "grade": "区域级",
+    "lat": 40.376,
+    "lon": 116.664,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 90,
+    "name": "北房站",
+    "district": "怀柔区",
+    "grade": "街区级",
+    "lat": 40.3252,
+    "lon": 116.6969,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 91,
+    "name": "马坊站",
+    "district": "平谷区",
+    "grade": "区域级",
+    "lat": 40.069055,
+    "lon": 116.997389,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 92,
+    "name": "平谷站",
+    "district": "平谷区",
+    "grade": "区域级",
+    "lat": 40.136019,
+    "lon": 116.987121,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 93,
+    "name": "农业创新港站",
+    "district": "平谷区",
+    "grade": "街区级",
+    "lat": 40.15,
+    "lon": 117.0,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 94,
+    "name": "马昌营站",
+    "district": "平谷区",
+    "grade": "街区级",
+    "lat": 40.133,
+    "lon": 117.0149,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  },
+  {
+    "id": 95,
+    "name": "密云站",
+    "district": "密云区",
+    "grade": "区域级",
+    "lat": 40.351008,
+    "lon": 116.845128,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 96,
+    "name": "密云北站",
+    "district": "密云区",
+    "grade": "街区级",
+    "lat": 40.395753,
+    "lon": 116.85659,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 97,
+    "name": "统军庄站",
+    "district": "密云区",
+    "grade": "区域级",
+    "lat": 40.34103,
+    "lon": 116.74779,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 98,
+    "name": "北神树站",
+    "district": "亦庄",
+    "grade": "区域级",
+    "lat": 39.817535,
+    "lon": 116.547173,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 99,
+    "name": "次渠站",
+    "district": "亦庄",
+    "grade": "区域级",
+    "lat": 39.802552,
+    "lon": 116.585621,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 100,
+    "name": "次渠北站",
+    "district": "亦庄",
+    "grade": "区域级",
+    "lat": 39.808597,
+    "lon": 116.570624,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 101,
+    "name": "荣昌东街站",
+    "district": "亦庄",
+    "grade": "区域级",
+    "lat": 39.781696,
+    "lon": 116.515857,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 102,
+    "name": "嘉会湖站",
+    "district": "亦庄",
+    "grade": "街区级",
+    "lat": 39.791872,
+    "lon": 116.605256,
+    "source": "OSM",
+    "note": "已运营/在建站，OSM核实"
+  },
+  {
+    "id": 103,
+    "name": "开发区西区站",
+    "district": "亦庄",
+    "grade": "区域级",
+    "lat": 39.793,
+    "lon": 116.478,
+    "source": "estimated",
+    "note": "规划/在建站，坐标为估算值"
+  }
+]

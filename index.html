@@ -16,9 +16,9 @@
 <meta property="og:see_also" content="https://www.perplexity.ai/computer">
 <link rel="author" href="https://www.perplexity.ai/computer">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>北京轨道交通TOD一体化 — 机遇区动态展示</title>
-<meta name="description" content="北京市地铁现有线路、在建线路及重点TOD一体化机遇区动态交互地图">
+<meta name="description" content="北京市地铁现有线路、在建线路、轨道微中心及重点TOD一体化机遇区动态交互地图">
 <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
 <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
@@ -60,12 +60,22 @@
       </div>
     </div>
     <div class="header-right">
-      <div class="legend-toggle" id="legend-toggle" title="图例">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="2" fill="currentColor"/><circle cx="15" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg>
+      <!-- Export button -->
+      <button class="header-btn" id="export-btn" title="导出高清图片" aria-label="导出高清图片">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </button>
+      <!-- Layer control -->
+      <button class="header-btn" id="layer-btn" title="图层控制" aria-label="图层控制">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      </button>
+      <!-- Legend -->
+      <div class="header-btn" id="legend-toggle" title="图例">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="2" fill="currentColor"/><circle cx="15" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg>
       </div>
-      <button class="theme-toggle" id="theme-toggle" data-theme-toggle aria-label="切换主题">
-        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <!-- Theme toggle -->
+      <button class="header-btn" id="theme-toggle" data-theme-toggle aria-label="切换主题">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </div>
   </header>
@@ -75,12 +85,60 @@
 
   <!-- North orientation button -->
   <button id="north-btn" class="north-btn" title="恢复正北朝向" aria-label="恢复正北朝向">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <polygon points="3 11 12 2 21 11" fill="none"/>
       <line x1="12" y1="2" x2="12" y2="22"/>
       <text x="12" y="18" text-anchor="middle" font-size="7" font-weight="bold" fill="currentColor" stroke="none">N</text>
     </svg>
   </button>
+
+  <!-- Layer control panel -->
+  <div id="layer-panel" class="layer-panel">
+    <div class="layer-panel-header">
+      <h3>图层控制</h3>
+      <button class="layer-panel-close" id="layer-panel-close">&times;</button>
+    </div>
+
+    <div class="layer-group">
+      <label class="layer-toggle">
+        <input type="checkbox" class="layer-toggle-input" data-layer="operating" checked>
+        <span class="layer-toggle-switch"></span>
+        <span class="layer-toggle-label">运营线路</span>
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" class="layer-toggle-input" data-layer="underConstruction" checked>
+        <span class="layer-toggle-switch"></span>
+        <span class="layer-toggle-label">在建线路</span>
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" class="layer-toggle-input" data-layer="stations" checked>
+        <span class="layer-toggle-switch"></span>
+        <span class="layer-toggle-label">站点</span>
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" class="layer-toggle-input" data-layer="lineLabels" checked>
+        <span class="layer-toggle-switch"></span>
+        <span class="layer-toggle-label">线路名称</span>
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" class="layer-toggle-input" data-layer="todZones" checked>
+        <span class="layer-toggle-switch"></span>
+        <span class="layer-toggle-label">TOD机遇区</span>
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" class="layer-toggle-input" data-layer="microCenters" checked>
+        <span class="layer-toggle-switch"></span>
+        <span class="layer-toggle-label">轨道微中心</span>
+      </label>
+    </div>
+
+    <div class="layer-group">
+      <div class="slider-group">
+        <label class="slider-label">线路透明度 <span id="opacity-value">90%</span></label>
+        <input type="range" id="opacity-slider" class="opacity-slider" min="0" max="1" step="0.05" value="0.9">
+      </div>
+    </div>
+  </div>
 
   <!-- Legend panel -->
   <div id="legend-panel" class="legend-panel">
@@ -100,8 +158,15 @@
       <div class="legend-item"><span class="legend-dot legend-dot-transfer" style="background:#FFB703"></span>换乘站</div>
     </div>
     <div class="legend-section">
+      <h4>轨道微中心</h4>
+      <div class="legend-item"><span class="legend-dot" style="background:#D4A017"></span>枢纽级</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#E67E22"></span>城市级</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#27AE60"></span>区域级</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#5DADE2"></span>街区级</div>
+    </div>
+    <div class="legend-section">
       <h4>TOD机遇区</h4>
-      <div class="legend-item"><span class="legend-zone"></span>重点TOD一体化区域</div>
+      <div class="legend-item"><span class="legend-zone legend-zone-tod"></span>重点TOD一体化区域</div>
     </div>
   </div>
 
