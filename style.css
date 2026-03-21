@@ -262,7 +262,7 @@ body {
 
 .maplibregl-ctrl-bottom-left,
 .maplibregl-ctrl-bottom-right {
-  bottom: 70px !important;
+  bottom: 60px !important;
 }
 
 /* Custom map controls style */
@@ -284,6 +284,47 @@ body {
 
 .maplibregl-ctrl-group button + button {
   border-top: 1px solid var(--color-divider) !important;
+}
+
+/* ========================================
+   North Button
+   ======================================== */
+.north-btn {
+  position: fixed;
+  bottom: 170px;
+  right: 16px;
+  z-index: 90;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-panel-bg);
+  backdrop-filter: blur(var(--color-panel-blur));
+  -webkit-backdrop-filter: blur(var(--color-panel-blur));
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  opacity: 0;
+  animation: slide-up 500ms 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.north-btn:hover {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.north-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .north-btn { bottom: 160px; right: 10px; }
 }
 
 /* ========================================
@@ -839,8 +880,8 @@ body {
    ======================================== */
 .attribution {
   position: fixed;
-  bottom: 72px;
-  right: 12px;
+  bottom: 58px;
+  right: 56px;
   z-index: 50;
 }
 
