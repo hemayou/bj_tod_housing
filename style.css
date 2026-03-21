@@ -1087,9 +1087,18 @@ body {
     max-height: 55vh;
     border-radius: var(--radius-xl) var(--radius-xl) 0 0;
     transform: translateY(100%);
+    overflow: visible;
   }
   
   .side-panel.visible { transform: translateY(0); }
+
+  .side-panel .panel-content {
+    max-height: calc(55vh - 10px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
   
   .zone-nav { bottom: 8px; left: 8px; right: 8px; }
   .zone-nav-inner { padding: 6px; gap: 4px; }
