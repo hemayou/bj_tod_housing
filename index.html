@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北京轨道交通TOD一体化 — 机遇区动态展示</title>
+<meta name="description" content="北京市地铁现有线路、在建线路及重点TOD一体化机遇区动态交互地图">
+<link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230066CC'/><path d='M8 22V10l8-4 8 4v12l-8 4-8-4z' fill='none' stroke='white' stroke-width='2'/><circle cx='16' cy='16' r='3' fill='white'/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <svg class="loading-logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="56" height="56" rx="12" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M20 44V20l12-6 12 6v24l-12 6-12-6z" stroke="currentColor" stroke-width="2" fill="none" opacity="0.4"/>
+        <circle cx="32" cy="32" r="5" fill="currentColor" opacity="0.6"/>
+        <circle cx="32" cy="32" r="2" fill="currentColor"/>
+        <line x1="32" y1="10" x2="32" y2="24" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
+        <line x1="32" y1="40" x2="32" y2="54" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
+        <line x1="14" y1="32" x2="24" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
+        <line x1="40" y1="32" x2="50" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
+      </svg>
+      <h2 class="loading-title">北京轨道交通TOD一体化</h2>
+      <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+      <p class="loading-text">正在加载地图数据...</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header-left">
+      <svg class="logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="北京轨道TOD">
+        <rect x="2" y="2" width="32" height="32" rx="7" stroke="currentColor" stroke-width="2"/>
+        <path d="M11 26V10l7-4 7 4v16l-7 4-7-4z" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <circle cx="18" cy="18" r="3.5" fill="currentColor" opacity="0.7"/>
+        <circle cx="18" cy="18" r="1.5" fill="currentColor"/>
+      </svg>
+      <div class="header-title">
+        <h1>北京轨道交通TOD</h1>
+        <span class="header-subtitle">机遇区动态展示</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="legend-toggle" id="legend-toggle" title="图例">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="2" fill="currentColor"/><circle cx="15" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" data-theme-toggle aria-label="切换主题">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Legend panel -->
+  <div id="legend-panel" class="legend-panel">
+    <div class="legend-header">
+      <h3>图例</h3>
+      <button class="legend-close" id="legend-close">&times;</button>
+    </div>
+    <div class="legend-section">
+      <h4>线路状态</h4>
+      <div class="legend-item"><span class="legend-line" style="background:#0066CC"></span>已运营线路</div>
+      <div class="legend-item"><span class="legend-line legend-line-dashed" style="background:#E63946"></span>在建线路</div>
+    </div>
+    <div class="legend-section">
+      <h4>站点类型</h4>
+      <div class="legend-item"><span class="legend-dot" style="background:#0066CC"></span>运营中站点</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#E63946"></span>在建站点</div>
+      <div class="legend-item"><span class="legend-dot legend-dot-transfer" style="background:#FFB703"></span>换乘站</div>
+    </div>
+    <div class="legend-section">
+      <h4>TOD机遇区</h4>
+      <div class="legend-item"><span class="legend-zone"></span>重点TOD一体化区域</div>
+    </div>
+  </div>
+
+  <!-- Side panel for opportunity zone details -->
+  <div id="side-panel" class="side-panel">
+    <button class="panel-close" id="panel-close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="panel-content" class="panel-content">
+      <!-- Dynamic content -->
+    </div>
+  </div>
+
+  <!-- Bottom navigation for zones -->
+  <nav id="zone-nav" class="zone-nav">
+    <div class="zone-nav-inner" id="zone-nav-inner">
+      <!-- Dynamic zone buttons -->
+    </div>
+  </nav>
+
+  <!-- Footer attribution -->
+  <footer class="attribution">
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
