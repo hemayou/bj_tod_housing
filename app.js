@@ -1,9 +1,12 @@
 // ========================================
-// 北京轨道交通TOD+居住机遇区 — App v4.1
+// 北京轨道交通TOD+居住机遇区 — App v4.3
 // Features: real GeoJSON, micro-centers, layer control,
 //   opacity slider, export HD, line labels, enhanced TOD zones,
 //   v4: employment data, dynamic POI on zoom
 //   v4.1: POI as GeoJSON layers with text labels, zone splits
+//   v4.2: POI coordinate fixes, zone boundary adjustments
+//   v4.3: Comprehensive POI re-audit (242 POIs verified),
+//         basemap switching (vector/satellite/OSM/terrain)
 // ========================================
 
 (function() {
@@ -12,6 +15,13 @@
   let map;
   let activeZone = null;
   let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let currentBasemap = 'vector';
+
+  // Whether the current basemap has a dark background (affects label colors)
+  function isBasemapDark() {
+    if (currentBasemap === 'satellite') return true;
+    return isDark;
+  }
 
   // Data stores
   let metroLinesData = null;
@@ -93,21 +103,70 @@
     document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
     if (map) {
       map.setStyle(getMapStyle());
-      map.once('style.load', () => {
-        addAllMapLayers();
-        if (activeZone) {
-          highlightZone(activeZone);
-          const zone = OPPORTUNITY_ZONES.find(z => z.id === activeZone);
-          if (zone) addPoiMarkers(zone);
-        }
+      map.once('styledata', () => {
+        setTimeout(() => {
+          addAllMapLayers();
+          if (activeZone) {
+            highlightZone(activeZone);
+            const zone = OPPORTUNITY_ZONES.find(z => z.id === activeZone);
+            if (zone) addPoiMarkers(zone);
+          }
+        }, 100);
       });
     }
   }
 
+  // ========================================
+  // Basemap Styles
+  // ========================================
+  function getRasterStyle(tiles, attribution, tileSize) {
+    return {
+      version: 8,
+      glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+      sources: {
+        'raster-basemap': {
+          type: 'raster',
+          tiles: tiles,
+          tileSize: tileSize || 256,
+          attribution: attribution || ''
+        }
+      },
+      layers: [{
+        id: 'raster-basemap-layer',
+        type: 'raster',
+        source: 'raster-basemap',
+        minzoom: 0,
+        maxzoom: 19
+      }]
+    };
+  }
+
   function getMapStyle() {
-    return isDark
-      ? 'https://tiles.openfreemap.org/styles/dark'
-      : 'https://tiles.openfreemap.org/styles/positron';
+    switch (currentBasemap) {
+      case 'satellite':
+        return getRasterStyle(
+          ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
+          '&copy; <a href="https://www.esri.com/">Esri</a>, Maxar, Earthstar Geographics',
+          256
+        );
+      case 'osm':
+        return getRasterStyle(
+          ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          256
+        );
+      case 'terrain':
+        return getRasterStyle(
+          ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'],
+          '&copy; <a href="https://www.esri.com/">Esri</a>',
+          256
+        );
+      case 'vector':
+      default:
+        return isDark
+          ? 'https://tiles.openfreemap.org/styles/dark'
+          : 'https://tiles.openfreemap.org/styles/positron';
+    }
   }
 
   $themeToggle.addEventListener('click', () => { isDark = !isDark; applyTheme(); });
@@ -189,6 +248,43 @@
         layerVisibility[layerKey] = e.target.checked;
         applyLayerVisibility(layerKey);
       });
+    });
+
+    // Basemap switcher
+    const basemapGrid = document.getElementById('basemap-grid');
+    if (basemapGrid) {
+      basemapGrid.addEventListener('click', (e) => {
+        const btn = e.target.closest('.basemap-btn');
+        if (!btn || btn.classList.contains('active')) return;
+        const newBasemap = btn.dataset.basemap;
+        currentBasemap = newBasemap;
+
+        // Update active state
+        basemapGrid.querySelectorAll('.basemap-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Switch map style
+        switchBasemap();
+      });
+    }
+  }
+
+  function switchBasemap() {
+    if (!map) return;
+    const style = getMapStyle();
+    map.setStyle(style);
+    // Use idle event as fallback — style.load may fire before handler is registered for simple styles
+    function onStyleReady() {
+      addAllMapLayers();
+      if (activeZone) {
+        highlightZone(activeZone);
+        const zone = OPPORTUNITY_ZONES.find(z => z.id === activeZone);
+        if (zone) addPoiMarkers(zone);
+      }
+    }
+    map.once('styledata', () => {
+      // Small delay to ensure style is fully processed
+      setTimeout(onStyleReady, 100);
     });
   }
 
@@ -300,6 +396,7 @@
       attributionControl: false,
       preserveDrawingBuffer: true
     });
+    window._map = map; // Debug access
 
     map.addControl(new maplibregl.NavigationControl({ showCompass: true, visualizePitch: true }), 'bottom-right');
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-left');
@@ -415,7 +512,7 @@
       paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 2, 12, 6, 16, 10],
         'circle-color': 'transparent',
-        'circle-stroke-color': isDark ? '#FFCC33' : '#FFB703',
+        'circle-stroke-color': isBasemapDark() ? '#FFCC33' : '#FFB703',
         'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 8, 0.3, 12, 1.2, 16, 2],
         'circle-stroke-opacity': 0.6, 'circle-opacity': metroOpacity
       }
@@ -425,8 +522,8 @@
       paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 1, 11, 2, 13, 4, 16, 7],
         'circle-color': ['case', ['==', ['get', 'status'], 'under_construction'],
-          isDark ? '#FF6B6B' : '#E63946', isDark ? '#4A9EFF' : '#0066CC'],
-        'circle-stroke-color': isDark ? '#161920' : '#FFFFFF',
+          isBasemapDark() ? '#FF6B6B' : '#E63946', isBasemapDark() ? '#4A9EFF' : '#0066CC'],
+        'circle-stroke-color': isBasemapDark() ? '#161920' : '#FFFFFF',
         'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 8, 0.3, 12, 1, 16, 2],
         'circle-opacity': metroOpacity, 'circle-stroke-opacity': metroOpacity
       }
@@ -441,8 +538,8 @@
         'text-optional': true, 'text-allow-overlap': false, 'text-padding': 2
       },
       paint: {
-        'text-color': isDark ? '#E8E8E8' : '#1A1A1A',
-        'text-halo-color': isDark ? '#161920' : '#FFFFFF',
+        'text-color': isBasemapDark() ? '#E8E8E8' : '#1A1A1A',
+        'text-halo-color': isBasemapDark() ? '#161920' : '#FFFFFF',
         'text-halo-width': 1.5, 'text-opacity': metroOpacity
       }
     });
@@ -457,8 +554,8 @@
       id: 'new-op-stations-dots', type: 'circle', source: 'new-op-stations',
       paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 1, 11, 2, 13, 4, 16, 7],
-        'circle-color': isDark ? '#4A9EFF' : '#0066CC',
-        'circle-stroke-color': isDark ? '#161920' : '#FFFFFF',
+        'circle-color': isBasemapDark() ? '#4A9EFF' : '#0066CC',
+        'circle-stroke-color': isBasemapDark() ? '#161920' : '#FFFFFF',
         'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 8, 0.3, 12, 1, 16, 2],
         'circle-opacity': metroOpacity, 'circle-stroke-opacity': metroOpacity
       }
@@ -473,8 +570,8 @@
         'text-optional': true, 'text-allow-overlap': false, 'text-padding': 2
       },
       paint: {
-        'text-color': isDark ? '#E8E8E8' : '#1A1A1A',
-        'text-halo-color': isDark ? '#161920' : '#FFFFFF',
+        'text-color': isBasemapDark() ? '#E8E8E8' : '#1A1A1A',
+        'text-halo-color': isBasemapDark() ? '#161920' : '#FFFFFF',
         'text-halo-width': 1.5, 'text-opacity': metroOpacity
       }
     });
@@ -489,8 +586,8 @@
       id: 'uc-stations-dots', type: 'circle', source: 'uc-stations',
       paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 1, 11, 2, 13, 4, 16, 6],
-        'circle-color': isDark ? '#FF6B6B' : '#E63946',
-        'circle-stroke-color': isDark ? '#161920' : '#FFFFFF',
+        'circle-color': isBasemapDark() ? '#FF6B6B' : '#E63946',
+        'circle-stroke-color': isBasemapDark() ? '#161920' : '#FFFFFF',
         'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 8, 0.3, 12, 1, 16, 1.5],
         'circle-opacity': metroOpacity * 0.8, 'circle-stroke-opacity': metroOpacity * 0.8
       }
@@ -505,8 +602,8 @@
         'text-optional': true, 'text-allow-overlap': false, 'text-padding': 2
       },
       paint: {
-        'text-color': isDark ? '#FF9999' : '#C0392B',
-        'text-halo-color': isDark ? '#161920' : '#FFFFFF',
+        'text-color': isBasemapDark() ? '#FF9999' : '#C0392B',
+        'text-halo-color': isBasemapDark() ? '#161920' : '#FFFFFF',
         'text-halo-width': 1.5, 'text-opacity': metroOpacity
       }
     });
@@ -528,7 +625,7 @@
         },
         paint: {
           'text-color': ['get', 'color'],
-          'text-halo-color': isDark ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
+          'text-halo-color': isBasemapDark() ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
           'text-halo-width': 2, 'text-opacity': metroOpacity * 0.8
         }
       });
@@ -547,7 +644,7 @@
         },
         paint: {
           'text-color': ['get', 'color'],
-          'text-halo-color': isDark ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
+          'text-halo-color': isBasemapDark() ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
           'text-halo-width': 2, 'text-opacity': metroOpacity * 0.8
         }
       });
@@ -566,7 +663,7 @@
         },
         paint: {
           'text-color': ['get', 'color'],
-          'text-halo-color': isDark ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
+          'text-halo-color': isBasemapDark() ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
           'text-halo-width': 2, 'text-opacity': metroOpacity * 0.7
         }
       });
@@ -593,10 +690,10 @@
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 5, 13, 10, 16, 16],
         'circle-color': 'transparent',
         'circle-stroke-color': ['match', ['get', 'grade'],
-          '枢纽级', isDark ? '#FFD700' : '#D4A017',
-          '城市级', isDark ? '#FF8C42' : '#E67E22',
-          '区域级', isDark ? '#66BB6A' : '#27AE60',
-          '街区级', isDark ? '#90CAF9' : '#5DADE2',
+          '枢纽级', isBasemapDark() ? '#FFD700' : '#D4A017',
+          '城市级', isBasemapDark() ? '#FF8C42' : '#E67E22',
+          '区域级', isBasemapDark() ? '#66BB6A' : '#27AE60',
+          '街区级', isBasemapDark() ? '#90CAF9' : '#5DADE2',
           '#888'
         ],
         'circle-stroke-width': ['match', ['get', 'grade'],
@@ -616,14 +713,14 @@
           16, ['match', ['get', 'grade'], '枢纽级', 11, '城市级', 9, '区域级', 7, '街区级', 6, 6]
         ],
         'circle-color': ['match', ['get', 'grade'],
-          '枢纽级', isDark ? '#FFD700' : '#D4A017',
-          '城市级', isDark ? '#FF8C42' : '#E67E22',
-          '区域级', isDark ? '#66BB6A' : '#27AE60',
-          '街区级', isDark ? '#90CAF9' : '#5DADE2',
+          '枢纽级', isBasemapDark() ? '#FFD700' : '#D4A017',
+          '城市级', isBasemapDark() ? '#FF8C42' : '#E67E22',
+          '区域级', isBasemapDark() ? '#66BB6A' : '#27AE60',
+          '街区级', isBasemapDark() ? '#90CAF9' : '#5DADE2',
           '#888'
         ],
         'circle-opacity': 0.85,
-        'circle-stroke-color': isDark ? '#161920' : '#FFFFFF',
+        'circle-stroke-color': isBasemapDark() ? '#161920' : '#FFFFFF',
         'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 10, 0.5, 14, 1.5]
       }
     });
@@ -639,8 +736,8 @@
         'text-optional': true, 'text-allow-overlap': false, 'text-padding': 4
       },
       paint: {
-        'text-color': isDark ? '#BBBBBB' : '#555555',
-        'text-halo-color': isDark ? 'rgba(13,15,18,0.85)' : 'rgba(255,255,255,0.85)',
+        'text-color': isBasemapDark() ? '#BBBBBB' : '#555555',
+        'text-halo-color': isBasemapDark() ? 'rgba(13,15,18,0.85)' : 'rgba(255,255,255,0.85)',
         'text-halo-width': 1.5
       }
     });
@@ -740,7 +837,7 @@
       map.addLayer({
         id: `${sourceId}-fill`, type: 'fill', source: sourceId,
         paint: {
-          'fill-color': isDark ? 'rgba(255, 100, 50, 0.12)' : 'rgba(230, 57, 70, 0.10)',
+          'fill-color': isBasemapDark() ? 'rgba(255, 100, 50, 0.12)' : 'rgba(230, 57, 70, 0.10)',
           'fill-opacity': 1
         }
       });
@@ -748,7 +845,7 @@
       map.addLayer({
         id: `${sourceId}-border`, type: 'line', source: sourceId,
         paint: {
-          'line-color': isDark ? '#FF6B4A' : '#E63946',
+          'line-color': isBasemapDark() ? '#FF6B4A' : '#E63946',
           'line-width': 3,
           'line-dasharray': [5, 3],
           'line-opacity': 0.85
@@ -775,8 +872,8 @@
             'text-allow-overlap': true
           },
           paint: {
-            'text-color': isDark ? '#FF8A70' : '#C0392B',
-            'text-halo-color': isDark ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
+            'text-color': isBasemapDark() ? '#FF8A70' : '#C0392B',
+            'text-halo-color': isBasemapDark() ? 'rgba(13,15,18,0.9)' : 'rgba(255,255,255,0.9)',
             'text-halo-width': 2.5
           }
         });
@@ -787,14 +884,14 @@
       map.on('mouseenter', `${sourceId}-fill`, () => {
         map.getCanvas().style.cursor = 'pointer';
         map.setPaintProperty(`${sourceId}-fill`, 'fill-color',
-          isDark ? 'rgba(255, 100, 50, 0.22)' : 'rgba(230, 57, 70, 0.18)');
+          isBasemapDark() ? 'rgba(255, 100, 50, 0.22)' : 'rgba(230, 57, 70, 0.18)');
         map.setPaintProperty(`${sourceId}-border`, 'line-width', 4);
       });
       map.on('mouseleave', `${sourceId}-fill`, () => {
         map.getCanvas().style.cursor = '';
         if (activeZone !== zone.id) {
           map.setPaintProperty(`${sourceId}-fill`, 'fill-color',
-            isDark ? 'rgba(255, 100, 50, 0.12)' : 'rgba(230, 57, 70, 0.10)');
+            isBasemapDark() ? 'rgba(255, 100, 50, 0.12)' : 'rgba(230, 57, 70, 0.10)');
           map.setPaintProperty(`${sourceId}-border`, 'line-width', 3);
         }
       });
@@ -843,7 +940,7 @@
       const pois = zone.pois[cat];
       if (!pois || pois.length === 0) return;
       const config = POI_CONFIG[cat];
-      const color = isDark ? config.darkColor : config.color;
+      const color = isBasemapDark() ? config.darkColor : config.color;
 
       // Build GeoJSON
       const geojson = {
@@ -865,7 +962,7 @@
         source: srcId,
         paint: {
           'circle-radius': ['interpolate', ['linear'], ['zoom'], 12, 7, 14, 10, 16, 14],
-          'circle-color': isDark ? '#1a1a2e' : '#ffffff',
+          'circle-color': isBasemapDark() ? '#1a1a2e' : '#ffffff',
           'circle-opacity': 0.9,
           'circle-stroke-width': 0,
         }
@@ -881,7 +978,7 @@
           'circle-color': color,
           'circle-opacity': 0.92,
           'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 16, 2.5],
-          'circle-stroke-color': isDark ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.9)',
+          'circle-stroke-color': isBasemapDark() ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.9)',
         }
       });
 
@@ -902,8 +999,8 @@
           'icon-allow-overlap': true,
         },
         paint: {
-          'text-color': isDark ? '#e0e0e0' : '#1a1a2e',
-          'text-halo-color': isDark ? 'rgba(20,20,40,0.85)' : 'rgba(255,255,255,0.85)',
+          'text-color': isBasemapDark() ? '#e0e0e0' : '#1a1a2e',
+          'text-halo-color': isBasemapDark() ? 'rgba(20,20,40,0.85)' : 'rgba(255,255,255,0.85)',
           'text-halo-width': 2,
           'text-opacity': ['interpolate', ['linear'], ['zoom'], 12.5, 0, 13, 1],
         }
@@ -979,16 +1076,16 @@
       try {
         if (z.id === zoneId) {
           map.setPaintProperty(`${sid}-fill`, 'fill-color',
-            isDark ? 'rgba(255, 100, 50, 0.25)' : 'rgba(230, 57, 70, 0.22)');
+            isBasemapDark() ? 'rgba(255, 100, 50, 0.25)' : 'rgba(230, 57, 70, 0.22)');
           map.setPaintProperty(`${sid}-border`, 'line-color',
-            isDark ? '#FF5722' : '#C0392B');
+            isBasemapDark() ? '#FF5722' : '#C0392B');
           map.setPaintProperty(`${sid}-border`, 'line-width', 4.5);
           map.setPaintProperty(`${sid}-border`, 'line-opacity', 1);
         } else {
           map.setPaintProperty(`${sid}-fill`, 'fill-color',
-            isDark ? 'rgba(255, 100, 50, 0.05)' : 'rgba(230, 57, 70, 0.04)');
+            isBasemapDark() ? 'rgba(255, 100, 50, 0.05)' : 'rgba(230, 57, 70, 0.04)');
           map.setPaintProperty(`${sid}-border`, 'line-color',
-            isDark ? 'rgba(255, 107, 74, 0.3)' : 'rgba(230, 57, 70, 0.2)');
+            isBasemapDark() ? 'rgba(255, 107, 74, 0.3)' : 'rgba(230, 57, 70, 0.2)');
           map.setPaintProperty(`${sid}-border`, 'line-width', 2);
           map.setPaintProperty(`${sid}-border`, 'line-opacity', 0.6);
         }
@@ -1010,9 +1107,9 @@
       const sid = `zone-${z.id}`;
       try {
         map.setPaintProperty(`${sid}-fill`, 'fill-color',
-          isDark ? 'rgba(255, 100, 50, 0.12)' : 'rgba(230, 57, 70, 0.10)');
+          isBasemapDark() ? 'rgba(255, 100, 50, 0.12)' : 'rgba(230, 57, 70, 0.10)');
         map.setPaintProperty(`${sid}-border`, 'line-color',
-          isDark ? '#FF6B4A' : '#E63946');
+          isBasemapDark() ? '#FF6B4A' : '#E63946');
         map.setPaintProperty(`${sid}-border`, 'line-width', 3);
         map.setPaintProperty(`${sid}-border`, 'line-opacity', 0.85);
       } catch(e) {}
@@ -1033,7 +1130,7 @@
         const pois = zone.pois[cat];
         if (!pois || pois.length === 0) return;
         const config = POI_CONFIG[cat];
-        const colorVar = isDark ? config.darkColor : config.color;
+        const colorVar = isBasemapDark() ? config.darkColor : config.color;
 
         poiItems += `<div class="poi-category">
           <div class="poi-category-header">
@@ -1059,7 +1156,7 @@
             <div class="poi-legend-mini">
               ${categories.map(cat => {
                 const config = POI_CONFIG[cat];
-                const colorVar = isDark ? config.darkColor : config.color;
+                const colorVar = isBasemapDark() ? config.darkColor : config.color;
                 return `<span class="poi-legend-item"><span class="poi-legend-dot" style="background:${colorVar}"></span>${config.label}</span>`;
               }).join('')}
             </div>

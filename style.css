@@ -503,6 +503,62 @@ body {
 }
 
 /* ========================================
+   Basemap Switcher
+   ======================================== */
+.basemap-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.basemap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.basemap-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  background: var(--color-surface-2);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: 10px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  line-height: 1;
+}
+
+.basemap-btn:hover {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-color: var(--color-primary);
+}
+
+.basemap-btn.active {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.basemap-btn.active svg {
+  stroke: #fff;
+}
+
+.basemap-btn svg {
+  flex-shrink: 0;
+}
+
+/* ========================================
    Legend Panel
    ======================================== */
 .legend-panel {

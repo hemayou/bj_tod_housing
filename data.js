@@ -14,10 +14,10 @@ const OPPORTUNITY_ZONES = [
     "id": "huilongguan",
     "name": "回龙观-西三旗",
     "center": [
-      116.3228,
-      40.0668
+      116.326,
+      40.0635
     ],
-    "radius": 3400,
+    "radius": 5200,
     "relatedLines": [
       {
         "name": "13号线扩能",
@@ -99,8 +99,8 @@ const OPPORTUNITY_ZONES = [
           "name": "生命科学园",
           "type": "employment",
           "coords": [
-            116.3043,
-            40.0928
+            116.288183,
+            40.093573
           ],
           "desc": "国家级生物医药基地，入驻企业600+"
         },
@@ -108,8 +108,8 @@ const OPPORTUNITY_ZONES = [
           "name": "TBD云集中心",
           "type": "employment",
           "coords": [
-            116.3378,
-            40.0512
+            116.3358,
+            40.0502
           ],
           "desc": "科技与文创产业孵化平台"
         },
@@ -117,8 +117,8 @@ const OPPORTUNITY_ZONES = [
           "name": "龙域中心",
           "type": "employment",
           "coords": [
-            116.3318,
-            40.0485
+            116.3308,
+            40.0478
           ],
           "desc": "集办公、商业于一体的综合体"
         },
@@ -126,8 +126,8 @@ const OPPORTUNITY_ZONES = [
           "name": "智汇大厦",
           "type": "employment",
           "coords": [
-            116.3405,
-            40.0545
+            116.3388,
+            40.0538
           ],
           "desc": "互联网企业集聚办公区"
         }
@@ -137,8 +137,8 @@ const OPPORTUNITY_ZONES = [
           "name": "回龙观社区",
           "type": "residential",
           "coords": [
-            116.3252,
-            40.0693
+            116.3242,
+            40.0683
           ],
           "desc": "超大型居住社区，约30万人，建于2000年前后"
         },
@@ -146,8 +146,8 @@ const OPPORTUNITY_ZONES = [
           "name": "龙泽苑",
           "type": "residential",
           "coords": [
-            116.3228,
-            40.0735
+            116.339258,
+            40.073395
           ],
           "desc": "2002年建成，大型经济适用房社区"
         },
@@ -155,8 +155,8 @@ const OPPORTUNITY_ZONES = [
           "name": "融泽嘉园",
           "type": "residential",
           "coords": [
-            116.3128,
-            40.0583
+            116.30121,
+            40.067015
           ],
           "desc": "较新建成社区，品质较高"
         },
@@ -164,8 +164,8 @@ const OPPORTUNITY_ZONES = [
           "name": "金域华府",
           "type": "residential",
           "coords": [
-            116.3388,
-            40.0518
+            116.3368,
+            40.0508
           ],
           "desc": "2010年代商品房，存量商办可改租赁公寓"
         }
@@ -175,8 +175,8 @@ const OPPORTUNITY_ZONES = [
           "name": "回龙观体育公园",
           "type": "publicSpace",
           "coords": [
-            116.3302,
-            40.0755
+            116.33574,
+            40.076722
           ],
           "desc": "回天地区重要的体育休闲公园"
         },
@@ -184,8 +184,8 @@ const OPPORTUNITY_ZONES = [
           "name": "回龙观滨水绿道",
           "type": "publicSpace",
           "coords": [
-            116.3182,
-            40.0585
+            116.3172,
+            40.0578
           ],
           "desc": "东小口沟沿线滨水空间，可进一步提升"
         },
@@ -193,8 +193,8 @@ const OPPORTUNITY_ZONES = [
           "name": "回龙观文化公园",
           "type": "publicSpace",
           "coords": [
-            116.3228,
-            40.0638
+            116.3218,
+            40.0628
           ],
           "desc": "社区级公园，承载居民日常休闲"
         }
@@ -204,8 +204,8 @@ const OPPORTUNITY_ZONES = [
           "name": "积水潭医院回龙观院区",
           "type": "publicService",
           "coords": [
-            116.3335,
-            40.0713
+            116.3325,
+            40.0703
           ],
           "desc": "三甲医院分院，骨科专长"
         },
@@ -213,8 +213,8 @@ const OPPORTUNITY_ZONES = [
           "name": "清华附小昌平学校",
           "type": "publicService",
           "coords": [
-            116.3265,
-            40.0615
+            116.3258,
+            40.0608
           ],
           "desc": "优质教育资源引入回天地区"
         },
@@ -222,8 +222,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京人大附中昌平学校",
           "type": "publicService",
           "coords": [
-            116.3365,
-            40.0565
+            116.3358,
+            40.0558
           ],
           "desc": "名校办学，提升区域教育配套"
         }
@@ -234,10 +234,10 @@ const OPPORTUNITY_ZONES = [
     "id": "tiantongyuan",
     "name": "天通苑",
     "center": [
-      116.42,
-      40.058
+      116.4122,
+      40.0601
     ],
-    "radius": 2200,
+    "radius": 2900,
     "relatedLines": [
       {
         "name": "5号线",
@@ -324,8 +324,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通苑龙德广场",
           "type": "employment",
           "coords": [
-            116.4215,
-            40.0535
+            116.409217,
+            40.058374
           ],
           "desc": "区域最大商业综合体，提供约5000就业岗位"
         },
@@ -333,8 +333,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通科技园",
           "type": "employment",
           "coords": [
-            116.4283,
-            40.0628
+            116.4268,
+            40.0618
           ],
           "desc": "中小企业科技孵化基地"
         },
@@ -342,8 +342,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北方明珠大厦",
           "type": "employment",
           "coords": [
-            116.4168,
-            40.0563
+            116.4158,
+            40.0558
           ],
           "desc": "商务办公楼，存量商办可改青年公寓"
         }
@@ -353,8 +353,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通苑北区",
           "type": "residential",
           "coords": [
-            116.4198,
-            40.0748
+            116.40664,
+            40.073775
           ],
           "desc": "1999-2004年建成，最大经适房片区，约10万套"
         },
@@ -362,8 +362,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通苑南区",
           "type": "residential",
           "coords": [
-            116.4175,
-            40.0455
+            116.406517,
+            40.065118
           ],
           "desc": "建成年代较早，部分楼龄超25年"
         },
@@ -371,8 +371,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通中苑",
           "type": "residential",
           "coords": [
-            116.4188,
-            40.0598
+            116.401268,
+            40.054865
           ],
           "desc": "核心区域，高层住宅密集"
         }
@@ -382,8 +382,8 @@ const OPPORTUNITY_ZONES = [
           "name": "东小口森林公园",
           "type": "publicSpace",
           "coords": [
-            116.4035,
-            40.0438
+            116.386565,
+            40.046943
           ],
           "desc": "大型城市森林公园，面积约248公顷"
         },
@@ -391,8 +391,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通艺园",
           "type": "publicSpace",
           "coords": [
-            116.4232,
-            40.0645
+            116.428411,
+            40.06887
           ],
           "desc": "社区公园，回天行动改造提升"
         },
@@ -400,8 +400,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通苑体育中心",
           "type": "publicSpace",
           "coords": [
-            116.4155,
-            40.0605
+            116.4148,
+            40.0598
           ],
           "desc": "回天三年行动新建体育设施"
         }
@@ -411,8 +411,8 @@ const OPPORTUNITY_ZONES = [
           "name": "清华长庚医院",
           "type": "publicService",
           "coords": [
-            116.4078,
-            40.0665
+            116.4068,
+            40.0658
           ],
           "desc": "三甲综合医院，2014年开院"
         },
@@ -420,8 +420,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京师范大学昌平附属学校",
           "type": "publicService",
           "coords": [
-            116.4255,
-            40.0548
+            116.4248,
+            40.0538
           ],
           "desc": "名校办学，改善教育供给"
         },
@@ -429,8 +429,8 @@ const OPPORTUNITY_ZONES = [
           "name": "天通苑社区卫生服务中心",
           "type": "publicService",
           "coords": [
-            116.4195,
-            40.0575
+            116.4188,
+            40.0568
           ],
           "desc": "基层医疗服务覆盖"
         }
@@ -441,10 +441,10 @@ const OPPORTUNITY_ZONES = [
     "id": "shangdi",
     "name": "上地-马连洼",
     "center": [
-      116.2868,
-      40.0348
+      116.2859,
+      40.0362
     ],
-    "radius": 2500,
+    "radius": 3100,
     "relatedLines": [
       {
         "name": "13号线",
@@ -531,8 +531,8 @@ const OPPORTUNITY_ZONES = [
           "name": "百度科技园",
           "type": "employment",
           "coords": [
-            116.2958,
-            40.0488
+            116.267427,
+            40.042178
           ],
           "desc": "百度总部，员工约4万人"
         },
@@ -571,6 +571,15 @@ const OPPORTUNITY_ZONES = [
             40.0285
           ],
           "desc": "IT巨头全球总部，中关村环保园"
+        },
+        {
+          "name": "小米科技园（二期）",
+          "type": "employment",
+          "coords": [
+            116.311213,
+            40.046433
+          ],
+          "desc": "小米集团第二总部"
         }
       ],
       "residential": [
@@ -578,8 +587,8 @@ const OPPORTUNITY_ZONES = [
           "name": "马连洼社区",
           "type": "residential",
           "coords": [
-            116.2875,
-            40.0202
+            116.274223,
+            40.03418
           ],
           "desc": "1990年代建成，部分楼龄30年+，改造需求强烈"
         },
@@ -596,8 +605,8 @@ const OPPORTUNITY_ZONES = [
           "name": "上地西里",
           "type": "residential",
           "coords": [
-            116.2932,
-            40.0338
+            116.304268,
+            40.030825
           ],
           "desc": "2000年前后建成，紧邻地铁上地站"
         },
@@ -616,8 +625,8 @@ const OPPORTUNITY_ZONES = [
           "name": "百旺公园",
           "type": "publicSpace",
           "coords": [
-            116.2645,
-            40.0215
+            116.253711,
+            40.04187
           ],
           "desc": "海淀北部较大的城市公园"
         },
@@ -625,8 +634,8 @@ const OPPORTUNITY_ZONES = [
           "name": "马连洼郊野公园",
           "type": "publicSpace",
           "coords": [
-            116.2808,
-            40.0318
+            116.297288,
+            40.025229
           ],
           "desc": "海淀区马连洼地区生态绿地"
         },
@@ -634,8 +643,8 @@ const OPPORTUNITY_ZONES = [
           "name": "上地公园",
           "type": "publicSpace",
           "coords": [
-            116.2992,
-            40.0378
+            116.30425,
+            40.033801
           ],
           "desc": "科技人员日常休憩空间"
         }
@@ -654,8 +663,8 @@ const OPPORTUNITY_ZONES = [
           "name": "上地实验小学",
           "type": "publicService",
           "coords": [
-            116.2978,
-            40.0295
+            116.307903,
+            40.030106
           ],
           "desc": "海淀区优质小学"
         },
@@ -663,8 +672,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中关村第二小学百旺校区",
           "type": "publicService",
           "coords": [
-            116.2815,
-            40.0245
+            116.262688,
+            40.046207
           ],
           "desc": "名校分校，优质教育资源"
         }
@@ -675,10 +684,10 @@ const OPPORTUNITY_ZONES = [
     "id": "lize",
     "name": "丽泽-草桥",
     "center": [
-      116.3188,
-      39.8698
+      116.3192,
+      39.8663
     ],
-    "radius": 2700,
+    "radius": 3200,
     "relatedLines": [
       {
         "name": "14号线",
@@ -765,8 +774,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丽泽SOHO",
           "type": "employment",
           "coords": [
-            116.3218,
-            39.8695
+            116.324724,
+            39.865863
           ],
           "desc": "扎哈·哈迪德设计，新兴商务地标"
         },
@@ -774,8 +783,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丽泽金融商务区",
           "type": "employment",
           "coords": [
-            116.3148,
-            39.8725
+            116.3128,
+            39.8718
           ],
           "desc": "规划总建面约500万㎡，已入驻企业800+"
         },
@@ -783,8 +792,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中国华能总部",
           "type": "employment",
           "coords": [
-            116.3098,
-            39.8688
+            116.3128,
+            39.8668
           ],
           "desc": "央企总部入驻丽泽"
         },
@@ -792,8 +801,8 @@ const OPPORTUNITY_ZONES = [
           "name": "平安金融中心",
           "type": "employment",
           "coords": [
-            116.3258,
-            39.8738
+            116.320329,
+            39.864468
           ],
           "desc": "金融机构集聚办公区"
         }
@@ -803,8 +812,8 @@ const OPPORTUNITY_ZONES = [
           "name": "万泉寺社区",
           "type": "residential",
           "coords": [
-            116.3275,
-            39.8628
+            116.33421,
+            39.85953
           ],
           "desc": "1990年代建成，紧邻丽泽商务区"
         },
@@ -812,8 +821,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丰益花园",
           "type": "residential",
           "coords": [
-            116.3128,
-            39.8678
+            116.306586,
+            39.859438
           ],
           "desc": "2005年前后建成，中等品质"
         },
@@ -821,8 +830,8 @@ const OPPORTUNITY_ZONES = [
           "name": "草桥欣园",
           "type": "residential",
           "coords": [
-            116.3405,
-            39.8528
+            116.3408,
+            39.8508
           ],
           "desc": "大型居住区，距草桥站步行可达"
         }
@@ -832,8 +841,8 @@ const OPPORTUNITY_ZONES = [
           "name": "莲花池公园",
           "type": "publicSpace",
           "coords": [
-            116.3205,
-            39.8935
+            116.309391,
+            39.890775
           ],
           "desc": "城市历史公园，面积约47公顷"
         },
@@ -841,8 +850,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丽泽城市运动公园",
           "type": "publicSpace",
           "coords": [
-            116.3135,
-            39.8765
+            116.3118,
+            39.8758
           ],
           "desc": "新建城市运动公园"
         },
@@ -850,8 +859,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丰草河滨水绿道",
           "type": "publicSpace",
           "coords": [
-            116.3188,
-            39.8615
+            116.3168,
+            39.8608
           ],
           "desc": "滨水空间可进一步提升"
         }
@@ -862,7 +871,7 @@ const OPPORTUNITY_ZONES = [
           "type": "publicService",
           "coords": [
             116.3228,
-            39.8708
+            39.8618
           ],
           "desc": "丰台区属综合医院"
         },
@@ -870,8 +879,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丰台区实验学校",
           "type": "publicService",
           "coords": [
-            116.3215,
-            39.8655
+            116.3208,
+            39.8638
           ],
           "desc": "区级重点学校"
         },
@@ -879,8 +888,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丽泽国际学校（规划）",
           "type": "publicService",
           "coords": [
-            116.3168,
-            39.8708
+            116.3158,
+            39.8698
           ],
           "desc": "配合金融商务区的国际化教育配套"
         }
@@ -891,10 +900,10 @@ const OPPORTUNITY_ZONES = [
     "id": "lugu",
     "name": "鲁谷",
     "center": [
-      116.2508,
-      39.9038
+      116.2417,
+      39.9056
     ],
-    "radius": 1800,
+    "radius": 3600,
     "relatedLines": [
       {
         "name": "1号线",
@@ -981,8 +990,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中关村丰台园",
           "type": "employment",
           "coords": [
-            116.2658,
-            39.9088
+            116.2618,
+            39.9068
           ],
           "desc": "丰台区最大产业园，入驻企业1万+"
         },
@@ -990,8 +999,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中关村科技园石景山园（鲁谷）",
           "type": "employment",
           "coords": [
-            116.2558,
-            39.9068
+            116.2508,
+            39.9088
           ],
           "desc": "鲁谷地区高新技术产业聚集区"
         },
@@ -999,8 +1008,8 @@ const OPPORTUNITY_ZONES = [
           "name": "总装备部科研基地",
           "type": "employment",
           "coords": [
-            116.2498,
-            39.8988
+            116.2458,
+            39.8998
           ],
           "desc": "航天科技产业集群"
         }
@@ -1010,7 +1019,7 @@ const OPPORTUNITY_ZONES = [
           "name": "鲁谷社区",
           "type": "residential",
           "coords": [
-            116.2525,
+            116.2508,
             39.9058
           ],
           "desc": "1980年代建成，大量老旧住宅，改造需求迫切"
@@ -1019,8 +1028,8 @@ const OPPORTUNITY_ZONES = [
           "name": "衙门口棚改区",
           "type": "residential",
           "coords": [
-            116.2418,
-            39.9008
+            116.2378,
+            39.9018
           ],
           "desc": "棚户区改造项目，新建安置房在建"
         },
@@ -1028,8 +1037,8 @@ const OPPORTUNITY_ZONES = [
           "name": "卢沟桥南里",
           "type": "residential",
           "coords": [
-            116.2568,
-            39.9008
+            116.2538,
+            39.8978
           ],
           "desc": "90年代老旧小区，距地铁较近"
         }
@@ -1039,8 +1048,8 @@ const OPPORTUNITY_ZONES = [
           "name": "鲁谷大街商圈",
           "type": "publicSpace",
           "coords": [
-            116.2538,
-            39.9078
+            116.2518,
+            39.9068
           ],
           "desc": "鲁谷地区主要商业街区"
         },
@@ -1048,8 +1057,8 @@ const OPPORTUNITY_ZONES = [
           "name": "鲁谷滨河公园",
           "type": "publicSpace",
           "coords": [
-            116.2478,
-            39.9018
+            116.2428,
+            39.9008
           ],
           "desc": "永定河引水渠沿线休闲空间"
         }
@@ -1059,7 +1068,7 @@ const OPPORTUNITY_ZONES = [
           "name": "北京朝阳医院京西院区",
           "type": "publicService",
           "coords": [
-            116.2518,
+            116.2488,
             39.9098
           ],
           "desc": "北京朝阳医院石景山分院区"
@@ -1068,8 +1077,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京九中",
           "type": "publicService",
           "coords": [
-            116.2335,
-            39.9108
+            116.2078,
+            39.9188
           ],
           "desc": "石景山区重点中学"
         },
@@ -1077,8 +1086,8 @@ const OPPORTUNITY_ZONES = [
           "name": "石景山医院",
           "type": "publicService",
           "coords": [
-            116.2488,
-            39.9058
+            116.207159,
+            39.904685
           ],
           "desc": "石景山区属三级综合医院"
         }
@@ -1089,10 +1098,10 @@ const OPPORTUNITY_ZONES = [
     "id": "yuanboyuan",
     "name": "园博园",
     "center": [
-      116.2095,
-      39.8618
+      116.1895,
+      39.8643
     ],
-    "radius": 2500,
+    "radius": 2000,
     "relatedLines": [
       {
         "name": "14号线",
@@ -1174,8 +1183,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京园博园管理中心",
           "type": "employment",
           "coords": [
-            116.2128,
-            39.8638
+            116.1838,
+            39.8758
           ],
           "desc": "园博园运营管理及文旅服务"
         },
@@ -1183,8 +1192,8 @@ const OPPORTUNITY_ZONES = [
           "name": "园博园文创产业园",
           "type": "employment",
           "coords": [
-            116.2108,
-            39.8658
+            116.1868,
+            39.8728
           ],
           "desc": "北京园博园内文化创意产业聚集区"
         }
@@ -1194,8 +1203,8 @@ const OPPORTUNITY_ZONES = [
           "name": "长辛店镇社区",
           "type": "residential",
           "coords": [
-            116.1832,
-            39.8655
+            116.189161,
+            39.848612
           ],
           "desc": "城中村改造中，规划新建社区"
         },
@@ -1203,8 +1212,8 @@ const OPPORTUNITY_ZONES = [
           "name": "王佐镇安置房",
           "type": "residential",
           "coords": [
-            116.1968,
-            39.8508
+            116.1958,
+            39.8498
           ],
           "desc": "回迁安置住宅区"
         }
@@ -1214,8 +1223,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京园博园",
           "type": "publicSpace",
           "coords": [
-            116.2095,
-            39.8618
+            116.182631,
+            39.874482
           ],
           "desc": "大型城市公园，面积约267公顷，亟需激活"
         },
@@ -1223,8 +1232,8 @@ const OPPORTUNITY_ZONES = [
           "name": "永定河滨水空间（南段）",
           "type": "publicSpace",
           "coords": [
-            116.1892,
-            39.8648
+            116.1882,
+            39.8638
           ],
           "desc": "永定河丰台段生态廊道"
         },
@@ -1232,8 +1241,8 @@ const OPPORTUNITY_ZONES = [
           "name": "园博湖",
           "type": "publicSpace",
           "coords": [
-            116.1968,
-            39.8698
+            116.193282,
+            39.872651
           ],
           "desc": "人工湖景观，生态休闲节点"
         }
@@ -1244,7 +1253,7 @@ const OPPORTUNITY_ZONES = [
           "type": "publicService",
           "coords": [
             116.1848,
-            39.8618
+            39.8488
           ],
           "desc": "基层医疗机构，覆盖周边社区"
         },
@@ -1252,7 +1261,7 @@ const OPPORTUNITY_ZONES = [
           "name": "北京十中",
           "type": "publicService",
           "coords": [
-            116.2248,
+            116.2008,
             39.8718
           ],
           "desc": "丰台区中学"
@@ -1264,10 +1273,10 @@ const OPPORTUNITY_ZONES = [
     "id": "gaobeidian",
     "name": "高碑店",
     "center": [
-      116.515,
-      39.913
+      116.5214,
+      39.9127
     ],
-    "radius": 1900,
+    "radius": 2900,
     "relatedLines": [
       {
         "name": "1号线/八通线",
@@ -1349,7 +1358,7 @@ const OPPORTUNITY_ZONES = [
           "name": "高碑店文化产业园",
           "type": "employment",
           "coords": [
-            116.5178,
+            116.5158,
             39.9128
           ],
           "desc": "古典家具、艺术品集散中心"
@@ -1358,7 +1367,7 @@ const OPPORTUNITY_ZONES = [
           "name": "传媒大学文创基地",
           "type": "employment",
           "coords": [
-            116.5318,
+            116.5298,
             39.9108
           ],
           "desc": "传媒影视相关创意产业"
@@ -1367,8 +1376,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北花园产业园",
           "type": "employment",
           "coords": [
-            116.5082,
-            39.9158
+            116.5068,
+            39.9148
           ],
           "desc": "中小文创企业孵化"
         }
@@ -1378,8 +1387,8 @@ const OPPORTUNITY_ZONES = [
           "name": "高碑店东区",
           "type": "residential",
           "coords": [
-            116.5218,
-            39.9138
+            116.531266,
+            39.915962
           ],
           "desc": "传统村落改造区域，居住品质待提升"
         },
@@ -1387,8 +1396,8 @@ const OPPORTUNITY_ZONES = [
           "name": "兴隆家园",
           "type": "residential",
           "coords": [
-            116.5128,
-            39.9098
+            116.518038,
+            39.913979
           ],
           "desc": "2005年前后建成，品质中等"
         },
@@ -1396,8 +1405,8 @@ const OPPORTUNITY_ZONES = [
           "name": "甘露园南里",
           "type": "residential",
           "coords": [
-            116.5018,
-            39.9128
+            116.508275,
+            39.912631
           ],
           "desc": "1990年代建成，改造空间大"
         }
@@ -1407,8 +1416,8 @@ const OPPORTUNITY_ZONES = [
           "name": "庆丰公园",
           "type": "publicSpace",
           "coords": [
-            116.4978,
-            39.9088
+            116.495,
+            39.905
           ],
           "desc": "通惠河沿线公园，滨水休闲空间"
         },
@@ -1416,8 +1425,8 @@ const OPPORTUNITY_ZONES = [
           "name": "通惠河滨水绿道",
           "type": "publicSpace",
           "coords": [
-            116.5158,
-            39.9118
+            116.5138,
+            39.9108
           ],
           "desc": "通惠河两岸空间，可打造文化漫步带"
         },
@@ -1425,8 +1434,8 @@ const OPPORTUNITY_ZONES = [
           "name": "高碑店漕运遗址公园",
           "type": "publicSpace",
           "coords": [
-            116.5238,
-            39.9145
+            116.5218,
+            39.9138
           ],
           "desc": "历史文化遗产空间"
         }
@@ -1436,8 +1445,8 @@ const OPPORTUNITY_ZONES = [
           "name": "高碑店社区卫生服务中心",
           "type": "publicService",
           "coords": [
-            116.5128,
-            39.9138
+            116.5148,
+            39.9128
           ],
           "desc": "高碑店地区基层医疗机构"
         },
@@ -1445,8 +1454,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中国传媒大学",
           "type": "publicService",
           "coords": [
-            116.5348,
-            39.9068
+            116.552101,
+            39.91164
           ],
           "desc": "全国知名高校，传媒领域领先"
         },
@@ -1454,10 +1463,19 @@ const OPPORTUNITY_ZONES = [
           "name": "定福庄小学",
           "type": "publicService",
           "coords": [
-            116.5258,
-            39.9098
+            116.546861,
+            39.91745
           ],
           "desc": "社区基础教育"
+        },
+        {
+          "name": "民航总医院",
+          "type": "publicService",
+          "coords": [
+            116.5238,
+            39.9128
+          ],
+          "desc": "三甲医院，综合医疗服务"
         }
       ]
     }
@@ -1466,8 +1484,8 @@ const OPPORTUNITY_ZONES = [
     "id": "jingai",
     "name": "金盏",
     "center": [
-      116.55,
-      39.955
+      116.5447,
+      39.9571
     ],
     "radius": 3000,
     "relatedLines": [
@@ -1551,8 +1569,8 @@ const OPPORTUNITY_ZONES = [
           "name": "金盏国际合作服务区",
           "type": "employment",
           "coords": [
-            116.5518,
-            39.9578
+            116.5508,
+            39.9558
           ],
           "desc": "第四使馆区配套国际商务区"
         },
@@ -1560,8 +1578,8 @@ const OPPORTUNITY_ZONES = [
           "name": "金盏文化中心",
           "type": "employment",
           "coords": [
-            116.5428,
-            39.9515
+            116.5418,
+            39.9508
           ],
           "desc": "文化创意产业集聚区"
         },
@@ -1569,8 +1587,8 @@ const OPPORTUNITY_ZONES = [
           "name": "黑桥艺术区",
           "type": "employment",
           "coords": [
-            116.5248,
-            39.9648
+            116.5228,
+            39.9638
           ],
           "desc": "当代艺术家工作室集群"
         }
@@ -1580,8 +1598,8 @@ const OPPORTUNITY_ZONES = [
           "name": "温榆河别墅区",
           "type": "residential",
           "coords": [
-            116.5598,
-            39.9715
+            116.5578,
+            39.9698
           ],
           "desc": "低密度国际社区，高端住宅"
         },
@@ -1589,8 +1607,8 @@ const OPPORTUNITY_ZONES = [
           "name": "金盏嘉园",
           "type": "residential",
           "coords": [
-            116.5478,
-            39.9488
+            116.5458,
+            39.9478
           ],
           "desc": "回迁安置社区，居住品质待提升"
         },
@@ -1598,8 +1616,8 @@ const OPPORTUNITY_ZONES = [
           "name": "皮村社区",
           "type": "residential",
           "coords": [
-            116.5618,
-            39.9465
+            116.5598,
+            39.9458
           ],
           "desc": "城中村区域，城市更新机遇"
         }
@@ -1609,7 +1627,7 @@ const OPPORTUNITY_ZONES = [
           "name": "温榆河公园",
           "type": "publicSpace",
           "coords": [
-            116.5528,
+            116.5378,
             39.9808
           ],
           "desc": "超大城市公园，面积约30平方公里"
@@ -1618,8 +1636,8 @@ const OPPORTUNITY_ZONES = [
           "name": "金盏郊野公园",
           "type": "publicSpace",
           "coords": [
-            116.5518,
-            39.9588
+            116.5498,
+            39.9578
           ],
           "desc": "郊野公园，生态空间"
         },
@@ -1627,8 +1645,8 @@ const OPPORTUNITY_ZONES = [
           "name": "坝河滨水带",
           "type": "publicSpace",
           "coords": [
-            116.5428,
-            39.9458
+            116.5408,
+            39.9448
           ],
           "desc": "滨水空间改造提升机遇"
         }
@@ -1638,8 +1656,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中日友好医院（东院区）",
           "type": "publicService",
           "coords": [
-            116.5388,
-            39.9538
+            116.5378,
+            39.9528
           ],
           "desc": "三甲医院东部分院（规划）"
         },
@@ -1647,8 +1665,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京国际学校（ISB）",
           "type": "publicService",
           "coords": [
-            116.5448,
-            39.9675
+            116.5438,
+            39.9658
           ],
           "desc": "国际教育学校"
         },
@@ -1656,8 +1674,8 @@ const OPPORTUNITY_ZONES = [
           "name": "金盏学校",
           "type": "publicService",
           "coords": [
-            116.5488,
-            39.9508
+            116.5478,
+            39.9498
           ],
           "desc": "区域基础教育"
         }
@@ -1668,10 +1686,10 @@ const OPPORTUNITY_ZONES = [
     "id": "guanzhuang",
     "name": "管庄",
     "center": [
-      116.5588,
-      39.9208
+      116.5733,
+      39.9207
     ],
-    "radius": 1800,
+    "radius": 1500,
     "relatedLines": [
       {
         "name": "1号线/八通线",
@@ -1753,8 +1771,8 @@ const OPPORTUNITY_ZONES = [
           "name": "管庄产业园",
           "type": "employment",
           "coords": [
-            116.5618,
-            39.9218
+            116.5768,
+            39.9198
           ],
           "desc": "中小企业办公园区"
         },
@@ -1762,8 +1780,8 @@ const OPPORTUNITY_ZONES = [
           "name": "朝阳经济开发区（东区）",
           "type": "employment",
           "coords": [
-            116.5728,
-            39.9228
+            116.5828,
+            39.9218
           ],
           "desc": "科技与商贸企业集聚"
         },
@@ -1771,8 +1789,8 @@ const OPPORTUNITY_ZONES = [
           "name": "杨闸环岛商圈",
           "type": "employment",
           "coords": [
-            116.5498,
-            39.9195
+            116.5638,
+            39.9178
           ],
           "desc": "区域商业服务中心"
         }
@@ -1782,8 +1800,8 @@ const OPPORTUNITY_ZONES = [
           "name": "管庄西里",
           "type": "residential",
           "coords": [
-            116.5558,
-            39.9208
+            116.5728,
+            39.9178
           ],
           "desc": "1980-90年代建成，建筑老化明显"
         },
@@ -1791,7 +1809,7 @@ const OPPORTUNITY_ZONES = [
           "name": "京通苑",
           "type": "residential",
           "coords": [
-            116.5688,
+            116.5788,
             39.9188
           ],
           "desc": "2000年代经适房项目，规模较大"
@@ -1800,8 +1818,8 @@ const OPPORTUNITY_ZONES = [
           "name": "华龙美树",
           "type": "residential",
           "coords": [
-            116.5738,
-            39.9245
+            116.5818,
+            39.9238
           ],
           "desc": "较新商品房社区"
         }
@@ -1811,8 +1829,8 @@ const OPPORTUNITY_ZONES = [
           "name": "管庄公园",
           "type": "publicSpace",
           "coords": [
-            116.5598,
-            39.9228
+            116.5748,
+            39.9218
           ],
           "desc": "社区公园，服务周边居民"
         },
@@ -1820,28 +1838,27 @@ const OPPORTUNITY_ZONES = [
           "name": "杨闸河绿地",
           "type": "publicSpace",
           "coords": [
-            116.5508,
-            39.9175
+            116.5618,
+            39.9168
           ],
           "desc": "河道两侧绿地，可提升为线性公园"
+        },
+        {
+          "name": "常营公园",
+          "coords": [
+            116.5698,
+            39.9258
+          ],
+          "desc": "管庄附近大型社区公园"
         }
       ],
       "publicService": [
         {
-          "name": "民航总医院",
-          "type": "publicService",
-          "coords": [
-            116.5628,
-            39.9148
-          ],
-          "desc": "三甲医院，综合医疗服务"
-        },
-        {
           "name": "管庄学校",
           "type": "publicService",
           "coords": [
-            116.5578,
-            39.9238
+            116.5758,
+            39.9228
           ],
           "desc": "九年一贯制学校"
         },
@@ -1849,8 +1866,8 @@ const OPPORTUNITY_ZONES = [
           "name": "二外附中朝阳学校",
           "type": "publicService",
           "coords": [
-            116.5668,
-            39.9218
+            116.5678,
+            39.9208
           ],
           "desc": "区域优质中学"
         }
@@ -1861,10 +1878,10 @@ const OPPORTUNITY_ZONES = [
     "id": "yunhe",
     "name": "运河商务区",
     "center": [
-      116.6578,
-      39.9008
+      116.7087,
+      39.8964
     ],
-    "radius": 3200,
+    "radius": 5700,
     "relatedLines": [
       {
         "name": "6号线",
@@ -1946,8 +1963,8 @@ const OPPORTUNITY_ZONES = [
           "name": "运河商务区",
           "type": "employment",
           "coords": [
-            116.6628,
-            39.9128
+            116.7085,
+            39.9148
           ],
           "desc": "副中心金融商务核心区，规划约300万㎡"
         },
@@ -1955,8 +1972,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京市行政办公区",
           "type": "employment",
           "coords": [
-            116.6712,
-            39.9058
+            116.718475,
+            39.903905
           ],
           "desc": "市级行政机关新址，约4万公务员"
         },
@@ -1964,8 +1981,8 @@ const OPPORTUNITY_ZONES = [
           "name": "张家湾设计小镇",
           "type": "employment",
           "coords": [
-            116.6508,
-            39.8738
+            116.718195,
+            39.850893
           ],
           "desc": "设计产业集聚区，城市更新示范"
         }
@@ -1975,8 +1992,8 @@ const OPPORTUNITY_ZONES = [
           "name": "通州北苑社区",
           "type": "residential",
           "coords": [
-            116.6528,
-            39.9188
+            116.6678,
+            39.9148
           ],
           "desc": "2005-2015年建成，副中心早期居住区"
         },
@@ -1984,8 +2001,8 @@ const OPPORTUNITY_ZONES = [
           "name": "新华联家园",
           "type": "residential",
           "coords": [
-            116.6618,
-            39.9078
+            116.6658,
+            39.9038
           ],
           "desc": "大型居住社区，距运河较近"
         },
@@ -1993,8 +2010,8 @@ const OPPORTUNITY_ZONES = [
           "name": "行政办公区配套住房",
           "type": "residential",
           "coords": [
-            116.6728,
-            39.8998
+            116.7188,
+            39.8968
           ],
           "desc": "公务员周转住房和配套社区"
         }
@@ -2004,8 +2021,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大运河森林公园",
           "type": "publicSpace",
           "coords": [
-            116.6698,
-            39.9248
+            116.73176,
+            39.87838
           ],
           "desc": "大型滨水森林公园，面积约713公顷"
         },
@@ -2013,8 +2030,8 @@ const OPPORTUNITY_ZONES = [
           "name": "城市绿心公园",
           "type": "publicSpace",
           "coords": [
-            116.6358,
-            39.8868
+            116.721347,
+            39.872046
           ],
           "desc": "副中心城市级公园，面积约11平方公里"
         },
@@ -2022,8 +2039,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北运河沿线绿道",
           "type": "publicSpace",
           "coords": [
-            116.6618,
-            39.9218
+            116.7198,
+            39.9188
           ],
           "desc": "运河两岸景观步道系统"
         }
@@ -2033,8 +2050,8 @@ const OPPORTUNITY_ZONES = [
           "name": "首都医科大学附属北京友谊医院通州院区",
           "type": "publicService",
           "coords": [
-            116.6508,
-            39.9028
+            116.6768,
+            39.9328
           ],
           "desc": "三甲医院分院"
         },
@@ -2042,8 +2059,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京学校",
           "type": "publicService",
           "coords": [
-            116.6678,
-            39.9108
+            116.74284,
+            39.891791
           ],
           "desc": "十二年制公办学校，高标准建设"
         },
@@ -2051,8 +2068,8 @@ const OPPORTUNITY_ZONES = [
           "name": "国家大剧院副中心剧院",
           "type": "publicService",
           "coords": [
-            116.6388,
-            39.8908
+            116.7148,
+            39.8778
           ],
           "desc": "文化地标，三座剧场"
         }
@@ -2063,10 +2080,10 @@ const OPPORTUNITY_ZONES = [
     "id": "cbd_baiziwan",
     "name": "CBD-百子湾",
     "center": [
-      116.475,
-      39.9
+      116.4726,
+      39.9042
     ],
-    "radius": 2200,
+    "radius": 3400,
     "relatedLines": [
       {
         "name": "1号线",
@@ -2158,8 +2175,8 @@ const OPPORTUNITY_ZONES = [
           "name": "国贸中心/中国尊",
           "type": "employment",
           "coords": [
-            116.4618,
-            39.9088
+            116.4608,
+            39.9078
           ],
           "desc": "CBD核心，北京最高建筑群，就业超10万人"
         },
@@ -2167,8 +2184,8 @@ const OPPORTUNITY_ZONES = [
           "name": "SK大厦/建外SOHO",
           "type": "employment",
           "coords": [
-            116.4528,
-            39.9068
+            116.4538,
+            39.9058
           ],
           "desc": "国际企业和创业公司集聚"
         },
@@ -2176,8 +2193,8 @@ const OPPORTUNITY_ZONES = [
           "name": "华贸中心",
           "type": "employment",
           "coords": [
-            116.4758,
-            39.9118
+            116.474724,
+            39.907696
           ],
           "desc": "高端商务综合体"
         },
@@ -2185,8 +2202,8 @@ const OPPORTUNITY_ZONES = [
           "name": "百子湾西区",
           "type": "employment",
           "coords": [
-            116.4868,
-            39.8978
+            116.4878,
+            39.8968
           ],
           "desc": "文化创意和设计产业集聚"
         }
@@ -2196,8 +2213,8 @@ const OPPORTUNITY_ZONES = [
           "name": "百子湾家园",
           "type": "residential",
           "coords": [
-            116.4938,
-            39.8948
+            116.4948,
+            39.8938
           ],
           "desc": "大型保障性住房社区，服务CBD就业人群"
         },
@@ -2206,7 +2223,7 @@ const OPPORTUNITY_ZONES = [
           "type": "residential",
           "coords": [
             116.4878,
-            39.9008
+            39.8998
           ],
           "desc": "2008年前后建成，CBD通勤社区"
         },
@@ -2215,7 +2232,7 @@ const OPPORTUNITY_ZONES = [
           "type": "residential",
           "coords": [
             116.4778,
-            39.8968
+            39.8958
           ],
           "desc": "2004年建成，存量商办可改青年公寓"
         },
@@ -2224,7 +2241,7 @@ const OPPORTUNITY_ZONES = [
           "type": "residential",
           "coords": [
             116.4678,
-            39.8948
+            39.8938
           ],
           "desc": "靠近CBD的居住组团"
         }
@@ -2234,8 +2251,8 @@ const OPPORTUNITY_ZONES = [
           "name": "百子湾路口街心公园",
           "type": "publicSpace",
           "coords": [
-            116.4818,
-            39.8998
+            116.472456,
+            39.93195
           ],
           "desc": "百子湾地区城市绿地"
         },
@@ -2243,8 +2260,8 @@ const OPPORTUNITY_ZONES = [
           "name": "庆丰公园（西段）",
           "type": "publicSpace",
           "coords": [
-            116.4828,
-            39.9038
+            116.457525,
+            39.901638
           ],
           "desc": "通惠河沿线休闲空间"
         },
@@ -2252,8 +2269,8 @@ const OPPORTUNITY_ZONES = [
           "name": "百子湾公园",
           "type": "publicSpace",
           "coords": [
-            116.4948,
-            39.8918
+            116.481732,
+            39.894213
           ],
           "desc": "社区公园，居民日常休闲"
         }
@@ -2264,7 +2281,7 @@ const OPPORTUNITY_ZONES = [
           "type": "publicService",
           "coords": [
             116.4628,
-            39.9148
+            39.9218
           ],
           "desc": "三甲综合医院，CBD核心医疗"
         },
@@ -2273,7 +2290,7 @@ const OPPORTUNITY_ZONES = [
           "type": "publicService",
           "coords": [
             116.4808,
-            39.9028
+            39.9018
           ],
           "desc": "双语教育特色学校"
         },
@@ -2281,8 +2298,8 @@ const OPPORTUNITY_ZONES = [
           "name": "芳草地国际学校",
           "type": "publicService",
           "coords": [
-            116.4538,
-            39.9068
+            116.4558,
+            39.9058
           ],
           "desc": "知名国际化公办小学"
         }
@@ -2293,10 +2310,10 @@ const OPPORTUNITY_ZONES = [
     "id": "gongti_sanlitun",
     "name": "工体-三里屯",
     "center": [
-      116.451,
-      39.933
+      116.4557,
+      39.9307
     ],
-    "radius": 2000,
+    "radius": 2600,
     "relatedLines": [
       {
         "name": "6号线",
@@ -2388,8 +2405,8 @@ const OPPORTUNITY_ZONES = [
           "name": "三里屯太古里",
           "type": "employment",
           "coords": [
-            116.4558,
-            39.9358
+            116.4548,
+            39.9365
           ],
           "desc": "国际时尚消费中心，就业约2万人"
         },
@@ -2397,8 +2414,8 @@ const OPPORTUNITY_ZONES = [
           "name": "新工人体育场",
           "type": "employment",
           "coords": [
-            116.4432,
-            39.9302
+            116.440997,
+            39.9295
           ],
           "desc": "6.8万座专业足球场，2023年落成"
         },
@@ -2406,8 +2423,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京电视台（新址）",
           "type": "employment",
           "coords": [
-            116.4528,
-            39.9238
+            116.4518,
+            39.9228
           ],
           "desc": "朝阳门外传媒文化产业"
         }
@@ -2417,8 +2434,8 @@ const OPPORTUNITY_ZONES = [
           "name": "团结湖社区",
           "type": "residential",
           "coords": [
-            116.4608,
-            39.9268
+            116.4598,
+            39.9258
           ],
           "desc": "1980年代建成，外交部宿舍片区，楼龄40年+"
         },
@@ -2426,8 +2443,8 @@ const OPPORTUNITY_ZONES = [
           "name": "幸福村社区",
           "type": "residential",
           "coords": [
-            116.4478,
-            39.9365
+            116.4468,
+            39.9358
           ],
           "desc": "工体北路成熟社区，配套完善"
         },
@@ -2435,8 +2452,8 @@ const OPPORTUNITY_ZONES = [
           "name": "白家庄社区",
           "type": "residential",
           "coords": [
-            116.4628,
-            39.9288
+            116.4618,
+            39.9278
           ],
           "desc": "朝阳门外老社区，邻近CBD"
         }
@@ -2446,8 +2463,8 @@ const OPPORTUNITY_ZONES = [
           "name": "朝阳公园（北区）",
           "type": "publicSpace",
           "coords": [
-            116.4738,
-            39.9368
+            116.475948,
+            39.944418
           ],
           "desc": "城市核心公园北部入口区域"
         },
@@ -2455,8 +2472,8 @@ const OPPORTUNITY_ZONES = [
           "name": "团结湖公园",
           "type": "publicSpace",
           "coords": [
-            116.4618,
-            39.9285
+            116.460877,
+            39.923867
           ],
           "desc": "经典社区公园，需提质改造"
         },
@@ -2464,8 +2481,8 @@ const OPPORTUNITY_ZONES = [
           "name": "三里屯街头绿地",
           "type": "publicSpace",
           "coords": [
-            116.4548,
-            39.9398
+            116.4538,
+            39.9388
           ],
           "desc": "三里屯商圈公共活动空间"
         }
@@ -2475,8 +2492,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京和睦家医院",
           "type": "publicService",
           "coords": [
-            116.4578,
-            39.9378
+            116.4568,
+            39.9368
           ],
           "desc": "三里屯地区国际化综合医院"
         },
@@ -2484,8 +2501,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京八十中学",
           "type": "publicService",
           "coords": [
-            116.4648,
-            39.9278
+            116.4638,
+            39.9268
           ],
           "desc": "朝阳区重点中学"
         },
@@ -2493,8 +2510,8 @@ const OPPORTUNITY_ZONES = [
           "name": "陈经纶中学",
           "type": "publicService",
           "coords": [
-            116.4548,
-            39.9228
+            116.441435,
+            39.919836
           ],
           "desc": "朝阳区知名中学"
         }
@@ -2505,10 +2522,10 @@ const OPPORTUNITY_ZONES = [
     "id": "shilihe_shibali",
     "name": "十里河-十八里店",
     "center": [
-      116.462,
-      39.867
+      116.4662,
+      39.8647
     ],
-    "radius": 2200,
+    "radius": 3000,
     "relatedLines": [
       {
         "name": "10号线",
@@ -2595,8 +2612,8 @@ const OPPORTUNITY_ZONES = [
           "name": "十里河居然之家",
           "type": "employment",
           "coords": [
-            116.4698,
-            39.8668
+            116.462451,
+            39.858388
           ],
           "desc": "建材家居龙头企业总部"
         },
@@ -2604,8 +2621,8 @@ const OPPORTUNITY_ZONES = [
           "name": "十八里店产业园",
           "type": "employment",
           "coords": [
-            116.4738,
-            39.8558
+            116.4808,
+            39.8518
           ],
           "desc": "城市更新产业孵化基地"
         },
@@ -2613,8 +2630,8 @@ const OPPORTUNITY_ZONES = [
           "name": "潘家园旧货市场",
           "type": "employment",
           "coords": [
-            116.4618,
-            39.8728
+            116.452188,
+            39.873921
           ],
           "desc": "文化创意与古玩交易集散地"
         }
@@ -2624,8 +2641,8 @@ const OPPORTUNITY_ZONES = [
           "name": "农光里社区",
           "type": "residential",
           "coords": [
-            116.4578,
-            39.8788
+            116.4568,
+            39.8778
           ],
           "desc": "1970-80年代建成，改造需求迫切"
         },
@@ -2633,8 +2650,8 @@ const OPPORTUNITY_ZONES = [
           "name": "劲松社区",
           "type": "residential",
           "coords": [
-            116.4498,
-            39.8778
+            116.447283,
+            39.880528
           ],
           "desc": "北京最早的老旧小区改造试点"
         },
@@ -2642,8 +2659,8 @@ const OPPORTUNITY_ZONES = [
           "name": "潘家园社区",
           "type": "residential",
           "coords": [
-            116.4608,
-            39.8698
+            116.4598,
+            39.8688
           ],
           "desc": "1990年代建成，品质中等"
         },
@@ -2651,8 +2668,8 @@ const OPPORTUNITY_ZONES = [
           "name": "十八里店安置房",
           "type": "residential",
           "coords": [
-            116.4798,
-            39.8528
+            116.4838,
+            39.8498
           ],
           "desc": "棚改回迁安置区，新建住宅"
         }
@@ -2662,8 +2679,8 @@ const OPPORTUNITY_ZONES = [
           "name": "十里河桥周边",
           "type": "publicSpace",
           "coords": [
-            116.4658,
-            39.8648
+            116.4648,
+            39.8638
           ],
           "desc": "城南河沿线空间待优化"
         },
@@ -2671,8 +2688,8 @@ const OPPORTUNITY_ZONES = [
           "name": "横街子公园",
           "type": "publicSpace",
           "coords": [
-            116.4768,
-            39.8538
+            116.4758,
+            39.8528
           ],
           "desc": "十八里店地区社区公园"
         },
@@ -2680,8 +2697,8 @@ const OPPORTUNITY_ZONES = [
           "name": "十八里店小武基公园",
           "type": "publicSpace",
           "coords": [
-            116.4738,
-            39.8628
+            116.488885,
+            39.862099
           ],
           "desc": "十八里店地区新建城市公园"
         }
@@ -2691,8 +2708,8 @@ const OPPORTUNITY_ZONES = [
           "name": "三环肿瘤医院",
           "type": "publicService",
           "coords": [
-            116.4658,
-            39.8688
+            116.4648,
+            39.8678
           ],
           "desc": "十里河地区综合医疗机构"
         },
@@ -2700,8 +2717,8 @@ const OPPORTUNITY_ZONES = [
           "name": "劲松职业高中",
           "type": "publicService",
           "coords": [
-            116.4538,
-            39.8798
+            116.444069,
+            39.882138
           ],
           "desc": "朝阳区职业教育基地"
         },
@@ -2709,8 +2726,8 @@ const OPPORTUNITY_ZONES = [
           "name": "十八里店社区卫生中心",
           "type": "publicService",
           "coords": [
-            116.4728,
-            39.8558
+            116.4788,
+            39.8518
           ],
           "desc": "基层医疗服务"
         }
@@ -2721,10 +2738,10 @@ const OPPORTUNITY_ZONES = [
     "id": "pingguoyuan",
     "name": "苹果园-金安桥",
     "center": [
-      116.168,
-      39.923
+      116.176,
+      39.9239
     ],
-    "radius": 2000,
+    "radius": 2700,
     "relatedLines": [
       {
         "name": "1号线",
@@ -2816,8 +2833,8 @@ const OPPORTUNITY_ZONES = [
           "name": "首钢园",
           "type": "employment",
           "coords": [
-            116.1868,
-            39.9228
+            116.1878,
+            39.9088
           ],
           "desc": "城市更新标杆，SoReal科幻乐园+冬奥遗产+服贸会场馆"
         },
@@ -2834,8 +2851,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中关村石景山园",
           "type": "employment",
           "coords": [
-            116.1808,
-            39.9248
+            116.1928,
+            39.9342
           ],
           "desc": "人工智能产业园，科技企业300+"
         },
@@ -2854,7 +2871,7 @@ const OPPORTUNITY_ZONES = [
           "name": "苹果园街道老旧小区",
           "type": "residential",
           "coords": [
-            116.1758,
+            116.1728,
             39.9268
           ],
           "desc": "1970-80年代首钢工人宿舍，楼龄40-50年，改造需求迫切"
@@ -2863,8 +2880,8 @@ const OPPORTUNITY_ZONES = [
           "name": "金顶街社区",
           "type": "residential",
           "coords": [
-            116.1598,
-            39.9348
+            116.1748,
+            39.9308
           ],
           "desc": "首钢配套居住区，建成年代久远"
         },
@@ -2892,8 +2909,8 @@ const OPPORTUNITY_ZONES = [
           "name": "模式口大街商业区",
           "type": "publicSpace",
           "coords": [
-            116.1628,
-            39.9348
+            116.149781,
+            39.932315
           ],
           "desc": "苹果园地区历史文化商业街区"
         },
@@ -2910,8 +2927,8 @@ const OPPORTUNITY_ZONES = [
           "name": "模式口历史文化街区",
           "type": "publicSpace",
           "coords": [
-            116.1608,
-            39.9368
+            116.1498,
+            39.9323
           ],
           "desc": "京西古道驼铃古道，保护性更新"
         },
@@ -2919,8 +2936,8 @@ const OPPORTUNITY_ZONES = [
           "name": "首钢滑雪大跳台",
           "type": "publicSpace",
           "coords": [
-            116.1878,
-            39.9198
+            116.1858,
+            39.9068
           ],
           "desc": "冬奥遗产，新城市地标"
         }
@@ -2930,8 +2947,8 @@ const OPPORTUNITY_ZONES = [
           "name": "首钢医院",
           "type": "publicService",
           "coords": [
-            116.1908,
-            39.9268
+            116.198266,
+            39.926455
           ],
           "desc": "综合医院，服务京西居民"
         },
@@ -2939,8 +2956,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北大附中石景山学校",
           "type": "publicService",
           "coords": [
-            116.1758,
-            39.9298
+            116.165,
+            39.9396
           ],
           "desc": "名校办学，优质教育资源"
         },
@@ -2948,8 +2965,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北方工业大学",
           "type": "publicService",
           "coords": [
-            116.1758,
-            39.9138
+            116.1968,
+            39.9238
           ],
           "desc": "理工类本科院校"
         }
@@ -2960,10 +2977,10 @@ const OPPORTUNITY_ZONES = [
     "id": "qinghe",
     "name": "清河-小营",
     "center": [
-      116.35,
-      40.025
+      116.3478,
+      40.0201
     ],
-    "radius": 2000,
+    "radius": 3600,
     "relatedLines": [
       {
         "name": "8号线",
@@ -3055,26 +3072,17 @@ const OPPORTUNITY_ZONES = [
           "name": "中关村东升科技园",
           "type": "employment",
           "coords": [
-            116.3498,
-            40.0235
+            116.3478,
+            40.0178
           ],
           "desc": "海淀北部重要科技园区"
-        },
-        {
-          "name": "小米科技园（二期）",
-          "type": "employment",
-          "coords": [
-            116.3278,
-            40.0275
-          ],
-          "desc": "小米集团第二总部"
         },
         {
           "name": "五彩城/华润凤凰汇",
           "type": "employment",
           "coords": [
-            116.3488,
-            40.0355
+            116.3478,
+            40.0338
           ],
           "desc": "区域商业综合体，商业就业中心"
         },
@@ -3082,10 +3090,18 @@ const OPPORTUNITY_ZONES = [
           "name": "学院路科研院所群",
           "type": "employment",
           "coords": [
-            116.3598,
-            40.0098
+            116.3578,
+            40.0058
           ],
           "desc": "中科院力学所、计算所等聚集"
+        },
+        {
+          "name": "上地信息路创业园",
+          "coords": [
+            116.3388,
+            40.0278
+          ],
+          "desc": "清河地区科技创业园区"
         }
       ],
       "residential": [
@@ -3093,8 +3109,8 @@ const OPPORTUNITY_ZONES = [
           "name": "毛纺厂路社区",
           "type": "residential",
           "coords": [
-            116.3418,
-            40.0258
+            116.3398,
+            40.0228
           ],
           "desc": "1980年代毛纺厂宿舍，楼龄40年+，典型待改造社区"
         },
@@ -3102,8 +3118,8 @@ const OPPORTUNITY_ZONES = [
           "name": "小营西路社区",
           "type": "residential",
           "coords": [
-            116.3575,
-            40.0238
+            116.3558,
+            40.0218
           ],
           "desc": "科研院所宿舍区，建成年代1980-90年代"
         },
@@ -3111,8 +3127,8 @@ const OPPORTUNITY_ZONES = [
           "name": "清河新城",
           "type": "residential",
           "coords": [
-            116.3428,
-            40.0368
+            116.3418,
+            40.0348
           ],
           "desc": "2010年代新建住宅，品质较好"
         },
@@ -3120,8 +3136,8 @@ const OPPORTUNITY_ZONES = [
           "name": "西三旗科研宿舍",
           "type": "residential",
           "coords": [
-            116.3568,
-            40.0378
+            116.3548,
+            40.0348
           ],
           "desc": "中科院等单位老旧宿舍，改造需求强"
         }
@@ -3131,8 +3147,8 @@ const OPPORTUNITY_ZONES = [
           "name": "清河滨水绿道",
           "type": "publicSpace",
           "coords": [
-            116.3458,
-            40.0318
+            116.3448,
+            40.0298
           ],
           "desc": "清河沿线，可建设高品质滨水公园"
         },
@@ -3140,8 +3156,8 @@ const OPPORTUNITY_ZONES = [
           "name": "东升八家郊野公园",
           "type": "publicSpace",
           "coords": [
-            116.3398,
-            40.0198
+            116.330071,
+            40.015632
           ],
           "desc": "城市郊野公园，面积较大"
         },
@@ -3149,8 +3165,8 @@ const OPPORTUNITY_ZONES = [
           "name": "西小口公园",
           "type": "publicSpace",
           "coords": [
-            116.3688,
-            40.0148
+            116.3668,
+            40.0118
           ],
           "desc": "社区公园，服务周边居民"
         }
@@ -3160,8 +3176,8 @@ const OPPORTUNITY_ZONES = [
           "name": "海淀医院",
           "type": "publicService",
           "coords": [
-            116.3565,
-            40.0178
+            116.3545,
+            40.0148
           ],
           "desc": "区级综合医院"
         },
@@ -3169,8 +3185,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京二十中学",
           "type": "publicService",
           "coords": [
-            116.3508,
-            40.0218
+            116.3488,
+            40.0188
           ],
           "desc": "清河地区重点中学"
         },
@@ -3178,8 +3194,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京语言大学",
           "type": "publicService",
           "coords": [
-            116.3588,
-            40.0128
+            116.339135,
+            39.991676
           ],
           "desc": "国际化高校，留学生聚集"
         }
@@ -3190,10 +3206,10 @@ const OPPORTUNITY_ZONES = [
     "id": "dahongmen",
     "name": "大红门-南苑",
     "center": [
-      116.3908,
-      39.8288
+      116.3863,
+      39.8332
     ],
-    "radius": 3000,
+    "radius": 3900,
     "relatedLines": [
       {
         "name": "8号线",
@@ -3285,8 +3301,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大红门服装城转型园区",
           "type": "employment",
           "coords": [
-            116.3958,
-            39.8348
+            116.3948,
+            39.8338
           ],
           "desc": "原批发市场疏解转型为设计+文化产业园"
         },
@@ -3294,8 +3310,8 @@ const OPPORTUNITY_ZONES = [
           "name": "南中轴博物馆群（规划）",
           "type": "employment",
           "coords": [
-            116.3908,
-            39.8468
+            116.3898,
+            39.8458
           ],
           "desc": "国家级博物馆集群，文化就业中心"
         },
@@ -3303,8 +3319,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大红门国际时尚创意园",
           "type": "employment",
           "coords": [
-            116.3878,
-            39.8318
+            116.3868,
+            39.8308
           ],
           "desc": "时尚设计和文创产业"
         },
@@ -3312,8 +3328,8 @@ const OPPORTUNITY_ZONES = [
           "name": "南苑数字经济区",
           "type": "employment",
           "coords": [
-            116.3958,
-            39.8128
+            116.3948,
+            39.8118
           ],
           "desc": "数字经济+科技创新产业"
         }
@@ -3324,7 +3340,7 @@ const OPPORTUNITY_ZONES = [
           "type": "residential",
           "coords": [
             116.3738,
-            39.8508
+            39.8608
           ],
           "desc": "1990年代建成，紧邻地铁10号线"
         },
@@ -3332,8 +3348,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大红门社区",
           "type": "residential",
           "coords": [
-            116.3918,
-            39.8368
+            116.392772,
+            39.844014
           ],
           "desc": "原批发市场配套居住区，品质待提升"
         },
@@ -3341,8 +3357,8 @@ const OPPORTUNITY_ZONES = [
           "name": "南苑西路社区",
           "type": "residential",
           "coords": [
-            116.3858,
-            39.8198
+            116.368808,
+            39.804975
           ],
           "desc": "老旧平房+筒子楼，楼龄40-50年，亟需改造"
         },
@@ -3350,8 +3366,8 @@ const OPPORTUNITY_ZONES = [
           "name": "鑫福里小区",
           "type": "residential",
           "coords": [
-            116.3978,
-            39.8398
+            116.387145,
+            39.845847
           ],
           "desc": "2000年代建成，品质中等"
         }
@@ -3361,8 +3377,8 @@ const OPPORTUNITY_ZONES = [
           "name": "南苑森林湿地公园",
           "type": "publicSpace",
           "coords": [
-            116.3888,
-            39.8028
+            116.372022,
+            39.815363
           ],
           "desc": "规划面积约16平方公里，北京南部最大生态空间"
         },
@@ -3370,8 +3386,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大红门街心花园",
           "type": "publicSpace",
           "coords": [
-            116.3938,
-            39.8368
+            116.3928,
+            39.8358
           ],
           "desc": "疏解后城市公共空间，需进一步设计"
         },
@@ -3379,8 +3395,8 @@ const OPPORTUNITY_ZONES = [
           "name": "凉水河沿线",
           "type": "publicSpace",
           "coords": [
-            116.3958,
-            39.8258
+            116.3948,
+            39.8248
           ],
           "desc": "河道治理后滨水空间可提升"
         }
@@ -3390,8 +3406,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京大学第一医院南院",
           "type": "publicService",
           "coords": [
-            116.3845,
-            39.8438
+            116.3838,
+            39.8428
           ],
           "desc": "三甲医院分院"
         },
@@ -3399,8 +3415,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京十八中学",
           "type": "publicService",
           "coords": [
-            116.3908,
-            39.8318
+            116.3898,
+            39.8308
           ],
           "desc": "丰台区重点中学"
         },
@@ -3408,8 +3424,8 @@ const OPPORTUNITY_ZONES = [
           "name": "丰台五小",
           "type": "publicService",
           "coords": [
-            116.3878,
-            39.8378
+            116.3868,
+            39.8368
           ],
           "desc": "区级优质小学"
         }
@@ -3420,10 +3436,10 @@ const OPPORTUNITY_ZONES = [
     "id": "daxing_huangcun",
     "name": "大兴黄村",
     "center": [
-      116.3408,
-      39.7208
+      116.3365,
+      39.7272
     ],
-    "radius": 2600,
+    "radius": 3300,
     "relatedLines": [
       {
         "name": "4号线/大兴线",
@@ -3505,8 +3521,8 @@ const OPPORTUNITY_ZONES = [
           "name": "中关村大兴生物医药基地",
           "type": "employment",
           "coords": [
-            116.3318,
-            39.7028
+            116.3308,
+            39.7018
           ],
           "desc": "生物医药产业集群"
         },
@@ -3514,8 +3530,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大兴新城商务区",
           "type": "employment",
           "coords": [
-            116.3498,
-            39.7268
+            116.3488,
+            39.7258
           ],
           "desc": "大兴区行政商务中心"
         },
@@ -3523,8 +3539,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大兴高米店产业园",
           "type": "employment",
           "coords": [
-            116.3508,
-            39.7428
+            116.3498,
+            39.7418
           ],
           "desc": "新媒体与科技企业聚集区"
         }
@@ -3534,8 +3550,8 @@ const OPPORTUNITY_ZONES = [
           "name": "黄村西大街社区",
           "type": "residential",
           "coords": [
-            116.3408,
-            39.7308
+            116.3398,
+            39.7298
           ],
           "desc": "大兴老城区，部分楼龄30年+"
         },
@@ -3543,8 +3559,8 @@ const OPPORTUNITY_ZONES = [
           "name": "枣园社区",
           "type": "residential",
           "coords": [
-            116.3238,
-            39.7378
+            116.3228,
+            39.7368
           ],
           "desc": "大兴新城居住片区，距地铁4号线较近"
         },
@@ -3552,8 +3568,8 @@ const OPPORTUNITY_ZONES = [
           "name": "清源路新社区",
           "type": "residential",
           "coords": [
-            116.3368,
-            39.7378
+            116.3358,
+            39.7368
           ],
           "desc": "新建住宅，配套较完善"
         }
@@ -3563,8 +3579,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大兴黄村公园",
           "type": "publicSpace",
           "coords": [
-            116.3388,
-            39.7228
+            116.3378,
+            39.7218
           ],
           "desc": "城市综合公园"
         },
@@ -3572,8 +3588,8 @@ const OPPORTUNITY_ZONES = [
           "name": "念坛公园",
           "type": "publicSpace",
           "coords": [
-            116.3428,
-            39.7098
+            116.31536,
+            39.706358
           ],
           "desc": "大兴区大型滨水公园"
         }
@@ -3583,8 +3599,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大兴一中",
           "type": "publicService",
           "coords": [
-            116.3498,
-            39.7318
+            116.3488,
+            39.7308
           ],
           "desc": "大兴区重点中学"
         },
@@ -3592,8 +3608,8 @@ const OPPORTUNITY_ZONES = [
           "name": "大兴区人民医院",
           "type": "publicService",
           "coords": [
-            116.3498,
-            39.7248
+            116.3488,
+            39.7238
           ],
           "desc": "区级综合医院"
         },
@@ -3601,8 +3617,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京印刷学院",
           "type": "publicService",
           "coords": [
-            116.3468,
-            39.7338
+            116.323216,
+            39.743261
           ],
           "desc": "高等院校"
         }
@@ -3613,10 +3629,10 @@ const OPPORTUNITY_ZONES = [
     "id": "yizhuang_bda",
     "name": "亦庄经开区",
     "center": [
-      116.5068,
-      39.7838
+      116.5005,
+      39.7796
     ],
-    "radius": 3000,
+    "radius": 4700,
     "relatedLines": [
       {
         "name": "亦庄线",
@@ -3703,8 +3719,8 @@ const OPPORTUNITY_ZONES = [
           "name": "小米汽车工厂",
           "type": "employment",
           "coords": [
-            116.5058,
-            39.7638
+            116.5028,
+            39.7588
           ],
           "desc": "智能电动汽车制造基地"
         },
@@ -3712,8 +3728,8 @@ const OPPORTUNITY_ZONES = [
           "name": "京东方科技集团",
           "type": "employment",
           "coords": [
-            116.5148,
-            39.7878
+            116.5068,
+            39.7928
           ],
           "desc": "全球显示面板龙头企业"
         },
@@ -3721,8 +3737,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京经济技术开发区核心区",
           "type": "employment",
           "coords": [
-            116.5068,
-            39.7848
+            116.5028,
+            39.7888
           ],
           "desc": "225平方公里产业新城，就业约45万"
         },
@@ -3730,8 +3746,8 @@ const OPPORTUNITY_ZONES = [
           "name": "京东总部（亦庄）",
           "type": "employment",
           "coords": [
-            116.5078,
-            39.8038
+            116.4848,
+            39.7978
           ],
           "desc": "电商巨头华北总部"
         }
@@ -3741,8 +3757,8 @@ const OPPORTUNITY_ZONES = [
           "name": "亦嘉·新青年小镇",
           "type": "residential",
           "coords": [
-            116.5148,
-            39.7648
+            116.5188,
+            39.7618
           ],
           "desc": "保障性租赁住房，2000套，青年人阶梯式安居"
         },
@@ -3751,7 +3767,7 @@ const OPPORTUNITY_ZONES = [
           "type": "residential",
           "coords": [
             116.4998,
-            39.7698
+            39.7748
           ],
           "desc": "2008年建成，经开区通勤社区"
         },
@@ -3759,8 +3775,8 @@ const OPPORTUNITY_ZONES = [
           "name": "亦庄金茂悦",
           "type": "residential",
           "coords": [
-            116.5128,
-            39.7898
+            116.5088,
+            39.7958
           ],
           "desc": "新建商品住宅社区"
         }
@@ -3770,8 +3786,8 @@ const OPPORTUNITY_ZONES = [
           "name": "南海子公园",
           "type": "publicSpace",
           "coords": [
-            116.4888,
-            39.7838
+            116.4508,
+            39.7828
           ],
           "desc": "北京最大湿地公园，面积约743公顷"
         },
@@ -3779,8 +3795,8 @@ const OPPORTUNITY_ZONES = [
           "name": "亦庄凉水河滨水公园",
           "type": "publicSpace",
           "coords": [
-            116.5098,
-            39.7798
+            116.5038,
+            39.7818
           ],
           "desc": "产业区内的生态廊道"
         },
@@ -3788,8 +3804,8 @@ const OPPORTUNITY_ZONES = [
           "name": "博大公园",
           "type": "publicSpace",
           "coords": [
-            116.5028,
-            39.7718
+            116.496305,
+            39.796899
           ],
           "desc": "经开区中心绿地"
         }
@@ -3799,8 +3815,8 @@ const OPPORTUNITY_ZONES = [
           "name": "同仁医院亦庄院区",
           "type": "publicService",
           "coords": [
-            116.5218,
-            39.7798
+            116.5158,
+            39.7728
           ],
           "desc": "三甲医院分院"
         },
@@ -3808,8 +3824,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京儿童医院亦庄院区（在建）",
           "type": "publicService",
           "coords": [
-            116.5028,
-            39.7578
+            116.5048,
+            39.7538
           ],
           "desc": "优质儿科医疗资源引入"
         },
@@ -3817,8 +3833,8 @@ const OPPORTUNITY_ZONES = [
           "name": "人大附中经开区学校",
           "type": "publicService",
           "coords": [
-            116.5098,
-            39.7718
+            116.5108,
+            39.7758
           ],
           "desc": "名校办学，12年制"
         }
@@ -3829,10 +3845,10 @@ const OPPORTUNITY_ZONES = [
     "id": "huoying",
     "name": "霍营-北苑",
     "center": [
-      116.3708,
-      40.0428
+      116.3656,
+      40.0423
     ],
-    "radius": 2700,
+    "radius": 2500,
     "relatedLines": [
       {
         "name": "8号线",
@@ -3919,8 +3935,8 @@ const OPPORTUNITY_ZONES = [
           "name": "回龙观科技产业园（东区）",
           "type": "employment",
           "coords": [
-            116.3618,
-            40.0448
+            116.3608,
+            40.0438
           ],
           "desc": "科技中小企业集聚区"
         },
@@ -3928,8 +3944,8 @@ const OPPORTUNITY_ZONES = [
           "name": "龙域中心东区",
           "type": "employment",
           "coords": [
-            116.3758,
-            40.0278
+            116.3738,
+            40.0268
           ],
           "desc": "综合商务办公区"
         },
@@ -3937,8 +3953,8 @@ const OPPORTUNITY_ZONES = [
           "name": "霍营地铁商圈",
           "type": "employment",
           "coords": [
-            116.3718,
-            40.0458
+            116.3708,
+            40.0448
           ],
           "desc": "换乘站周边商业就业"
         }
@@ -3948,8 +3964,8 @@ const OPPORTUNITY_ZONES = [
           "name": "霍营社区",
           "type": "residential",
           "coords": [
-            116.3728,
-            40.0438
+            116.3718,
+            40.0428
           ],
           "desc": "2005年前后建成，大型居住区"
         },
@@ -3957,8 +3973,8 @@ const OPPORTUNITY_ZONES = [
           "name": "龙锦苑",
           "type": "residential",
           "coords": [
-            116.3548,
-            40.0548
+            116.3538,
+            40.0538
           ],
           "desc": "2003年建成经适房，楼龄超20年"
         },
@@ -3966,8 +3982,8 @@ const OPPORTUNITY_ZONES = [
           "name": "新龙城社区",
           "type": "residential",
           "coords": [
-            116.3438,
-            40.0538
+            116.3428,
+            40.0528
           ],
           "desc": "2006年建成，靠近新龙泽站"
         },
@@ -3975,8 +3991,8 @@ const OPPORTUNITY_ZONES = [
           "name": "蓬莱公寓",
           "type": "residential",
           "coords": [
-            116.3808,
-            40.0388
+            116.3798,
+            40.0378
           ],
           "desc": "2002年建成，老旧小区改造需求"
         }
@@ -3986,8 +4002,8 @@ const OPPORTUNITY_ZONES = [
           "name": "霍营公园",
           "type": "publicSpace",
           "coords": [
-            116.3698,
-            40.0418
+            116.3688,
+            40.0408
           ],
           "desc": "回天行动新建社区公园"
         },
@@ -3995,8 +4011,8 @@ const OPPORTUNITY_ZONES = [
           "name": "回龙观东部绿道",
           "type": "publicSpace",
           "coords": [
-            116.3588,
-            40.0488
+            116.3578,
+            40.0478
           ],
           "desc": "自行车专用路东延线"
         },
@@ -4004,8 +4020,8 @@ const OPPORTUNITY_ZONES = [
           "name": "华龙苑南里绿地",
           "type": "publicSpace",
           "coords": [
-            116.3678,
-            40.0378
+            116.3668,
+            40.0368
           ],
           "desc": "社区绿地，可进一步提升"
         }
@@ -4015,8 +4031,8 @@ const OPPORTUNITY_ZONES = [
           "name": "昌平区中西医结合医院",
           "type": "publicService",
           "coords": [
-            116.3768,
-            40.0468
+            116.3758,
+            40.0458
           ],
           "desc": "区级医院"
         },
@@ -4024,8 +4040,8 @@ const OPPORTUNITY_ZONES = [
           "name": "霍营中心小学",
           "type": "publicService",
           "coords": [
-            116.3708,
-            40.0438
+            116.3698,
+            40.0428
           ],
           "desc": "社区基础教育"
         },
@@ -4033,8 +4049,8 @@ const OPPORTUNITY_ZONES = [
           "name": "北京市昌平一中",
           "type": "publicService",
           "coords": [
-            116.3618,
-            40.0348
+            116.3608,
+            40.0338
           ],
           "desc": "昌平区重点中学"
         }

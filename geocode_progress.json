@@ -1,0 +1,3995 @@
+{
+  "huilongguan|生命科学园": {
+    "name": "生命科学园",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "employment",
+    "current_coords": [
+      116.3043,
+      40.0928
+    ],
+    "osm_coords": [
+      116.288183,
+      40.093573
+    ],
+    "osm_display": "生命科学园, 北清路, 史各庄街道, 昌平区, 北京市, 100126, 中国",
+    "osm_type": "station",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 1374
+  },
+  "huilongguan|TBD云集中心": {
+    "name": "TBD云集中心",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "employment",
+    "current_coords": [
+      116.3378,
+      40.0512
+    ],
+    "osm_coords": [
+      116.361121,
+      40.097094
+    ],
+    "osm_display": "TBD云集中心, 北七家镇, 昌平区, 北京市, 中国",
+    "osm_type": "commercial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 5475
+  },
+  "huilongguan|龙域中心": {
+    "name": "龙域中心",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "employment",
+    "current_coords": [
+      116.3318,
+      40.0485
+    ],
+    "osm_coords": [
+      116.077421,
+      39.935995
+    ],
+    "osm_display": "北京市门头沟区旅游商品行业协会, 东辛房街, 大峪街道, 门头沟区, 北京市, 102399, 中国",
+    "osm_type": "union",
+    "osm_class": "office",
+    "status": "found",
+    "distance_m": 25022
+  },
+  "huilongguan|智汇大厦": {
+    "name": "智汇大厦",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "employment",
+    "current_coords": [
+      116.3405,
+      40.0545
+    ],
+    "osm_coords": [
+      116.347275,
+      39.956186
+    ],
+    "osm_display": "智慧大厦, 学院南路, 北太平庄街道, 海淀区, 北京市, 100082, 中国",
+    "osm_type": "yes",
+    "osm_class": "building",
+    "status": "found",
+    "distance_m": 10947
+  },
+  "huilongguan|回龙观社区": {
+    "name": "回龙观社区",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "residential",
+    "current_coords": [
+      116.3252,
+      40.0693
+    ],
+    "osm_coords": [
+      116.272797,
+      40.126624
+    ],
+    "osm_display": "首都师范大学附属回龙观育新教育集团沙河校区, 46, 泰清宫大街, 西二村社区, 沙河镇, 昌平区, 北京市, 102206, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 7778
+  },
+  "huilongguan|龙泽苑": {
+    "name": "龙泽苑",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "residential",
+    "current_coords": [
+      116.3228,
+      40.0735
+    ],
+    "osm_coords": [
+      116.339258,
+      40.073395
+    ],
+    "osm_display": "龙泽园街道, 昌平区, 北京市, 100096, 中国",
+    "osm_type": "suburb",
+    "osm_class": "place",
+    "status": "found",
+    "distance_m": 1400
+  },
+  "huilongguan|融泽嘉园": {
+    "name": "融泽嘉园",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "residential",
+    "current_coords": [
+      116.3128,
+      40.0583
+    ],
+    "osm_coords": [
+      116.30121,
+      40.067015
+    ],
+    "osm_display": "融泽嘉园一号院, 回龙观街道, 昌平区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 1383
+  },
+  "huilongguan|金域华府": {
+    "name": "金域华府",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "residential",
+    "current_coords": [
+      116.3388,
+      40.0518
+    ],
+    "osm_coords": [
+      116.302958,
+      40.064013
+    ],
+    "osm_display": "金域华府, 5号院, 回龙观街道, 昌平区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 3339
+  },
+  "huilongguan|回龙观体育公园": {
+    "name": "回龙观体育公园",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3302,
+      40.0755
+    ],
+    "osm_coords": [
+      116.33574,
+      40.076722
+    ],
+    "osm_display": "回龙观体育公园, 龙泽园街道, 昌平区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 491
+  },
+  "huilongguan|回龙观滨水绿道": {
+    "name": "回龙观滨水绿道",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3182,
+      40.0585
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huilongguan|回龙观文化公园": {
+    "name": "回龙观文化公园",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3228,
+      40.0638
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huilongguan|积水潭医院回龙观院区": {
+    "name": "积水潭医院回龙观院区",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "publicService",
+    "current_coords": [
+      116.3335,
+      40.0713
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huilongguan|清华附小昌平学校": {
+    "name": "清华附小昌平学校",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "publicService",
+    "current_coords": [
+      116.3265,
+      40.0615
+    ],
+    "osm_coords": [
+      116.396399,
+      40.039091
+    ],
+    "osm_display": "清华附小昌平学校, 陈家营中路, 天通苑南街道, 昌平区, 北京市, 102218, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 6450
+  },
+  "huilongguan|北京人大附中昌平学校": {
+    "name": "北京人大附中昌平学校",
+    "zone": "回龙观-西三旗",
+    "zone_id": "huilongguan",
+    "category": "publicService",
+    "current_coords": [
+      116.3365,
+      40.0565
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "tiantongyuan|天通苑龙德广场": {
+    "name": "天通苑龙德广场",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "employment",
+    "current_coords": [
+      116.4215,
+      40.0535
+    ],
+    "osm_coords": [
+      116.409217,
+      40.058374
+    ],
+    "osm_display": "龙德广场, 天通苑南街道, 昌平区, 北京市, 中国",
+    "osm_type": "retail",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 1178
+  },
+  "tiantongyuan|天通科技园": {
+    "name": "天通科技园",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "employment",
+    "current_coords": [
+      116.4283,
+      40.0628
+    ],
+    "osm_coords": [
+      116.364766,
+      40.041215
+    ],
+    "osm_display": "北京天元特通科技有限公司, 黑泉路, 黑泉村, 东升镇, 海淀区, 北京市, 100192, 中国",
+    "osm_type": "company",
+    "osm_class": "office",
+    "status": "found",
+    "distance_m": 5916
+  },
+  "tiantongyuan|北方明珠大厦": {
+    "name": "北方明珠大厦",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "employment",
+    "current_coords": [
+      116.4168,
+      40.0563
+    ],
+    "osm_coords": [
+      116.692655,
+      39.502725
+    ],
+    "osm_display": "明珠大厦, 银河南路街道, 安次区, 廊坊市, 河北省, 中国",
+    "osm_type": "retail",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 65914
+  },
+  "tiantongyuan|天通苑北区": {
+    "name": "天通苑北区",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "residential",
+    "current_coords": [
+      116.4198,
+      40.0748
+    ],
+    "osm_coords": [
+      116.40664,
+      40.073775
+    ],
+    "osm_display": "天通苑, 立汤路, 天通苑北街道, 昌平区, 北京市, 102218, 中国",
+    "osm_type": "station",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 1126
+  },
+  "tiantongyuan|天通苑南区": {
+    "name": "天通苑南区",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "residential",
+    "current_coords": [
+      116.4175,
+      40.0455
+    ],
+    "osm_coords": [
+      116.406517,
+      40.065118
+    ],
+    "osm_display": "天通苑南, 立汤路, 天通苑南街道, 昌平区, 北京市, 102218, 中国",
+    "osm_type": "chalet",
+    "osm_class": "tourism",
+    "status": "found",
+    "distance_m": 2373
+  },
+  "tiantongyuan|天通中苑": {
+    "name": "天通中苑",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "residential",
+    "current_coords": [
+      116.4188,
+      40.0598
+    ],
+    "osm_coords": [
+      116.401268,
+      40.054865
+    ],
+    "osm_display": "北京北, 天通苑南街道, 昌平区, 北京市, 102218, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 1590
+  },
+  "tiantongyuan|东小口森林公园": {
+    "name": "东小口森林公园",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4035,
+      40.0438
+    ],
+    "osm_coords": [
+      116.386565,
+      40.046943
+    ],
+    "osm_display": "东小口森林公园, 东小口镇, 昌平区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1483
+  },
+  "tiantongyuan|天通艺园": {
+    "name": "天通艺园",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4232,
+      40.0645
+    ],
+    "osm_coords": [
+      116.428411,
+      40.06887
+    ],
+    "osm_display": "天通艺苑, 天通苑北街道, 昌平区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 658
+  },
+  "tiantongyuan|天通苑体育中心": {
+    "name": "天通苑体育中心",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4155,
+      40.0605
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "tiantongyuan|清华长庚医院": {
+    "name": "清华长庚医院",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.4078,
+      40.0665
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "tiantongyuan|北京师范大学昌平附属学校": {
+    "name": "北京师范大学昌平附属学校",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.4255,
+      40.0548
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "tiantongyuan|天通苑社区卫生服务中心": {
+    "name": "天通苑社区卫生服务中心",
+    "zone": "天通苑",
+    "zone_id": "tiantongyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.4195,
+      40.0575
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shangdi|百度科技园": {
+    "name": "百度科技园",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "employment",
+    "current_coords": [
+      116.2958,
+      40.0488
+    ],
+    "osm_coords": [
+      116.267427,
+      40.042178
+    ],
+    "osm_display": "百度科技园, 马连洼街道, 海淀区, 北京市, 中国",
+    "osm_type": "commercial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 2525
+  },
+  "shangdi|新浪总部大厦": {
+    "name": "新浪总部大厦",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "employment",
+    "current_coords": [
+      116.2765,
+      40.0498
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shangdi|腾讯北京总部": {
+    "name": "腾讯北京总部",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "employment",
+    "current_coords": [
+      116.2755,
+      40.0408
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shangdi|网易北京研发中心": {
+    "name": "网易北京研发中心",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "employment",
+    "current_coords": [
+      116.2998,
+      40.0388
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shangdi|联想全球总部": {
+    "name": "联想全球总部",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "employment",
+    "current_coords": [
+      116.2868,
+      40.0285
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shangdi|马连洼社区": {
+    "name": "马连洼社区",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "residential",
+    "current_coords": [
+      116.2875,
+      40.0202
+    ],
+    "osm_coords": [
+      116.274223,
+      40.03418
+    ],
+    "osm_display": "百草园社区, 马连洼街道, 海淀区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 1922
+  },
+  "shangdi|唐家岭新城": {
+    "name": "唐家岭新城",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "residential",
+    "current_coords": [
+      116.2728,
+      40.0345
+    ],
+    "osm_coords": [
+      116.269005,
+      40.066203
+    ],
+    "osm_display": "滴滴新橙海大厦, 友谊路, 唐家岭村, 西北旺镇, 海淀区, 北京市, 100126, 中国",
+    "osm_type": "commercial",
+    "osm_class": "building",
+    "status": "found",
+    "distance_m": 3540
+  },
+  "shangdi|上地西里": {
+    "name": "上地西里",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "residential",
+    "current_coords": [
+      116.2932,
+      40.0338
+    ],
+    "osm_coords": [
+      116.304268,
+      40.030825
+    ],
+    "osm_display": "上地西里, 上地街道, 海淀区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 999
+  },
+  "shangdi|上地东里社区": {
+    "name": "上地东里社区",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "residential",
+    "current_coords": [
+      116.2938,
+      40.0308
+    ],
+    "osm_coords": [
+      116.39949,
+      39.951771
+    ],
+    "osm_display": "北京市安外清真寺, 安德路, 安德路社区, 和平里街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "place_of_worship",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 12581
+  },
+  "shangdi|百旺公园": {
+    "name": "百旺公园",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "publicSpace",
+    "current_coords": [
+      116.2645,
+      40.0215
+    ],
+    "osm_coords": [
+      116.253711,
+      40.04187
+    ],
+    "osm_display": "百旺公园, 马连洼街道, 海淀区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 2444
+  },
+  "shangdi|马连洼郊野公园": {
+    "name": "马连洼郊野公园",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "publicSpace",
+    "current_coords": [
+      116.2808,
+      40.0318
+    ],
+    "osm_coords": [
+      116.297288,
+      40.025229
+    ],
+    "osm_display": "树村郊野公园, 上地街道, 海淀区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1583
+  },
+  "shangdi|上地公园": {
+    "name": "上地公园",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "publicSpace",
+    "current_coords": [
+      116.2992,
+      40.0378
+    ],
+    "osm_coords": [
+      116.30425,
+      40.033801
+    ],
+    "osm_display": "上地公园, 上地街道, 海淀区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 619
+  },
+  "shangdi|北京市海淀医院（西院区）": {
+    "name": "北京市海淀医院（西院区）",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "publicService",
+    "current_coords": [
+      116.2868,
+      40.0258
+    ],
+    "osm_coords": [
+      116.27758,
+      39.934002
+    ],
+    "osm_display": "北京市盲人学校, 颐慧佳园西路, 万寿路街道, 海淀区, 北京市, 100143, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 10238
+  },
+  "shangdi|上地实验小学": {
+    "name": "上地实验小学",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "publicService",
+    "current_coords": [
+      116.2978,
+      40.0295
+    ],
+    "osm_coords": [
+      116.307903,
+      40.030106
+    ],
+    "osm_display": "上地实验小学, 信息路, 上地街道, 海淀区, 北京市, 100085, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 863
+  },
+  "shangdi|中关村第二小学百旺校区": {
+    "name": "中关村第二小学百旺校区",
+    "zone": "上地-马连洼",
+    "zone_id": "shangdi",
+    "category": "publicService",
+    "current_coords": [
+      116.2815,
+      40.0245
+    ],
+    "osm_coords": [
+      116.262688,
+      40.046207
+    ],
+    "osm_display": "中关村第二小学(百旺校区), 西北旺东路, 马连洼街道, 海淀区, 北京市, 100093, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 2897
+  },
+  "lize|丽泽SOHO": {
+    "name": "丽泽SOHO",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "employment",
+    "current_coords": [
+      116.3218,
+      39.8695
+    ],
+    "osm_coords": [
+      116.324724,
+      39.865863
+    ],
+    "osm_display": "丽泽SOHO, 金鹏天润社区, 太平桥街道, 丰台区, 北京市, 中国",
+    "osm_type": "commercial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 475
+  },
+  "lize|丽泽金融商务区": {
+    "name": "丽泽金融商务区",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "employment",
+    "current_coords": [
+      116.3148,
+      39.8725
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lize|中国华能总部": {
+    "name": "中国华能总部",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "employment",
+    "current_coords": [
+      116.3098,
+      39.8688
+    ],
+    "osm_coords": [
+      116.411897,
+      39.912754
+    ],
+    "osm_display": "北京地铁5号线, 新开路胡同, 西总布社区, 建国门街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "subway",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 9988
+  },
+  "lize|平安金融中心": {
+    "name": "平安金融中心",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "employment",
+    "current_coords": [
+      116.3258,
+      39.8738
+    ],
+    "osm_coords": [
+      116.320329,
+      39.864468
+    ],
+    "osm_display": "北京平安金融中心(基本完工), 骆驼湾西路, 金鹏天润社区, 太平桥街道, 丰台区, 北京市, 100055, 中国",
+    "osm_type": "office",
+    "osm_class": "building",
+    "status": "found",
+    "distance_m": 1138
+  },
+  "lize|万泉寺社区": {
+    "name": "万泉寺社区",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "residential",
+    "current_coords": [
+      116.3275,
+      39.8628
+    ],
+    "osm_coords": [
+      116.33421,
+      39.85953
+    ],
+    "osm_display": "万泉寺社区, 太平桥街道, 丰台区, 北京市, 100069, 中国",
+    "osm_type": "quarter",
+    "osm_class": "place",
+    "status": "found",
+    "distance_m": 678
+  },
+  "lize|丰益花园": {
+    "name": "丰益花园",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "residential",
+    "current_coords": [
+      116.3128,
+      39.8678
+    ],
+    "osm_coords": [
+      116.306586,
+      39.859438
+    ],
+    "osm_display": "丰益花园, 丰台街道, 丰台区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1070
+  },
+  "lize|草桥欣园": {
+    "name": "草桥欣园",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "residential",
+    "current_coords": [
+      116.3405,
+      39.8528
+    ],
+    "osm_coords": [
+      116.411796,
+      39.940317
+    ],
+    "osm_display": "北京雍和宫国际青年旅舍 Beijing Lama Temple Youth Hostel, 北新桥头条, 草园社区, 北新桥街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "hostel",
+    "osm_class": "tourism",
+    "status": "found",
+    "distance_m": 11476
+  },
+  "lize|莲花池公园": {
+    "name": "莲花池公园",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3205,
+      39.8935
+    ],
+    "osm_coords": [
+      116.309178,
+      39.890643
+    ],
+    "osm_display": "莲花池公园, 太平桥街道, 丰台区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1017
+  },
+  "lize|丽泽城市运动公园": {
+    "name": "丽泽城市运动公园",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3135,
+      39.8765
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lize|丰草河滨水绿道": {
+    "name": "丰草河滨水绿道",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3188,
+      39.8615
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lize|北京丰台医院": {
+    "name": "北京丰台医院",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "publicService",
+    "current_coords": [
+      116.3228,
+      39.8708
+    ],
+    "osm_coords": [
+      116.583361,
+      40.127751
+    ],
+    "osm_display": "北京顺义顺丰丰泰产业园, 南法信镇, 顺义区, 北京市, 中国",
+    "osm_type": "industrial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 36179
+  },
+  "lize|丰台区实验学校": {
+    "name": "丰台区实验学校",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "publicService",
+    "current_coords": [
+      116.3215,
+      39.8655
+    ],
+    "osm_coords": [
+      116.165573,
+      39.861382
+    ],
+    "osm_display": "丰台区长辛店中心小学, 大灰厂东路, 丰台区, 北京市, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 13316
+  },
+  "lize|丽泽国际学校（规划）": {
+    "name": "丽泽国际学校（规划）",
+    "zone": "丽泽-草桥",
+    "zone_id": "lize",
+    "category": "publicService",
+    "current_coords": [
+      116.3168,
+      39.8708
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lugu|中关村丰台园": {
+    "name": "中关村丰台园",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "employment",
+    "current_coords": [
+      116.2658,
+      39.9088
+    ],
+    "osm_coords": [
+      115.952917,
+      40.4451
+    ],
+    "osm_display": "泰国园, 园区北路, 儒林街道, 延庆区, 北京市, 中国",
+    "osm_type": "garden",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 65290
+  },
+  "lugu|中关村科技园石景山园（鲁谷）": {
+    "name": "中关村科技园石景山园（鲁谷）",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "employment",
+    "current_coords": [
+      116.2558,
+      39.9068
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lugu|总装备部科研基地": {
+    "name": "总装备部科研基地",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "employment",
+    "current_coords": [
+      116.2498,
+      39.8988
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lugu|鲁谷社区": {
+    "name": "鲁谷社区",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "residential",
+    "current_coords": [
+      116.2525,
+      39.9058
+    ],
+    "osm_coords": [
+      116.700146,
+      39.907971
+    ],
+    "osm_display": "北京通州, 潞通大街, 通运街道, 通州区, 北京市, 101117, 中国",
+    "osm_type": "station",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 38183
+  },
+  "lugu|衙门口棚改区": {
+    "name": "衙门口棚改区",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "residential",
+    "current_coords": [
+      116.2418,
+      39.9008
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lugu|卢沟桥南里": {
+    "name": "卢沟桥南里",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "residential",
+    "current_coords": [
+      116.2568,
+      39.9008
+    ],
+    "osm_coords": [
+      116.225446,
+      39.846414
+    ],
+    "osm_display": "卢沟桥南里, 宛平街道, 丰台区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 6613
+  },
+  "lugu|鲁谷大街商圈": {
+    "name": "鲁谷大街商圈",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "publicSpace",
+    "current_coords": [
+      116.2538,
+      39.9078
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lugu|鲁谷滨河公园": {
+    "name": "鲁谷滨河公园",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "publicSpace",
+    "current_coords": [
+      116.2478,
+      39.9018
+    ],
+    "osm_coords": [
+      116.148676,
+      39.90434
+    ],
+    "osm_display": "冬奥公园雪浪滑板场, 永定河滨河路, 古城街道, 石景山区, 北京市, 100043, 中国",
+    "osm_type": "pitch",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 8460
+  },
+  "lugu|北京朝阳医院京西院区": {
+    "name": "北京朝阳医院京西院区",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "publicService",
+    "current_coords": [
+      116.2518,
+      39.9098
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "lugu|北京九中": {
+    "name": "北京九中",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "publicService",
+    "current_coords": [
+      116.2335,
+      39.9108
+    ],
+    "osm_coords": [
+      116.146845,
+      39.930607
+    ],
+    "osm_display": "北京九中教育集团石景山学校（中校区）, 石门路, 金顶街街道, 石景山区, 北京市, 100042, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 7711
+  },
+  "lugu|石景山医院": {
+    "name": "石景山医院",
+    "zone": "鲁谷",
+    "zone_id": "lugu",
+    "category": "publicService",
+    "current_coords": [
+      116.2488,
+      39.9058
+    ],
+    "osm_coords": [
+      116.207166,
+      39.905037
+    ],
+    "osm_display": "石景山医院, 翠园西街, 鲁谷街道, 石景山区, 北京市, 100040, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 3552
+  },
+  "yuanboyuan|北京园博园管理中心": {
+    "name": "北京园博园管理中心",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "employment",
+    "current_coords": [
+      116.2128,
+      39.8638
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yuanboyuan|园博园文创产业园": {
+    "name": "园博园文创产业园",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "employment",
+    "current_coords": [
+      116.2108,
+      39.8658
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yuanboyuan|长辛店镇社区": {
+    "name": "长辛店镇社区",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "residential",
+    "current_coords": [
+      116.1832,
+      39.8655
+    ],
+    "osm_coords": [
+      116.189161,
+      39.848612
+    ],
+    "osm_display": "二七车辆社区文化广场, 张郭庄, 丰台区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1946
+  },
+  "yuanboyuan|王佐镇安置房": {
+    "name": "王佐镇安置房",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "residential",
+    "current_coords": [
+      116.1968,
+      39.8508
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yuanboyuan|北京园博园": {
+    "name": "北京园博园",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.2095,
+      39.8618
+    ],
+    "osm_coords": [
+      116.190672,
+      39.874468
+    ],
+    "osm_display": "北京园博园, 丰台区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 2137
+  },
+  "yuanboyuan|永定河滨水空间（南段）": {
+    "name": "永定河滨水空间（南段）",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.1892,
+      39.8648
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yuanboyuan|园博湖": {
+    "name": "园博湖",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.1968,
+      39.8698
+    ],
+    "osm_coords": [
+      116.198315,
+      39.872648
+    ],
+    "osm_display": "园博湖, 宛平街道, 丰台区, 北京市, 中国",
+    "osm_type": "water",
+    "osm_class": "natural",
+    "status": "found",
+    "distance_m": 342
+  },
+  "yuanboyuan|长辛店卫生院": {
+    "name": "长辛店卫生院",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.1848,
+      39.8618
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yuanboyuan|北京十中": {
+    "name": "北京十中",
+    "zone": "园博园",
+    "zone_id": "yuanboyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.2248,
+      39.8718
+    ],
+    "osm_coords": [
+      116.201147,
+      39.813665
+    ],
+    "osm_display": "北京十中, 周口店路, 长辛店街道, 丰台区, 北京市, 100074, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 6772
+  },
+  "gaobeidian|高碑店文化产业园": {
+    "name": "高碑店文化产业园",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "employment",
+    "current_coords": [
+      116.5178,
+      39.9128
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gaobeidian|传媒大学文创基地": {
+    "name": "传媒大学文创基地",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "employment",
+    "current_coords": [
+      116.5318,
+      39.9108
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gaobeidian|北花园产业园": {
+    "name": "北花园产业园",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "employment",
+    "current_coords": [
+      116.5082,
+      39.9158
+    ],
+    "osm_coords": [
+      115.819331,
+      40.3247
+    ],
+    "osm_display": "腾讯华北东园信息技术产业基地, 怀来县, 张家口市, 河北省, 中国",
+    "osm_type": "construction",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 74150
+  },
+  "gaobeidian|高碑店东区": {
+    "name": "高碑店东区",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "residential",
+    "current_coords": [
+      116.5218,
+      39.9138
+    ],
+    "osm_coords": [
+      116.531266,
+      39.915962
+    ],
+    "osm_display": "欧丝蒂西点蛋糕烘焙, 朝阳路, 高碑店乡, 朝阳区, 北京市, 100123, 中国",
+    "osm_type": "bakery",
+    "osm_class": "shop",
+    "status": "found",
+    "distance_m": 842
+  },
+  "gaobeidian|兴隆家园": {
+    "name": "兴隆家园",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "residential",
+    "current_coords": [
+      116.5128,
+      39.9098
+    ],
+    "osm_coords": [
+      116.518038,
+      39.913979
+    ],
+    "osm_display": "兴隆家园北区, 高碑店乡, 朝阳区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 645
+  },
+  "gaobeidian|甘露园南里": {
+    "name": "甘露园南里",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "residential",
+    "current_coords": [
+      116.5018,
+      39.9128
+    ],
+    "osm_coords": [
+      116.508275,
+      39.912631
+    ],
+    "osm_display": "芳草地国际学校甘露园分校初中部, 甘露园南里路, 康家沟, 高碑店乡, 朝阳区, 北京市, 100123, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 553
+  },
+  "gaobeidian|庆丰公园": {
+    "name": "庆丰公园",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4978,
+      39.9088
+    ],
+    "osm_coords": [
+      116.457525,
+      39.901638
+    ],
+    "osm_display": "庆丰公园, 双井街道, 朝阳区, 北京市, 100022, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 3526
+  },
+  "gaobeidian|通惠河滨水绿道": {
+    "name": "通惠河滨水绿道",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5158,
+      39.9118
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gaobeidian|高碑店漕运遗址公园": {
+    "name": "高碑店漕运遗址公园",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5238,
+      39.9145
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gaobeidian|高碑店社区卫生服务中心": {
+    "name": "高碑店社区卫生服务中心",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "publicService",
+    "current_coords": [
+      116.5128,
+      39.9138
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gaobeidian|中国传媒大学": {
+    "name": "中国传媒大学",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "publicService",
+    "current_coords": [
+      116.5348,
+      39.9068
+    ],
+    "osm_coords": [
+      116.551891,
+      39.912
+    ],
+    "osm_display": "中国传媒大学, 朝阳路, 三间房乡, 朝阳区, 北京市, 100123, 中国",
+    "osm_type": "university",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 1568
+  },
+  "gaobeidian|定福庄小学": {
+    "name": "定福庄小学",
+    "zone": "高碑店",
+    "zone_id": "gaobeidian",
+    "category": "publicService",
+    "current_coords": [
+      116.5258,
+      39.9098
+    ],
+    "osm_coords": [
+      116.546861,
+      39.91745
+    ],
+    "osm_display": "定福庄小学, 定福庄北街, 三间房乡, 朝阳区, 北京市, 100123, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 1987
+  },
+  "jingai|金盏国际合作服务区": {
+    "name": "金盏国际合作服务区",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "employment",
+    "current_coords": [
+      116.5518,
+      39.9578
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "jingai|金盏文化中心": {
+    "name": "金盏文化中心",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "employment",
+    "current_coords": [
+      116.5428,
+      39.9515
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "jingai|黑桥艺术区": {
+    "name": "黑桥艺术区",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "employment",
+    "current_coords": [
+      116.5248,
+      39.9648
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "jingai|温榆河别墅区": {
+    "name": "温榆河别墅区",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "residential",
+    "current_coords": [
+      116.5598,
+      39.9715
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "jingai|金盏嘉园": {
+    "name": "金盏嘉园",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "residential",
+    "current_coords": [
+      116.5478,
+      39.9488
+    ],
+    "osm_coords": [
+      116.550141,
+      40.009722
+    ],
+    "osm_display": "金盏嘉园, 长店大街, 金盏乡, 朝阳区, 北京市, 100103, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 6777
+  },
+  "jingai|皮村社区": {
+    "name": "皮村社区",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "residential",
+    "current_coords": [
+      116.5618,
+      39.9465
+    ],
+    "osm_coords": [
+      116.306034,
+      39.975102
+    ],
+    "osm_display": "啤啤猫江湖烧烤小酒馆(中关村店), 海淀南路, 中关村核心区, 海淀南路北社区, 海淀街道, 海淀区, 北京市, 100872, 中国",
+    "osm_type": "pub",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 22029
+  },
+  "jingai|温榆河公园": {
+    "name": "温榆河公园",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5528,
+      39.9808
+    ],
+    "osm_coords": [
+      116.495778,
+      40.112634
+    ],
+    "osm_display": "温榆河公园·故城记忆, 后沙峪镇, 顺义区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 15442
+  },
+  "jingai|金盏郊野公园": {
+    "name": "金盏郊野公园",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5518,
+      39.9588
+    ],
+    "osm_coords": [
+      116.637034,
+      40.31828
+    ],
+    "osm_display": "北京城建·府前龙樾, 教师公寓, 龙山街道, 怀柔区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 40624
+  },
+  "jingai|坝河滨水带": {
+    "name": "坝河滨水带",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5428,
+      39.9458
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "jingai|中日友好医院（东院区）": {
+    "name": "中日友好医院（东院区）",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "publicService",
+    "current_coords": [
+      116.5388,
+      39.9538
+    ],
+    "osm_coords": [
+      116.420692,
+      39.972858
+    ],
+    "osm_display": "中日友好医院本部, 樱花巷, 和平街街道, 朝阳区, 北京市, 100029, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 10287
+  },
+  "jingai|北京国际学校（ISB）": {
+    "name": "北京国际学校（ISB）",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "publicService",
+    "current_coords": [
+      116.5448,
+      39.9675
+    ],
+    "osm_coords": [
+      116.248513,
+      39.942555
+    ],
+    "osm_display": "北京市海淀外国语藤飞学校, 行集寺路, 十王坟, 四季青镇, 海淀区, 北京市, 100143, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 25406
+  },
+  "jingai|金盏学校": {
+    "name": "金盏学校",
+    "zone": "金盏",
+    "zone_id": "jingai",
+    "category": "publicService",
+    "current_coords": [
+      116.5488,
+      39.9508
+    ],
+    "osm_coords": [
+      116.561184,
+      40.004184
+    ],
+    "osm_display": "金盏学校, 金盏路, 金盏乡, 朝阳区, 北京市, 100103, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 6029
+  },
+  "guanzhuang|管庄产业园": {
+    "name": "管庄产业园",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "employment",
+    "current_coords": [
+      116.5618,
+      39.9218
+    ],
+    "osm_coords": [
+      116.575568,
+      39.919989
+    ],
+    "osm_display": "懋隆文化创意产业园, 三间房乡, 朝阳区, 北京市, 中国",
+    "osm_type": "commercial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 1191
+  },
+  "guanzhuang|朝阳经济开发区（东区）": {
+    "name": "朝阳经济开发区（东区）",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "employment",
+    "current_coords": [
+      116.5728,
+      39.9228
+    ],
+    "osm_coords": [
+      116.056538,
+      39.487416
+    ],
+    "osm_display": "朝阳路, 涿州经济开发区, 涿州市, 保定市, 河北省, 中国",
+    "osm_type": "secondary",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 65531
+  },
+  "guanzhuang|杨闸环岛商圈": {
+    "name": "杨闸环岛商圈",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "employment",
+    "current_coords": [
+      116.5498,
+      39.9195
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "guanzhuang|管庄西里": {
+    "name": "管庄西里",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "residential",
+    "current_coords": [
+      116.5558,
+      39.9208
+    ],
+    "osm_coords": [
+      116.582846,
+      39.913645
+    ],
+    "osm_display": "北京市第八十中学管庄分校(管庄校区), 管庄西里路, 管庄乡, 朝阳区, 北京市, 100024, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 2440
+  },
+  "guanzhuang|京通苑": {
+    "name": "京通苑",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "residential",
+    "current_coords": [
+      116.5688,
+      39.9188
+    ],
+    "osm_coords": [
+      116.348375,
+      39.91046
+    ],
+    "osm_display": "首都医科大学附属北京儿童医院, 南礼士路, 月坛街道, 首都功能核心区, 西城区, 北京市, 100032, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 18822
+  },
+  "guanzhuang|华龙美树": {
+    "name": "华龙美树",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "residential",
+    "current_coords": [
+      116.5738,
+      39.9245
+    ],
+    "osm_coords": [
+      116.685223,
+      39.914634
+    ],
+    "osm_display": "蔬果美超市, 通胡大街辅路, 加华印象街, 通运街道, 通州区, 北京市, 101118, 中国",
+    "osm_type": "supermarket",
+    "osm_class": "shop",
+    "status": "found",
+    "distance_m": 9565
+  },
+  "guanzhuang|管庄公园": {
+    "name": "管庄公园",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5598,
+      39.9228
+    ],
+    "osm_coords": [
+      116.498515,
+      39.875777
+    ],
+    "osm_display": "王四营官庄公园南区, 王四营乡, 朝阳区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 7394
+  },
+  "guanzhuang|杨闸河绿地": {
+    "name": "杨闸河绿地",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5508,
+      39.9175
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "guanzhuang|民航总医院": {
+    "name": "民航总医院",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "publicService",
+    "current_coords": [
+      116.5628,
+      39.9148
+    ],
+    "osm_coords": [
+      116.523952,
+      39.914648
+    ],
+    "osm_display": "民航总医院, 朝阳路, 高碑店乡, 朝阳区, 北京市, 100123, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 3313
+  },
+  "guanzhuang|管庄学校": {
+    "name": "管庄学校",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "publicService",
+    "current_coords": [
+      116.5578,
+      39.9238
+    ],
+    "osm_coords": [
+      116.502529,
+      39.875832
+    ],
+    "osm_display": "官庄小学, G1辅路, 燕窝, 王四营乡, 朝阳区, 北京市, 100023, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 7119
+  },
+  "guanzhuang|二外附中朝阳学校": {
+    "name": "二外附中朝阳学校",
+    "zone": "管庄",
+    "zone_id": "guanzhuang",
+    "category": "publicService",
+    "current_coords": [
+      116.5668,
+      39.9218
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yunhe|运河商务区": {
+    "name": "运河商务区",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "employment",
+    "current_coords": [
+      116.6628,
+      39.9128
+    ],
+    "osm_coords": [
+      116.948241,
+      39.741638
+    ],
+    "osm_display": "运河大道, 香河经济开发区, 香河县, 廊坊市, 河北省, 065400, 中国",
+    "osm_type": "secondary",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 30925
+  },
+  "yunhe|北京市行政办公区": {
+    "name": "北京市行政办公区",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "employment",
+    "current_coords": [
+      116.6712,
+      39.9058
+    ],
+    "osm_coords": [
+      116.724656,
+      39.903707
+    ],
+    "osm_display": "北京市教育委员会, 达济街, 潞源街道, 通州区, 北京市, 101117, 中国",
+    "osm_type": "government",
+    "osm_class": "office",
+    "status": "found",
+    "distance_m": 4566
+  },
+  "yunhe|张家湾设计小镇": {
+    "name": "张家湾设计小镇",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "employment",
+    "current_coords": [
+      116.6508,
+      39.8738
+    ],
+    "osm_coords": [
+      116.718176,
+      39.851466
+    ],
+    "osm_display": "张家湾设计小镇, 张家湾镇, 通州区, 北京市, 中国",
+    "osm_type": "commercial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 6264
+  },
+  "yunhe|通州北苑社区": {
+    "name": "通州北苑社区",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "residential",
+    "current_coords": [
+      116.6528,
+      39.9188
+    ],
+    "osm_coords": [
+      116.700146,
+      39.907971
+    ],
+    "osm_display": "北京通州, 潞通大街, 通运街道, 通州区, 北京市, 101117, 中国",
+    "osm_type": "station",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 4214
+  },
+  "yunhe|新华联家园": {
+    "name": "新华联家园",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "residential",
+    "current_coords": [
+      116.6618,
+      39.9078
+    ],
+    "osm_coords": [
+      116.63375,
+      39.891447
+    ],
+    "osm_display": "新华联家园, 通朝大街, 杨庄街道, 通州区, 北京市, 101101, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 3005
+  },
+  "yunhe|行政办公区配套住房": {
+    "name": "行政办公区配套住房",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "residential",
+    "current_coords": [
+      116.6728,
+      39.8998
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yunhe|大运河森林公园": {
+    "name": "大运河森林公园",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "publicSpace",
+    "current_coords": [
+      116.6698,
+      39.9248
+    ],
+    "osm_coords": [
+      116.740689,
+      39.869599
+    ],
+    "osm_display": "大运河森林公园, 通州区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 8617
+  },
+  "yunhe|城市绿心公园": {
+    "name": "城市绿心公园",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "publicSpace",
+    "current_coords": [
+      116.6358,
+      39.8868
+    ],
+    "osm_coords": [
+      116.716044,
+      39.906875
+    ],
+    "osm_display": "览秀西路5号院, 北京城市副中心行政办公区, 潞源街道, 通州区, 北京市, 中国",
+    "osm_type": "governmental",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 7200
+  },
+  "yunhe|北运河沿线绿道": {
+    "name": "北运河沿线绿道",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "publicSpace",
+    "current_coords": [
+      116.6618,
+      39.9218
+    ],
+    "osm_coords": [
+      115.677709,
+      39.727102
+    ],
+    "osm_display": "三江堰·南港盘道（非成熟路线）, 三江堰, 霞云岭乡, 房山区, 北京市, 中国",
+    "osm_type": "path",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 86783
+  },
+  "yunhe|首都医科大学附属北京友谊医院通州院区": {
+    "name": "首都医科大学附属北京友谊医院通州院区",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "publicService",
+    "current_coords": [
+      116.6508,
+      39.9028
+    ],
+    "osm_coords": [
+      116.676822,
+      39.933707
+    ],
+    "osm_display": "首都医科大学附属北京友谊医院通州院区, 潞苑五街, 潞邑街道, 通州区, 北京市, 101118, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 4091
+  },
+  "yunhe|北京学校": {
+    "name": "北京学校",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "publicService",
+    "current_coords": [
+      116.6678,
+      39.9108
+    ],
+    "osm_coords": [
+      116.743102,
+      39.891812
+    ],
+    "osm_display": "北京学校, 春明西路, 潞城镇, 通州区, 北京市, 101169, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 6762
+  },
+  "yunhe|国家大剧院副中心剧院": {
+    "name": "国家大剧院副中心剧院",
+    "zone": "运河商务区",
+    "zone_id": "yunhe",
+    "category": "publicService",
+    "current_coords": [
+      116.6388,
+      39.8908
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "cbd_baiziwan|国贸中心/中国尊": {
+    "name": "国贸中心/中国尊",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "employment",
+    "current_coords": [
+      116.4618,
+      39.9088
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "cbd_baiziwan|SK大厦/建外SOHO": {
+    "name": "SK大厦/建外SOHO",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "employment",
+    "current_coords": [
+      116.4528,
+      39.9068
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "cbd_baiziwan|华贸中心": {
+    "name": "华贸中心",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "employment",
+    "current_coords": [
+      116.4758,
+      39.9118
+    ],
+    "osm_coords": [
+      116.474724,
+      39.907696
+    ],
+    "osm_display": "华贸中心, 77, 八里庄街道, 朝阳区, 北京市, 100025, 中国",
+    "osm_type": "commercial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 465
+  },
+  "cbd_baiziwan|百子湾西区": {
+    "name": "百子湾西区",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "employment",
+    "current_coords": [
+      116.4868,
+      39.8978
+    ],
+    "osm_coords": [
+      116.330165,
+      39.930326
+    ],
+    "osm_display": "百万庄子区, 展览路街道, 首都功能核心区, 西城区, 北京市, 100032, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 13840
+  },
+  "cbd_baiziwan|百子湾家园": {
+    "name": "百子湾家园",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "residential",
+    "current_coords": [
+      116.4938,
+      39.8948
+    ],
+    "osm_coords": [
+      117.019363,
+      39.762954
+    ],
+    "osm_display": "兴业家园, 香河县, 廊坊市, 河北省, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 47213
+  },
+  "cbd_baiziwan|沿海赛洛城": {
+    "name": "沿海赛洛城",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "residential",
+    "current_coords": [
+      116.4878,
+      39.9008
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "cbd_baiziwan|后现代城": {
+    "name": "后现代城",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "residential",
+    "current_coords": [
+      116.4778,
+      39.8968
+    ],
+    "osm_coords": [
+      116.527053,
+      39.776663
+    ],
+    "osm_display": "北京市杂技学校, 建安街, 北京市高级别自动驾驶示范区（亦庄）, 通州区, 北京市, 100176, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 14005
+  },
+  "cbd_baiziwan|金泰城丽湾": {
+    "name": "金泰城丽湾",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "residential",
+    "current_coords": [
+      116.4678,
+      39.8948
+    ],
+    "osm_coords": [
+      116.336196,
+      39.869023
+    ],
+    "osm_display": "金泰城·丽湾, 丽湾社区, 太平桥街道, 丰台区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 11589
+  },
+  "cbd_baiziwan|百子湾路口街心公园": {
+    "name": "百子湾路口街心公园",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4818,
+      39.8998
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "cbd_baiziwan|庆丰公园（西段）": {
+    "name": "庆丰公园（西段）",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4828,
+      39.9038
+    ],
+    "osm_coords": [
+      116.457525,
+      39.901638
+    ],
+    "osm_display": "庆丰公园, 双井街道, 朝阳区, 北京市, 100022, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 2169
+  },
+  "cbd_baiziwan|百子湾公园": {
+    "name": "百子湾公园",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4948,
+      39.8918
+    ],
+    "osm_coords": [
+      116.481732,
+      39.894213
+    ],
+    "osm_display": "百子湾公园, 双井街道, 朝阳区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1147
+  },
+  "cbd_baiziwan|北京朝阳医院（本部）": {
+    "name": "北京朝阳医院（本部）",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "publicService",
+    "current_coords": [
+      116.4628,
+      39.9148
+    ],
+    "osm_coords": [
+      116.458755,
+      39.882719
+    ],
+    "osm_display": "北京华韩医疗美容医院, 南磨房路, 劲松街道, 朝阳区, 北京市, 100021, 中国",
+    "osm_type": "doctors",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 3584
+  },
+  "cbd_baiziwan|朝阳外国语学校": {
+    "name": "朝阳外国语学校",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "publicService",
+    "current_coords": [
+      116.4808,
+      39.9028
+    ],
+    "osm_coords": [
+      116.434121,
+      40.047258
+    ],
+    "osm_display": "北京市朝阳外国语学校高中部, 清河营中街, 来广营乡, 朝阳区, 北京市, 100012, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 16548
+  },
+  "cbd_baiziwan|芳草地国际学校": {
+    "name": "芳草地国际学校",
+    "zone": "CBD-百子湾",
+    "zone_id": "cbd_baiziwan",
+    "category": "publicService",
+    "current_coords": [
+      116.4538,
+      39.9068
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gongti_sanlitun|三里屯太古里": {
+    "name": "三里屯太古里",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "employment",
+    "current_coords": [
+      116.4558,
+      39.9358
+    ],
+    "osm_coords": [
+      116.447066,
+      39.936005
+    ],
+    "osm_display": "北京市三里屯一中幸福村校区, 幸福三村四巷, 三里屯太古里北区, 三里屯街道, 朝阳区, 北京市, 100027, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 745
+  },
+  "gongti_sanlitun|新工人体育场": {
+    "name": "新工人体育场",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "employment",
+    "current_coords": [
+      116.4432,
+      39.9302
+    ],
+    "osm_coords": [
+      116.440995,
+      39.92951
+    ],
+    "osm_display": "北京工人体育场, 工人体育场北路, 东直门街道, 三里屯街道, 朝阳区, 北京市, 100020, 中国",
+    "osm_type": "stadium",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 203
+  },
+  "gongti_sanlitun|北京电视台（新址）": {
+    "name": "北京电视台（新址）",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "employment",
+    "current_coords": [
+      116.4528,
+      39.9238
+    ],
+    "osm_coords": [
+      116.258525,
+      39.855137
+    ],
+    "osm_display": "中国人民解放军空军空中交通管制人员培训中心, 五里店街道, 丰台区, 北京市, 中国",
+    "osm_type": "military",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 18249
+  },
+  "gongti_sanlitun|团结湖社区": {
+    "name": "团结湖社区",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "residential",
+    "current_coords": [
+      116.4608,
+      39.9268
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gongti_sanlitun|幸福村社区": {
+    "name": "幸福村社区",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "residential",
+    "current_coords": [
+      116.4478,
+      39.9365
+    ],
+    "osm_coords": [
+      116.724656,
+      39.903707
+    ],
+    "osm_display": "北京市教育委员会, 达济街, 潞源街道, 通州区, 北京市, 101117, 中国",
+    "osm_type": "government",
+    "osm_class": "office",
+    "status": "found",
+    "distance_m": 23890
+  },
+  "gongti_sanlitun|白家庄社区": {
+    "name": "白家庄社区",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "residential",
+    "current_coords": [
+      116.4628,
+      39.9288
+    ],
+    "osm_coords": [
+      116.524156,
+      39.967626
+    ],
+    "osm_display": "朝阳区白家庄小学珑玺校区, 润泽路, 东坝乡, 朝阳区, 北京市, 100015, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 6782
+  },
+  "gongti_sanlitun|朝阳公园（北区）": {
+    "name": "朝阳公园（北区）",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4738,
+      39.9368
+    ],
+    "osm_coords": [
+      116.475948,
+      39.944418
+    ],
+    "osm_display": "朝阳公园, 麦子店街道, 朝阳区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 867
+  },
+  "gongti_sanlitun|团结湖公园": {
+    "name": "团结湖公园",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4618,
+      39.9285
+    ],
+    "osm_coords": [
+      116.4585,
+      39.924496
+    ],
+    "osm_display": "团结湖公园, 团结湖街道, 朝阳区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 527
+  },
+  "gongti_sanlitun|三里屯街头绿地": {
+    "name": "三里屯街头绿地",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4548,
+      39.9398
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "gongti_sanlitun|北京和睦家医院": {
+    "name": "北京和睦家医院",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "publicService",
+    "current_coords": [
+      116.4578,
+      39.9378
+    ],
+    "osm_coords": [
+      116.479531,
+      39.973361
+    ],
+    "osm_display": "北京和睦家医院, 芳园西路, 将台乡, 朝阳区, 北京市, 101102, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 4367
+  },
+  "gongti_sanlitun|北京八十中学": {
+    "name": "北京八十中学",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "publicService",
+    "current_coords": [
+      116.4648,
+      39.9278
+    ],
+    "osm_coords": [
+      116.471929,
+      40.009118
+    ],
+    "osm_display": "北京八十中学东门, 诺贝尔大道, 东湖街道, 朝阳区, 北京市, 100102, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 9063
+  },
+  "gongti_sanlitun|陈经纶中学": {
+    "name": "陈经纶中学",
+    "zone": "工体-三里屯",
+    "zone_id": "gongti_sanlitun",
+    "category": "publicService",
+    "current_coords": [
+      116.4548,
+      39.9228
+    ],
+    "osm_coords": [
+      116.441435,
+      39.919836
+    ],
+    "osm_display": "北京市陈经纶中学（东大桥高中部）, 朝外南街, 朝外街道, 朝阳区, 北京市, 100004, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 1186
+  },
+  "shilihe_shibali|十里河居然之家": {
+    "name": "十里河居然之家",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "employment",
+    "current_coords": [
+      116.4698,
+      39.8668
+    ],
+    "osm_coords": [
+      116.462451,
+      39.858388
+    ],
+    "osm_display": "居然之家, 周家庄路, 十八里店乡, 朝阳区, 北京市, 100122, 中国",
+    "osm_type": "furniture",
+    "osm_class": "shop",
+    "status": "found",
+    "distance_m": 1126
+  },
+  "shilihe_shibali|十八里店产业园": {
+    "name": "十八里店产业园",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "employment",
+    "current_coords": [
+      116.4738,
+      39.8558
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shilihe_shibali|潘家园旧货市场": {
+    "name": "潘家园旧货市场",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "employment",
+    "current_coords": [
+      116.4618,
+      39.8728
+    ],
+    "osm_coords": [
+      116.452188,
+      39.873921
+    ],
+    "osm_display": "潘家园旧货市场, 印象胡同, 潘家园街道, 朝阳区, 北京市, 100021, 中国",
+    "osm_type": "attraction",
+    "osm_class": "tourism",
+    "status": "found",
+    "distance_m": 830
+  },
+  "shilihe_shibali|农光里社区": {
+    "name": "农光里社区",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "residential",
+    "current_coords": [
+      116.4578,
+      39.8788
+    ],
+    "osm_coords": [
+      116.429967,
+      39.883152
+    ],
+    "osm_display": "中国农业银行, 11, 光明路, 龙潭北里社区, 龙潭街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "bank",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 2424
+  },
+  "shilihe_shibali|劲松社区": {
+    "name": "劲松社区",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "residential",
+    "current_coords": [
+      116.4498,
+      39.8778
+    ],
+    "osm_coords": [
+      116.447283,
+      39.880528
+    ],
+    "osm_display": "劲松社区卫生服务中心, 劲松南路, 劲松街道, 朝阳区, 北京市, 100021, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 372
+  },
+  "shilihe_shibali|潘家园社区": {
+    "name": "潘家园社区",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "residential",
+    "current_coords": [
+      116.4608,
+      39.8698
+    ],
+    "osm_coords": [
+      116.64777,
+      40.339833
+    ],
+    "osm_display": "北京福田汽车公司欧曼配件公司, 怀柔区, 北京市, 中国",
+    "osm_type": "industrial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 54631
+  },
+  "shilihe_shibali|十八里店安置房": {
+    "name": "十八里店安置房",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "residential",
+    "current_coords": [
+      116.4798,
+      39.8528
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shilihe_shibali|十里河桥周边": {
+    "name": "十里河桥周边",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4658,
+      39.8648
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shilihe_shibali|横街子公园": {
+    "name": "横街子公园",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4768,
+      39.8538
+    ],
+    "osm_coords": [
+      116.49001,
+      39.823387
+    ],
+    "osm_display": "横街子公园, 花墙子, 十八里店乡, 朝阳区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 3565
+  },
+  "shilihe_shibali|十八里店小武基公园": {
+    "name": "十八里店小武基公园",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4738,
+      39.8628
+    ],
+    "osm_coords": [
+      116.488885,
+      39.862099
+    ],
+    "osm_display": "小武基公园, 十八里店乡, 朝阳区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1290
+  },
+  "shilihe_shibali|三环肿瘤医院": {
+    "name": "三环肿瘤医院",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "publicService",
+    "current_coords": [
+      116.4658,
+      39.8688
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "shilihe_shibali|劲松职业高中": {
+    "name": "劲松职业高中",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "publicService",
+    "current_coords": [
+      116.4538,
+      39.8798
+    ],
+    "osm_coords": [
+      116.444069,
+      39.882138
+    ],
+    "osm_display": "北京劲松职业高中（劲松校区）, 广和东街, 劲松街道, 朝阳区, 北京市, 100021, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 870
+  },
+  "shilihe_shibali|十八里店社区卫生中心": {
+    "name": "十八里店社区卫生中心",
+    "zone": "十里河-十八里店",
+    "zone_id": "shilihe_shibali",
+    "category": "publicService",
+    "current_coords": [
+      116.4728,
+      39.8558
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "pingguoyuan|首钢园": {
+    "name": "首钢园",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "employment",
+    "current_coords": [
+      116.1868,
+      39.9228
+    ],
+    "osm_coords": [
+      116.187187,
+      39.899692
+    ],
+    "osm_display": "古城南街东侧(首钢园区东南区)1612-769地块综合性商业金融服务业用地, 八角街道, 石景山区, 北京市, 中国",
+    "osm_type": "construction",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 2570
+  },
+  "pingguoyuan|苹果园交通枢纽商务区": {
+    "name": "苹果园交通枢纽商务区",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "employment",
+    "current_coords": [
+      116.1718,
+      39.9258
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "pingguoyuan|中关村石景山园": {
+    "name": "中关村石景山园",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "employment",
+    "current_coords": [
+      116.1808,
+      39.9248
+    ],
+    "osm_coords": [
+      116.192656,
+      39.934272
+    ],
+    "osm_display": "中关村工业互联网产业园, 苹果园街道, 石景山区, 北京市, 中国",
+    "osm_type": "construction",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 1460
+  },
+  "pingguoyuan|北方工业大学科技园": {
+    "name": "北方工业大学科技园",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "employment",
+    "current_coords": [
+      116.1748,
+      39.9118
+    ],
+    "osm_coords": [
+      116.798669,
+      39.951527
+    ],
+    "osm_display": "华北科技学院, 学院大街, 樊村, 燕郊高新技术产业开发区, 迎宾北路街道, 三河市, 廊坊市, 河北省, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 53377
+  },
+  "pingguoyuan|苹果园街道老旧小区": {
+    "name": "苹果园街道老旧小区",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "residential",
+    "current_coords": [
+      116.1758,
+      39.9268
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "pingguoyuan|金顶街社区": {
+    "name": "金顶街社区",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "residential",
+    "current_coords": [
+      116.1598,
+      39.9348
+    ],
+    "osm_coords": [
+      116.174304,
+      39.929662
+    ],
+    "osm_display": "苹果园北路, 琅山南街, 金顶山, 苹果园街道, 石景山区, 北京市, 100043, 中国",
+    "osm_type": "proposed",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 1362
+  },
+  "pingguoyuan|苹果园南路社区": {
+    "name": "苹果园南路社区",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "residential",
+    "current_coords": [
+      116.1738,
+      39.9198
+    ],
+    "osm_coords": [
+      116.395485,
+      39.82281
+    ],
+    "osm_display": "北京地铁8号线, 南苑路, 大红门东街社区, 大红门街道, 丰台区, 北京市, 100075, 中国",
+    "osm_type": "subway",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 21777
+  },
+  "pingguoyuan|苹果园枢纽配套住房（规划）": {
+    "name": "苹果园枢纽配套住房（规划）",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "residential",
+    "current_coords": [
+      116.1728,
+      39.9238
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "pingguoyuan|模式口大街商业区": {
+    "name": "模式口大街商业区",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.1628,
+      39.9348
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "pingguoyuan|永定河滨水带": {
+    "name": "永定河滨水带",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.1738,
+      39.9158
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "pingguoyuan|模式口历史文化街区": {
+    "name": "模式口历史文化街区",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.1608,
+      39.9368
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "pingguoyuan|首钢滑雪大跳台": {
+    "name": "首钢滑雪大跳台",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "publicSpace",
+    "current_coords": [
+      116.1878,
+      39.9198
+    ],
+    "osm_coords": [
+      116.145504,
+      39.909705
+    ],
+    "osm_display": "首钢滑雪大跳台, 制氧创新中心, 古城街道, 石景山区, 北京市, 中国",
+    "osm_type": "winter_sports",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 3778
+  },
+  "pingguoyuan|首钢医院": {
+    "name": "首钢医院",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.1908,
+      39.9268
+    ],
+    "osm_coords": [
+      116.198266,
+      39.926455
+    ],
+    "osm_display": "首钢医院, 晋元庄路, 八角街道, 石景山区, 北京市, 100043, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 638
+  },
+  "pingguoyuan|北大附中石景山学校": {
+    "name": "北大附中石景山学校",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.1758,
+      39.9298
+    ],
+    "osm_coords": [
+      116.164972,
+      39.939554
+    ],
+    "osm_display": "中央财经大学西山校区, 金顶山路, 福寿岭村, 苹果园街道, 石景山区, 北京市, 100043, 中国",
+    "osm_type": "university",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 1424
+  },
+  "pingguoyuan|北方工业大学": {
+    "name": "北方工业大学",
+    "zone": "苹果园-金安桥",
+    "zone_id": "pingguoyuan",
+    "category": "publicService",
+    "current_coords": [
+      116.1758,
+      39.9138
+    ],
+    "osm_coords": [
+      116.202131,
+      39.926778
+    ],
+    "osm_display": "北方工业大学, 5号, 晋元庄路, 八角街道, 石景山区, 北京市, 100043, 中国",
+    "osm_type": "university",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 2669
+  },
+  "qinghe|中关村东升科技园": {
+    "name": "中关村东升科技园",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "employment",
+    "current_coords": [
+      116.3498,
+      40.0235
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "qinghe|小米科技园（二期）": {
+    "name": "小米科技园（二期）",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "employment",
+    "current_coords": [
+      116.3278,
+      40.0275
+    ],
+    "osm_coords": [
+      116.311264,
+      40.046522
+    ],
+    "osm_display": "小米科技园, 33, 清河街道, 海淀区, 北京市, 中国",
+    "osm_type": "commercial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 2541
+  },
+  "qinghe|五彩城/华润凤凰汇": {
+    "name": "五彩城/华润凤凰汇",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "employment",
+    "current_coords": [
+      116.3488,
+      40.0355
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "qinghe|学院路科研院所群": {
+    "name": "学院路科研院所群",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "employment",
+    "current_coords": [
+      116.3598,
+      40.0098
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "qinghe|毛纺厂路社区": {
+    "name": "毛纺厂路社区",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "residential",
+    "current_coords": [
+      116.3418,
+      40.0258
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "qinghe|小营西路社区": {
+    "name": "小营西路社区",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "residential",
+    "current_coords": [
+      116.3575,
+      40.0238
+    ],
+    "osm_coords": [
+      115.991913,
+      40.467161
+    ],
+    "osm_display": "小营村、石河营村棚户区改造和环境整治项目YQ00-0006-0011地块二类居住用地, 延庆区, 北京市, 中国",
+    "osm_type": "brownfield",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 58251
+  },
+  "qinghe|清河新城": {
+    "name": "清河新城",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "residential",
+    "current_coords": [
+      116.3428,
+      40.0368
+    ],
+    "osm_coords": [
+      116.411056,
+      39.909995
+    ],
+    "osm_display": "中国医学科学院 北京协和医学院, 9, 东单三条, 王府井社区, 东华门街道, 首都功能核心区, 东城区, 北京市, 100730, 中国",
+    "osm_type": "university",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 15253
+  },
+  "qinghe|西三旗科研宿舍": {
+    "name": "西三旗科研宿舍",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "residential",
+    "current_coords": [
+      116.3568,
+      40.0378
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "qinghe|清河滨水绿道": {
+    "name": "清河滨水绿道",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3458,
+      40.0318
+    ],
+    "osm_coords": [
+      116.426885,
+      40.059708
+    ],
+    "osm_display": "清河桥, 清河滨水慢行绿道, 来广营乡, 朝阳区, 北京市, 102218, 中国",
+    "osm_type": "bridge",
+    "osm_class": "man_made",
+    "status": "found",
+    "distance_m": 7568
+  },
+  "qinghe|东升八家郊野公园": {
+    "name": "东升八家郊野公园",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3398,
+      40.0198
+    ],
+    "osm_coords": [
+      116.330071,
+      40.015632
+    ],
+    "osm_display": "东升八家郊野公园, 东升镇, 海淀区, 北京市, 100084, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 949
+  },
+  "qinghe|西小口公园": {
+    "name": "西小口公园",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3688,
+      40.0148
+    ],
+    "osm_coords": [
+      116.341058,
+      40.049078
+    ],
+    "osm_display": "西小口公园南区, 东升镇, 海淀区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 4484
+  },
+  "qinghe|海淀医院": {
+    "name": "海淀医院",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "publicService",
+    "current_coords": [
+      116.3565,
+      40.0178
+    ],
+    "osm_coords": [
+      116.309302,
+      39.975655
+    ],
+    "osm_display": "海淀医院, 榆树林路, 中关村核心区, 海淀南路北社区, 海淀街道, 海淀区, 北京市, 100080, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 6175
+  },
+  "qinghe|北京二十中学": {
+    "name": "北京二十中学",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "publicService",
+    "current_coords": [
+      116.3508,
+      40.0218
+    ],
+    "osm_coords": [
+      116.361863,
+      40.06094
+    ],
+    "osm_display": "北京二十中学新都校区, 万春路, 西三旗街道, 海淀区, 北京市, 100196, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 4453
+  },
+  "qinghe|北京语言大学": {
+    "name": "北京语言大学",
+    "zone": "清河-小营",
+    "zone_id": "qinghe",
+    "category": "publicService",
+    "current_coords": [
+      116.3588,
+      40.0128
+    ],
+    "osm_coords": [
+      116.341806,
+      39.993568
+    ],
+    "osm_display": "北京语言大学, 学院路, 学院路街道, 海淀区, 北京市, 100083, 中国",
+    "osm_type": "university",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 2582
+  },
+  "dahongmen|大红门服装城转型园区": {
+    "name": "大红门服装城转型园区",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "employment",
+    "current_coords": [
+      116.3958,
+      39.8348
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "dahongmen|南中轴博物馆群（规划）": {
+    "name": "南中轴博物馆群（规划）",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "employment",
+    "current_coords": [
+      116.3908,
+      39.8468
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "dahongmen|大红门国际时尚创意园": {
+    "name": "大红门国际时尚创意园",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "employment",
+    "current_coords": [
+      116.3878,
+      39.8318
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "dahongmen|南苑数字经济区": {
+    "name": "南苑数字经济区",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "employment",
+    "current_coords": [
+      116.3958,
+      39.8128
+    ],
+    "osm_coords": [
+      116.474605,
+      39.793518
+    ],
+    "osm_display": "北京农商银行, 贵园南路, 北京市高级别自动驾驶示范区（亦庄）, 大兴区, 北京市, 100176, 中国",
+    "osm_type": "bank",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 7065
+  },
+  "dahongmen|角门西社区": {
+    "name": "角门西社区",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "residential",
+    "current_coords": [
+      116.3738,
+      39.8508
+    ],
+    "osm_coords": [
+      116.410328,
+      39.949179
+    ],
+    "osm_display": "北京地铁5号线, 外交部街, 西总布社区, 建国门街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "subway",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 11374
+  },
+  "dahongmen|大红门社区": {
+    "name": "大红门社区",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "residential",
+    "current_coords": [
+      116.3918,
+      39.8368
+    ],
+    "osm_coords": [
+      116.392772,
+      39.844014
+    ],
+    "osm_display": "大红门, 临泓路, 苗圃东里社区, 大红门街道, 丰台区, 北京市, 100075, 中国",
+    "osm_type": "station",
+    "osm_class": "railway",
+    "status": "found",
+    "distance_m": 806
+  },
+  "dahongmen|南苑西路社区": {
+    "name": "南苑西路社区",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "residential",
+    "current_coords": [
+      116.3858,
+      39.8198
+    ],
+    "osm_coords": [
+      116.368808,
+      39.804975
+    ],
+    "osm_display": "南苑西路, 合顺家园社区, 南苑街道, 丰台区, 北京市, 100076, 中国",
+    "osm_type": "tertiary",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 2196
+  },
+  "dahongmen|鑫福里小区": {
+    "name": "鑫福里小区",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "residential",
+    "current_coords": [
+      116.3978,
+      39.8398
+    ],
+    "osm_coords": [
+      116.387145,
+      39.845847
+    ],
+    "osm_display": "鑫福里小区, 鑫福里社区, 西罗园街道, 丰台区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 1131
+  },
+  "dahongmen|南苑森林湿地公园": {
+    "name": "南苑森林湿地公园",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3888,
+      39.8028
+    ],
+    "osm_coords": [
+      116.37765,
+      39.815431
+    ],
+    "osm_display": "南苑森林湿地公园, 南苑街道, 丰台区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 1697
+  },
+  "dahongmen|大红门街心花园": {
+    "name": "大红门街心花园",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3938,
+      39.8368
+    ],
+    "osm_coords": [
+      116.388207,
+      39.806107
+    ],
+    "osm_display": "大红门南路, 东新华社区, 南苑街道, 丰台区, 北京市, 100076, 中国",
+    "osm_type": "tertiary",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 3446
+  },
+  "dahongmen|凉水河沿线": {
+    "name": "凉水河沿线",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3958,
+      39.8258
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "dahongmen|北京大学第一医院南院": {
+    "name": "北京大学第一医院南院",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "publicService",
+    "current_coords": [
+      116.3845,
+      39.8438
+    ],
+    "osm_coords": [
+      116.864525,
+      40.373605
+    ],
+    "osm_display": "北京大学第一医院密云医院, 新南路, 鼓楼街道, 密云区, 北京市, 101500, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 71674
+  },
+  "dahongmen|北京十八中学": {
+    "name": "北京十八中学",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "publicService",
+    "current_coords": [
+      116.3908,
+      39.8318
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "dahongmen|丰台五小": {
+    "name": "丰台五小",
+    "zone": "大红门-南苑",
+    "zone_id": "dahongmen",
+    "category": "publicService",
+    "current_coords": [
+      116.3878,
+      39.8378
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "daxing_huangcun|中关村大兴生物医药基地": {
+    "name": "中关村大兴生物医药基地",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "employment",
+    "current_coords": [
+      116.3318,
+      39.7028
+    ],
+    "osm_coords": [
+      116.496438,
+      39.715451
+    ],
+    "osm_display": "亦昭生物医药研发生产基地, 瀛海镇, 大兴区, 北京市, 中国",
+    "osm_type": "construction",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 14154
+  },
+  "daxing_huangcun|大兴新城商务区": {
+    "name": "大兴新城商务区",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "employment",
+    "current_coords": [
+      116.3498,
+      39.7268
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "daxing_huangcun|大兴高米店产业园": {
+    "name": "大兴高米店产业园",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "employment",
+    "current_coords": [
+      116.3508,
+      39.7428
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "daxing_huangcun|黄村西大街社区": {
+    "name": "黄村西大街社区",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "residential",
+    "current_coords": [
+      116.3408,
+      39.7308
+    ],
+    "osm_coords": [
+      117.432936,
+      40.045597
+    ],
+    "osm_display": "远景城社区, 围坊村, 蓟州区, 天津市, 301900, 中国",
+    "osm_type": "neighbourhood",
+    "osm_class": "place",
+    "status": "found",
+    "distance_m": 99537
+  },
+  "daxing_huangcun|枣园社区": {
+    "name": "枣园社区",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "residential",
+    "current_coords": [
+      116.3238,
+      39.7378
+    ],
+    "osm_coords": [
+      116.423793,
+      39.894987
+    ],
+    "osm_display": "花市枣苑社区, 东花市街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "quarter",
+    "osm_class": "place",
+    "status": "found",
+    "distance_m": 19453
+  },
+  "daxing_huangcun|清源路新社区": {
+    "name": "清源路新社区",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "residential",
+    "current_coords": [
+      116.3368,
+      39.7378
+    ],
+    "osm_coords": [
+      116.421241,
+      39.874782
+    ],
+    "osm_display": "长青园路, 长青园社区, 体育馆路街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "residential",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 16853
+  },
+  "daxing_huangcun|大兴黄村公园": {
+    "name": "大兴黄村公园",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3388,
+      39.7228
+    ],
+    "osm_coords": [
+      116.288412,
+      39.78249
+    ],
+    "osm_display": "北京中华文化园, 黄村镇, 大兴区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 7913
+  },
+  "daxing_huangcun|念坛公园": {
+    "name": "念坛公园",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3428,
+      39.7098
+    ],
+    "osm_coords": [
+      116.307488,
+      39.703358
+    ],
+    "osm_display": "念坛公园, 兴丰街道, 大兴区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 3105
+  },
+  "daxing_huangcun|大兴一中": {
+    "name": "大兴一中",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "publicService",
+    "current_coords": [
+      116.3498,
+      39.7318
+    ],
+    "osm_coords": [
+      116.288831,
+      39.73323
+    ],
+    "osm_display": "大兴区第一中学西校区, 广永北路, 兴丰街道, 大兴区, 北京市, 102617, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 5216
+  },
+  "daxing_huangcun|大兴区人民医院": {
+    "name": "大兴区人民医院",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "publicService",
+    "current_coords": [
+      116.3498,
+      39.7248
+    ],
+    "osm_coords": [
+      116.315982,
+      39.509764
+    ],
+    "osm_display": "大兴区人民医院南院区, 榆垡路, 榆垡镇, 大兴区, 北京市, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 24086
+  },
+  "daxing_huangcun|北京印刷学院": {
+    "name": "北京印刷学院",
+    "zone": "大兴黄村",
+    "zone_id": "daxing_huangcun",
+    "category": "publicService",
+    "current_coords": [
+      116.3468,
+      39.7338
+    ],
+    "osm_coords": [
+      116.323204,
+      39.743393
+    ],
+    "osm_display": "北京印刷学院, 1号, 清源路, 清源街道, 大兴区, 北京市, 102600, 中国",
+    "osm_type": "college",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 2282
+  },
+  "yizhuang_bda|小米汽车工厂": {
+    "name": "小米汽车工厂",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "employment",
+    "current_coords": [
+      116.5058,
+      39.7638
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yizhuang_bda|京东方科技集团": {
+    "name": "京东方科技集团",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "employment",
+    "current_coords": [
+      116.5148,
+      39.7878
+    ],
+    "osm_coords": [
+      116.111616,
+      39.894328
+    ],
+    "osm_display": "北京精雕科技集团有限公司, 东辛房街道, 永定镇, 门头沟区, 北京市, 中国",
+    "osm_type": "industrial",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 36404
+  },
+  "yizhuang_bda|北京经济技术开发区核心区": {
+    "name": "北京经济技术开发区核心区",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "employment",
+    "current_coords": [
+      116.5068,
+      39.7848
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yizhuang_bda|京东总部（亦庄）": {
+    "name": "京东总部（亦庄）",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "employment",
+    "current_coords": [
+      116.5078,
+      39.8038
+    ],
+    "osm_coords": [
+      116.427856,
+      39.911267
+    ],
+    "osm_display": "北京谋智网络技术有限公司, 8号, 建国门北大街, 东总布社区, 建国门街道, 首都功能核心区, 东城区, 北京市, 100005, 中国",
+    "osm_type": "it",
+    "osm_class": "office",
+    "status": "found",
+    "distance_m": 13761
+  },
+  "yizhuang_bda|亦嘉·新青年小镇": {
+    "name": "亦嘉·新青年小镇",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "residential",
+    "current_coords": [
+      116.5148,
+      39.7648
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yizhuang_bda|亦庄泰河园": {
+    "name": "亦庄泰河园",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "residential",
+    "current_coords": [
+      116.4998,
+      39.7698
+    ],
+    "osm_coords": [
+      116.370099,
+      39.816414
+    ],
+    "osm_display": "北京槐房艺术幼儿园, 196, 槐房路, 公益庄, 南苑街道, 丰台区, 北京市, 100076, 中国",
+    "osm_type": "kindergarten",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 12234
+  },
+  "yizhuang_bda|亦庄金茂悦": {
+    "name": "亦庄金茂悦",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "residential",
+    "current_coords": [
+      116.5128,
+      39.7898
+    ],
+    "osm_coords": [
+      116.47834,
+      39.753544
+    ],
+    "osm_display": "亦庄·金茂悦北区, 北京市高级别自动驾驶示范区（亦庄）, 大兴区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 4993
+  },
+  "yizhuang_bda|南海子公园": {
+    "name": "南海子公园",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "publicSpace",
+    "current_coords": [
+      116.4888,
+      39.7838
+    ],
+    "osm_coords": [
+      116.458041,
+      39.775861
+    ],
+    "osm_display": "南海子公园, 大兴区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 2773
+  },
+  "yizhuang_bda|亦庄凉水河滨水公园": {
+    "name": "亦庄凉水河滨水公园",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5098,
+      39.7798
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "yizhuang_bda|博大公园": {
+    "name": "博大公园",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "publicSpace",
+    "current_coords": [
+      116.5028,
+      39.7718
+    ],
+    "osm_coords": [
+      116.497541,
+      39.795422
+    ],
+    "osm_display": "博大公园, 北京市高级别自动驾驶示范区（亦庄）, 大兴区, 北京市, 中国",
+    "osm_type": "park",
+    "osm_class": "leisure",
+    "status": "found",
+    "distance_m": 2665
+  },
+  "yizhuang_bda|同仁医院亦庄院区": {
+    "name": "同仁医院亦庄院区",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "publicService",
+    "current_coords": [
+      116.5218,
+      39.7798
+    ],
+    "osm_coords": [
+      116.515057,
+      39.772596
+    ],
+    "osm_display": "同仁医院亦庄分院, 景园南街, 荣华街道, 大兴区, 北京市, 100176, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 987
+  },
+  "yizhuang_bda|北京儿童医院亦庄院区（在建）": {
+    "name": "北京儿童医院亦庄院区（在建）",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "publicService",
+    "current_coords": [
+      116.5028,
+      39.7578
+    ],
+    "osm_coords": [
+      116.666211,
+      40.113373
+    ],
+    "osm_display": "北京儿童医院顺义妇儿医院, 民富街, 沙坨宜家家园, 中晟·景苑(晟品景园), 石园街道, 顺义区, 北京市, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 41921
+  },
+  "yizhuang_bda|人大附中经开区学校": {
+    "name": "人大附中经开区学校",
+    "zone": "亦庄经开区",
+    "zone_id": "yizhuang_bda",
+    "category": "publicService",
+    "current_coords": [
+      116.5098,
+      39.7718
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huoying|回龙观科技产业园（东区）": {
+    "name": "回龙观科技产业园（东区）",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "employment",
+    "current_coords": [
+      116.3618,
+      40.0448
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huoying|龙域中心东区": {
+    "name": "龙域中心东区",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "employment",
+    "current_coords": [
+      116.3758,
+      40.0278
+    ],
+    "osm_coords": [
+      116.077421,
+      39.935995
+    ],
+    "osm_display": "北京市门头沟区旅游商品行业协会, 东辛房街, 大峪街道, 门头沟区, 北京市, 102399, 中国",
+    "osm_type": "union",
+    "osm_class": "office",
+    "status": "found",
+    "distance_m": 27396
+  },
+  "huoying|霍营地铁商圈": {
+    "name": "霍营地铁商圈",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "employment",
+    "current_coords": [
+      116.3718,
+      40.0458
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huoying|霍营社区": {
+    "name": "霍营社区",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "residential",
+    "current_coords": [
+      116.3728,
+      40.0438
+    ],
+    "osm_coords": [
+      116.669034,
+      40.373655
+    ],
+    "osm_display": "水岸雁栖营销中心, 范各庄路, 马家坟, 怀柔区, 北京市, 101408, 中国",
+    "osm_type": "estate_agent",
+    "osm_class": "office",
+    "status": "found",
+    "distance_m": 44476
+  },
+  "huoying|龙锦苑": {
+    "name": "龙锦苑",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "residential",
+    "current_coords": [
+      116.3548,
+      40.0548
+    ],
+    "osm_coords": [
+      116.361883,
+      40.087741
+    ],
+    "osm_display": "龙锦苑东一区, 霍营街道, 昌平区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 3712
+  },
+  "huoying|新龙城社区": {
+    "name": "新龙城社区",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "residential",
+    "current_coords": [
+      116.3438,
+      40.0538
+    ],
+    "osm_coords": [
+      116.427194,
+      39.890252
+    ],
+    "osm_display": "北京汇文中学, 培新街, 安化楼社区, 龙潭街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 19525
+  },
+  "huoying|蓬莱公寓": {
+    "name": "蓬莱公寓",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "residential",
+    "current_coords": [
+      116.3808,
+      40.0388
+    ],
+    "osm_coords": [
+      116.409134,
+      40.122946
+    ],
+    "osm_display": "蓬莱公寓, 北七家镇, 昌平区, 北京市, 中国",
+    "osm_type": "residential",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 9662
+  },
+  "huoying|霍营公园": {
+    "name": "霍营公园",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3698,
+      40.0418
+    ],
+    "osm_coords": [
+      116.377238,
+      40.085147
+    ],
+    "osm_display": "霍营公园, 东小口镇, 昌平区, 北京市, 中国",
+    "osm_type": "forest",
+    "osm_class": "landuse",
+    "status": "found",
+    "distance_m": 4861
+  },
+  "huoying|回龙观东部绿道": {
+    "name": "回龙观东部绿道",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3588,
+      40.0488
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huoying|华龙苑南里绿地": {
+    "name": "华龙苑南里绿地",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "publicSpace",
+    "current_coords": [
+      116.3678,
+      40.0378
+    ],
+    "osm_coords": null,
+    "status": "not_found"
+  },
+  "huoying|昌平区中西医结合医院": {
+    "name": "昌平区中西医结合医院",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "publicService",
+    "current_coords": [
+      116.3768,
+      40.0468
+    ],
+    "osm_coords": [
+      116.345539,
+      40.100671
+    ],
+    "osm_display": "北京市昌平区中西医结合医院（分院）, 白各庄新村路, 沙河镇, 昌平区, 北京市, 102209, 中国",
+    "osm_type": "hospital",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 6554
+  },
+  "huoying|霍营中心小学": {
+    "name": "霍营中心小学",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "publicService",
+    "current_coords": [
+      116.3708,
+      40.0438
+    ],
+    "osm_coords": [
+      116.353562,
+      40.073464
+    ],
+    "osm_display": "霍营中心小学, 科星西路, 龙泽园街道, 昌平区, 北京市, 100096, 中国",
+    "osm_type": "school",
+    "osm_class": "amenity",
+    "status": "found",
+    "distance_m": 3610
+  },
+  "huoying|北京市昌平一中": {
+    "name": "北京市昌平一中",
+    "zone": "霍营-北苑",
+    "zone_id": "huoying",
+    "category": "publicService",
+    "current_coords": [
+      116.3618,
+      40.0348
+    ],
+    "osm_coords": [
+      116.23764,
+      40.2235
+    ],
+    "osm_display": "昌平一中, 东关路, 二街社区, 城北街道, 昌平区, 北京市, 102249, 中国",
+    "osm_type": "bus_stop",
+    "osm_class": "highway",
+    "status": "found",
+    "distance_m": 23488
+  }
+}
