@@ -1308,3 +1308,344 @@ body {
   .logo { width: 28px; height: 28px; }
   .zone-btn { padding: 6px 10px; font-size: 10px; }
 }
+
+/* ========================================
+   OPC Community Legend Dot
+   ======================================== */
+.legend-dot-opc {
+  box-shadow: 0 0 6px currentColor;
+  border: 1.5px solid rgba(0, 212, 255, 0.4);
+}
+
+/* ========================================
+   Header Accent Buttons (OPC Report + Podcast)
+   ======================================== */
+.header-btn-accent {
+  color: #00D4FF !important;
+  position: relative;
+}
+.header-btn-accent::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(0, 212, 255, 0.08);
+}
+[data-theme="dark"] .header-btn-accent {
+  color: #00E5FF !important;
+}
+.header-btn-accent:hover {
+  background: rgba(0, 212, 255, 0.15) !important;
+}
+
+/* ========================================
+   OPC Report Modal
+   ======================================== */
+.report-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.report-modal.visible {
+  display: flex;
+}
+.report-modal-inner {
+  position: relative;
+  width: 100%;
+  max-width: 780px;
+  margin: 24px auto;
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  max-height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+}
+.report-modal-close {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  float: right;
+  margin: 16px 16px 0 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+.report-modal-close:hover {
+  background: var(--color-accent);
+  color: white;
+}
+.report-modal-content {
+  padding: 0 32px 40px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+.report-modal-content h1 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -0.5px;
+}
+.report-modal-content .report-subtitle {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+.report-modal-content h2 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 32px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-divider);
+  color: var(--color-primary);
+}
+.report-modal-content h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: var(--color-text);
+}
+.report-modal-content p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+.report-modal-content ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+.report-modal-content li {
+  font-size: 13px;
+  margin: 4px 0;
+}
+.report-modal-content .report-card {
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin: 12px 0;
+  border-left: 3px solid #00D4FF;
+}
+.report-modal-content .report-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: #00D4FF;
+}
+.report-modal-content .report-card .card-meta {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+.report-modal-content .report-stars {
+  display: inline-block;
+  color: #FFB703;
+  font-size: 14px;
+  margin-left: 8px;
+}
+.report-modal-content .report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin: 16px 0;
+}
+.report-modal-content .report-table th {
+  background: var(--color-surface-2);
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-divider);
+}
+.report-modal-content .report-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--color-divider);
+}
+.report-modal-content .report-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.report-badge-active {
+  background: rgba(0, 212, 255, 0.15);
+  color: #00B8D9;
+}
+.report-badge-planned {
+  background: rgba(255, 183, 3, 0.15);
+  color: #B87900;
+}
+
+/* ========================================
+   Podcast Modal
+   ======================================== */
+.podcast-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.podcast-modal.visible {
+  display: flex;
+}
+.podcast-modal-inner {
+  position: relative;
+  width: 90%;
+  max-width: 440px;
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-xl);
+}
+.podcast-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.podcast-modal-close:hover {
+  background: var(--color-accent);
+  color: white;
+}
+.podcast-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.podcast-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00D4FF, #0066CC);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+.podcast-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+.podcast-subtitle {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin: 2px 0 0;
+}
+
+/* Audio player styling */
+#podcast-audio {
+  border-radius: 8px;
+}
+
+/* ========================================
+   OPC Popup on Map
+   ======================================== */
+.opc-popup {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  max-width: 300px;
+}
+.opc-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.opc-popup-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.opc-popup-badge-active {
+  background: rgba(0, 212, 255, 0.2);
+  color: #00B8D9;
+}
+.opc-popup-badge-planned {
+  background: rgba(255, 183, 3, 0.2);
+  color: #B87900;
+}
+.opc-popup h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+.opc-popup-meta {
+  font-size: 11px;
+  color: #888;
+  margin: 4px 0 8px;
+}
+.opc-popup h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #00B8D9;
+  margin: 10px 0 4px;
+}
+.opc-popup ul {
+  padding-left: 16px;
+  margin: 0;
+}
+.opc-popup li {
+  font-size: 11px;
+  margin: 2px 0;
+}
+
+@media (max-width: 768px) {
+  .report-modal {
+    padding: 8px;
+  }
+  .report-modal-inner {
+    border-radius: var(--radius-lg);
+    max-height: calc(100vh - 16px);
+    margin: 8px auto;
+  }
+  .report-modal-content {
+    padding: 0 20px 32px;
+  }
+  .report-modal-content h1 {
+    font-size: 20px;
+  }
+  .podcast-modal-inner {
+    width: 95%;
+    padding: 20px;
+  }
+}

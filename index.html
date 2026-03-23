@@ -17,8 +17,8 @@
 <link rel="author" href="https://www.perplexity.ai/computer">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>北京轨道交通TOD+居住机遇区</title>
-<meta name="description" content="北京市轨道交通TOD+居住机遇区交互地图 — 现有线路、在建线路、轨道微中心及19个重点TOD机遇区">
+<title>北京TOD+居住+OPC社区机遇区</title>
+<meta name="description" content="北京TOD+居住+OPC社区机遇区交互地图 — 轨道交通、TOD机遇区、OPC一人公司社群聚集潜力分析">
 <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
 <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
         <line x1="14" y1="32" x2="24" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
         <line x1="40" y1="32" x2="50" y2="32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
       </svg>
-      <h2 class="loading-title">北京轨道交通TOD+居住机遇区</h2>
+      <h2 class="loading-title">北京TOD+居住+OPC社区机遇区</h2>
       <div class="loading-bar"><div class="loading-bar-fill"></div></div>
       <p class="loading-text">正在加载地图数据...</p>
     </div>
@@ -55,11 +55,19 @@
         <circle cx="18" cy="18" r="1.5" fill="currentColor"/>
       </svg>
       <div class="header-title">
-        <h1>北京轨道交通TOD+居住机遇区</h1>
+        <h1>北京TOD+居住+OPC社区机遇区</h1>
         <span class="header-subtitle">交互地图</span>
       </div>
     </div>
     <div class="header-right">
+      <!-- Podcast button -->
+      <button class="header-btn header-btn-accent" id="podcast-btn" title="收听TOD+OPC播客" aria-label="收听播客">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      </button>
+      <!-- OPC Report button -->
+      <button class="header-btn header-btn-accent" id="opc-report-btn" title="OPC社区潜力分析报告" aria-label="OPC报告">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </button>
       <!-- Export button -->
       <button class="header-btn" id="export-btn" title="导出高清图片" aria-label="导出高清图片">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -130,6 +138,11 @@
         <span class="layer-toggle-switch"></span>
         <span class="layer-toggle-label">轨道微中心</span>
       </label>
+      <label class="layer-toggle">
+        <input type="checkbox" class="layer-toggle-input" data-layer="opcCommunities" checked>
+        <span class="layer-toggle-switch"></span>
+        <span class="layer-toggle-label">OPC社区</span>
+      </label>
     </div>
 
     <div class="layer-group">
@@ -191,6 +204,11 @@
       <div class="legend-item"><span class="legend-zone legend-zone-tod"></span>重点TOD一体化区域</div>
     </div>
     <div class="legend-section">
+      <h4>OPC社区</h4>
+      <div class="legend-item"><span class="legend-dot legend-dot-opc" style="background:#00D4FF"></span>已运营OPC社区</div>
+      <div class="legend-item"><span class="legend-dot legend-dot-opc" style="background:#00AADD"></span>规划中OPC社区</div>
+    </div>
+    <div class="legend-section">
       <h4>区域要素 (点击机遇区后显示)</h4>
       <div class="legend-item"><span class="legend-dot" style="background:#3B82F6"></span>就业空间</div>
       <div class="legend-item"><span class="legend-dot" style="background:#F59E0B"></span>居住区</div>
@@ -221,6 +239,35 @@
     <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
   </footer>
 
+  <!-- OPC Report Modal -->
+  <div id="opc-report-modal" class="report-modal">
+    <div class="report-modal-inner">
+      <button class="report-modal-close" id="opc-report-close">&times;</button>
+      <div class="report-modal-content" id="opc-report-content"></div>
+    </div>
+  </div>
+
+  <!-- Podcast Player Modal -->
+  <div id="podcast-modal" class="podcast-modal">
+    <div class="podcast-modal-inner">
+      <button class="podcast-modal-close" id="podcast-close">&times;</button>
+      <div class="podcast-header">
+        <div class="podcast-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div>
+          <h3 class="podcast-title">TOD+OPC社区 播客</h3>
+          <p class="podcast-subtitle">北京TOD居住机遇区与OPC社群联动分析</p>
+        </div>
+      </div>
+      <audio id="podcast-audio" controls preload="metadata" style="width:100%;margin-top:12px;">
+        <source src="podcast.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放
+      </audio>
+    </div>
+  </div>
+
+  <script src="opc_data.js"></script>
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
