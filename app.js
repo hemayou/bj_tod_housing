@@ -1115,7 +1115,7 @@
         source: sourceId,
         paint: {
           'fill-color': baseColor,
-          'fill-opacity': isBasemapDark() ? 0.08 : 0.06
+          'fill-opacity': isBasemapDark() ? 0.12 : 0.10
         }
       });
 
@@ -1125,7 +1125,7 @@
         source: sourceId,
         paint: {
           'fill-color': baseColor,
-          'fill-opacity': isBasemapDark() ? 0.12 : 0.08
+          'fill-opacity': isBasemapDark() ? 0.18 : 0.14
         }
       });
 
@@ -1136,8 +1136,8 @@
         source: sourceId,
         paint: {
           'line-color': baseColor,
-          'line-width': isActive ? 2.5 : 2,
-          'line-opacity': isActive ? 0.9 : 0.6,
+          'line-width': isActive ? 3 : 2.5,
+          'line-opacity': isActive ? 1.0 : 0.7,
           'line-dasharray': isActive ? [1, 0] : [4, 3]
         }
       });
@@ -1164,13 +1164,13 @@
       // Hover interaction
       map.on('mouseenter', `${sourceId}-fill`, () => {
         map.getCanvas().style.cursor = 'pointer';
-        map.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', isBasemapDark() ? 0.22 : 0.15);
-        map.setPaintProperty(`${sourceId}-border`, 'line-width', isActive ? 3.5 : 3);
+        map.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', isBasemapDark() ? 0.28 : 0.22);
+        map.setPaintProperty(`${sourceId}-border`, 'line-width', isActive ? 4 : 3.5);
       });
       map.on('mouseleave', `${sourceId}-fill`, () => {
         map.getCanvas().style.cursor = '';
-        map.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', isBasemapDark() ? 0.12 : 0.08);
-        map.setPaintProperty(`${sourceId}-border`, 'line-width', isActive ? 2.5 : 2);
+        map.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', isBasemapDark() ? 0.18 : 0.14);
+        map.setPaintProperty(`${sourceId}-border`, 'line-width', isActive ? 3 : 2.5);
       });
     });
 
@@ -1240,25 +1240,105 @@
   }
 
   // ========================================
-  // Podcast Modal (v5.0)
+  // Podcast Floating Player Bar (v5.0)
   // ========================================
-  if ($podcastBtn && $podcastModal) {
-    $podcastBtn.addEventListener('click', () => {
-      $podcastModal.classList.add('visible');
-    });
+  let podcastBarVisible = false;
+  let podcastMinimized = false;
+  const $podcastMini = document.getElementById('podcast-mini');
+  const $podcastMiniToggle = document.getElementById('podcast-mini-toggle');
+  const $podcastMiniExpand = document.getElementById('podcast-mini-expand');
+  const $podcastMinimize = document.getElementById('podcast-minimize');
+  const $podcastBack30 = document.getElementById('podcast-back30');
+  const $podcastFwd30 = document.getElementById('podcast-fwd30');
+
+  function showPodcastFull() {
+    podcastBarVisible = true;
+    podcastMinimized = false;
+    if ($podcastModal) $podcastModal.classList.add('visible');
+    if ($podcastMini) $podcastMini.classList.remove('visible');
+    if ($podcastBtn) $podcastBtn.classList.add('active');
   }
-  if ($podcastClose) {
-    $podcastClose.addEventListener('click', () => {
-      $podcastModal.classList.remove('visible');
-      if ($podcastAudio) $podcastAudio.pause();
-    });
+
+  function showPodcastMini() {
+    podcastBarVisible = true;
+    podcastMinimized = true;
+    if ($podcastModal) $podcastModal.classList.remove('visible');
+    if ($podcastMini) {
+      $podcastMini.classList.add('visible');
+      syncMiniPlayState();
+    }
+    if ($podcastBtn) $podcastBtn.classList.add('active');
   }
-  if ($podcastModal) {
-    $podcastModal.addEventListener('click', (e) => {
-      if (e.target === $podcastModal) {
-        $podcastModal.classList.remove('visible');
-        if ($podcastAudio) $podcastAudio.pause();
+
+  function hidePodcastAll() {
+    podcastBarVisible = false;
+    podcastMinimized = false;
+    if ($podcastModal) $podcastModal.classList.remove('visible');
+    if ($podcastMini) $podcastMini.classList.remove('visible');
+    if ($podcastBtn) $podcastBtn.classList.remove('active');
+    if ($podcastAudio) $podcastAudio.pause();
+  }
+
+  function syncMiniPlayState() {
+    if ($podcastMini && $podcastAudio) {
+      $podcastMini.classList.toggle('playing', !$podcastAudio.paused);
+    }
+  }
+
+  // Sync mini pill play/pause icon with audio state
+  if ($podcastAudio) {
+    $podcastAudio.addEventListener('play', syncMiniPlayState);
+    $podcastAudio.addEventListener('pause', syncMiniPlayState);
+  }
+
+  // Header button: toggle full player
+  if ($podcastBtn) {
+    $podcastBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (podcastBarVisible && !podcastMinimized) {
+        hidePodcastAll();
+      } else if (podcastMinimized) {
+        showPodcastFull();
+      } else {
+        showPodcastFull();
       }
+    });
+  }
+
+  // Close button: close entirely + stop audio
+  if ($podcastClose) {
+    $podcastClose.addEventListener('click', () => hidePodcastAll());
+  }
+
+  // Minimize button: shrink to pill, keep playing
+  if ($podcastMinimize) {
+    $podcastMinimize.addEventListener('click', () => showPodcastMini());
+  }
+
+  // Mini pill: expand back
+  if ($podcastMiniExpand) {
+    $podcastMiniExpand.addEventListener('click', () => showPodcastFull());
+  }
+
+  // Mini pill: play/pause toggle
+  if ($podcastMiniToggle) {
+    $podcastMiniToggle.addEventListener('click', () => {
+      if ($podcastAudio) {
+        if ($podcastAudio.paused) $podcastAudio.play();
+        else $podcastAudio.pause();
+      }
+    });
+  }
+
+  // Skip ±30s
+  if ($podcastBack30) {
+    $podcastBack30.addEventListener('click', () => {
+      if ($podcastAudio) $podcastAudio.currentTime = Math.max(0, $podcastAudio.currentTime - 30);
+    });
+  }
+  if ($podcastFwd30) {
+    $podcastFwd30.addEventListener('click', () => {
+      if ($podcastAudio) $podcastAudio.currentTime = Math.min($podcastAudio.duration || 0, $podcastAudio.currentTime + 30);
     });
   }
 
@@ -1377,17 +1457,20 @@
     `;
   }
 
-  if ($opcReportBtn && $opcReportModal) {
-    $opcReportBtn.addEventListener('click', () => {
+  if ($opcReportBtn) {
+    $opcReportBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
       if ($opcReportContent && !$opcReportContent.innerHTML.trim()) {
         $opcReportContent.innerHTML = getReportHTML();
       }
-      $opcReportModal.classList.add('visible');
+      if ($opcReportModal) $opcReportModal.classList.add('visible');
     });
   }
   if ($opcReportClose) {
-    $opcReportClose.addEventListener('click', () => {
-      $opcReportModal.classList.remove('visible');
+    $opcReportClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if ($opcReportModal) $opcReportModal.classList.remove('visible');
     });
   }
   if ($opcReportModal) {
@@ -1631,21 +1714,38 @@
     }, 800);
   }
 
-  // Keyboard
+  // Keyboard shortcuts
   document.addEventListener('keydown', (e) => {
+    // Don't trigger shortcuts when typing in input fields
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
     if (e.key === 'Escape') {
       if ($opcReportModal && $opcReportModal.classList.contains('visible')) {
         $opcReportModal.classList.remove('visible');
         return;
       }
-      if ($podcastModal && $podcastModal.classList.contains('visible')) {
-        $podcastModal.classList.remove('visible');
-        if ($podcastAudio) $podcastAudio.pause();
+      if (podcastBarVisible) {
+        hidePodcastAll();
         return;
       }
       if ($sidePanel.classList.contains('visible')) resetView();
       $legendPanel.classList.remove('visible');
       $layerPanel.classList.remove('visible');
+    }
+
+    // J/K: cycle through zone nav buttons
+    if (e.key === 'j' || e.key === 'J' || e.key === 'k' || e.key === 'K') {
+      const btns = Array.from(document.querySelectorAll('.zone-btn'));
+      if (!btns.length) return;
+      const currentIdx = btns.findIndex(b => b.classList.contains('active'));
+      let nextIdx;
+      if (e.key === 'j' || e.key === 'J') {
+        nextIdx = currentIdx <= 0 ? btns.length - 1 : currentIdx - 1;
+      } else {
+        nextIdx = currentIdx >= btns.length - 1 ? 0 : currentIdx + 1;
+      }
+      btns[nextIdx].click();
+      btns[nextIdx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
   });
 
